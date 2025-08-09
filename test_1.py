@@ -187,14 +187,26 @@ def pagination(page, base_url):
 # Next Goal is the Anti Blocking Toolkit i needed to Implement
 
 
-def human_behaviour_delays():
-    pass
-def politely_paginate():
-    pass
-def fingerprint():
-    pass
+def extract_Job_Description(page):
+    # Build a Clicking Thing in my Project that click a Job Post 
+    # Build a Human Mimicing Behavior for Scrolling
+    
+    cards = page.locator('div.job-card.result.sponsored-job.premium-job.spon-top')
+    count = cards.count()
+    print(count)
+    for i in range(count):
+        cards.nth(i).click()
+        print(f"Clicking the Job {i}")
 
+r'''
+Reflection in Clicking:
 
+viewport can matter when clicking
+Automatically scroll the element into view before clicking.
+Wait for it to be visible and enabled before clicking.
+
+Scrolling is the next Step i should do 
+'''
 
 software_names = [SoftwareName.CHROME.value, SoftwareName.FIREFOX.value]
 operating_systems = [OperatingSystem.WINDOWS.value, OperatingSystem.LINUX.value]
@@ -210,7 +222,7 @@ def get_user_agent():
         print(f"[WARNING] fake_useragent failed: {e}")
         return fallback_ua_rotator.get_random_user_agent()
     
-    
+
 def extract_job_description():
     # page.wait_for_selector(".quote", state="attached")
     # description = page.locator(".quote .text").all()
@@ -224,10 +236,9 @@ def scrape_jora_title():
         # print(f"[INFO] Using UA: {ua_string}")
         context = browser.new_context(user_agent=ua_string) # Implementing User Agent thing
         page = browser.new_page()
-
         base_url = "https://ph.jora.com/j?sp=homepage&trigger_source=homepage&q=Mechatronics&l="
         page.goto(base_url, timeout=60000)
-
+        extract_Job_Description(page)
 
         # basic_search_extraction(page)
         # Extract the title tag content
