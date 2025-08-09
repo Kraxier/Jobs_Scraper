@@ -1,14 +1,46 @@
 
 # History or Timeline of What I currently Gonna do In "Project_Job_PH"
-# 
+
 # Timeline/History:
 
 
 # August 10:
+
+# To Do List
 r'''
+Inspiration for the Project: https://datanerd.tech/
 
+1. Build a Clicking Thing in my Project that click a Job Post 
+2. Extract After Clicking the Thing Extracting the Entire Text
+3. Create a not so Complex Human Scrolling and Even Clicking and Addign Delays
+4. Store all of the Job Description in a CSV Files
+5. Cleaning Stage Most likely the Pandas Thing 
+    * Lower Casing Everything 
+    * removing Duplicate in the Projects
+    * Removing the Unnecessary Stuff such as the HTML Tags 
+6. Structuring Stage:
+    * Skills → keyword match + NLP (e.g., spaCy, SkillNER).
+    * Salary → regex → numeric range.
+    * Requirements → sentence filtering (“must have”, “degree in”, etc.).
 '''
-
+# Motivation for the Project 
+r'''
+I can do a Role of Data Analyst, Data Engineer and Web Scrapping in this Project
+'''
+r'''
+Got a Bit of problem and Starting a New Structure of the Code 
+'''
+# Project Structure 
+r'''
+README.md → The first thing a client sees. It sells the project and tells them exactly how to use it.
+requirements.txt → Makes it easy to install dependencies with pip install -r requirements.txt.
+config.py → Keeps URLs, credentials, and constants separate from code so they can be changed without editing core scripts.
+main.py → A single, simple entry point to run the scraper.
+scraper/ → Keeps scraping logic modular and organized by responsibility.
+data/ → Shows you actually produce something useful, not just run code.
+logs/ → Professional touch that shows you thought about monitoring/debugging.
+tests/ → Tells clients your scraper isn’t brittle and you care about quality.
+'''
 
 # August 9:
 r'''

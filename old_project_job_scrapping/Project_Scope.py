@@ -177,3 +177,6 @@ r'''
         Time-series if you scrape over weeks/months
 
 '''
+
+
+############################ Defining if it is a Good Project #######################
