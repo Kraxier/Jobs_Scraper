@@ -184,30 +184,27 @@ def pagination(page, base_url):
             print(f"Error or no more pages: {e}")
             break
  
-# Next Goal is the Anti Blocking Toolkit i needed to Implement
-
-
+# Next Goal is the Anti Blocking Toolkit i needed to Implent 
 def extract_Job_Description(page):
-    # Build a Clicking Thing in my Project that click a Job Post 
-    # Build a Human Mimicing Behavior for Scrolling
-    
-    # cards = page.locator('div.job-card.result.sponsored-job.premium-job.spon-top')
-    # count = cards.count()
-    # print(count)
-    # for i in range(count):
-    #     cards.nth(i).click()
-    #     print(f"Clicking the Job {i}")
+
 
     # What is i need in term of Scrolling?
     r'''
-    1. Viewport (Done)
-    2. Scrolling Profile for the Properties of Scrolling (Done)
-    3. Scrolling (Done)
-    4. Delaying the Scroll (Done)
-    5. Initial 25% of going up (Done)
-    6. Termination Program (Done)
-    7. Looping Things (Done)
-    8. Clicking and Scrapping Things right now 
+      8. Clicking and Scrapping Things right now 
+
+    I manage to Put Some of the Component This is where the Hard Part Will Begin
+    How the Program should flow 
+        1. Click the Job Post 
+        2. Extract the Job Description 
+        3. Click another Job Post 
+        4. Extract the Job Description 
+        5. Scroll Down Based on Viewport 
+        6. Click Another Job Post 
+        7. Extract amptjer Job Description 
+    
+    Testing: 
+
+
     '''
     scrolling_attempt_max = 15 
     scrolling_attempt_page = 0 
@@ -217,6 +214,17 @@ def extract_Job_Description(page):
     scrolling_fail_buffer = 0
 
     while scrolling_attempt_max > scrolling_attempt_page:
+  
+        
+        # Job Post Cards      
+        cards = page.locator('a.job-link.-no-underline.-desktop-only.show-job-description')
+
+        count = cards.count()
+        print(f"How many Jobs are There: {count}")
+        for i in range(initial_counting_job):
+            cards.click()
+            print("cards get Clicked")
+           
         initial_height_page = page.evaluate("document.body.scrollHeight")
         print(f'Intial Height of the Page{initial_height_page}')
         scrolling_profiles = {
