@@ -191,12 +191,71 @@ def extract_Job_Description(page):
     # Build a Clicking Thing in my Project that click a Job Post 
     # Build a Human Mimicing Behavior for Scrolling
     
-    cards = page.locator('div.job-card.result.sponsored-job.premium-job.spon-top')
-    count = cards.count()
-    print(count)
-    for i in range(count):
-        cards.nth(i).click()
-        print(f"Clicking the Job {i}")
+    # cards = page.locator('div.job-card.result.sponsored-job.premium-job.spon-top')
+    # count = cards.count()
+    # print(count)
+    # for i in range(count):
+    #     cards.nth(i).click()
+    #     print(f"Clicking the Job {i}")
+
+    # What is i need in term of Scrolling?
+    r'''
+    1. Viewport (Done)
+    2. Scrolling Profile for the Properties of Scrolling (Done)
+    3. Scrolling (Done)
+    4. Delaying the Scroll (Done)
+    5. Initial 25% of going up (Done)
+    6. Termination Program
+    7. Looping Things 
+
+    Thinking my Termination 
+        * After Clicking the Job Post and getting the Data Right out of it
+        * I Wonder if i can Randomize the Clicking
+
+        I realize that the Code is not the Asset it is Liability the Longer
+        the More Painful that i needed to read man       
+    
+    Analyzing the Termination in my Other Program
+    '''
+    initial_height_page = page.evaluate("document.body.scrollHeight")
+    print(f'Intial Height of the Page{initial_height_page}')
+    scrolling_profiles = {
+        "scroll_magnitude":(200.0, 768.0), # Scroll Magnitude right to the max for range
+        "scroll_timing": (0.2, 1.5),
+        "scroll_think": (3.0, 8.0)
+    }
+    # Scrolling Method that are Based on Viewport Height
+    viewport_height = page.viewport_size["height"] 
+    min_px, max_px = scrolling_profiles["scroll_magnitude"]
+    scroll_amount_px = random.uniform(min_px, max_px)
+    max_scroll = viewport_height * 0.8
+    scroll_amount = min(scroll_amount_px, max_scroll)
+    page.mouse.wheel(0, scroll_amount)
+    # Time Delay for Every Scroll 
+    min_scroll_delay, max__scroll_delay = scrolling_profiles["scroll_timing"] # For Short Term Scrolling 
+    min_scroll_think, max_scroll_think = scrolling_profiles["scroll_think"] # For Longer Interval of Thinking 
+    time_delay = random.uniform(min_scroll_delay, max__scroll_delay)
+    print(f"Time Delay: {time_delay}secods")
+    time.sleep(time_delay)
+
+    if random.random() < 0.25:  # 25% chance
+        think_min, think_max = scrolling_profiles["scroll_think"]
+        time_delay_long = random.uniform(think_min, think_max)
+        print(f"Long Thinking Scrolling {time_delay_long}seconds")
+        time.sleep(time_delay_long)
+            # time.sleep(random.uniform(think_min, think_max))
+
+        # ||||||||||| Scroll Amount Going up for 30% Chance |||||||||||
+    direction = 1  # Default down
+    if random.random() < 0.3:  # 30% chance to scroll up
+        direction = -1
+        print(f"Scrolling Up (30% Chance)")
+    scroll_amount *= direction
+    page.mouse.wheel(0, scroll_amount)
+
+    
+    
+
 
 r'''
 Reflection in Clicking:
@@ -234,7 +293,10 @@ def scrape_jora_title():
         browser = p.chromium.launch(headless=False)
         ua_string = get_user_agent()
         # print(f"[INFO] Using UA: {ua_string}")
-        context = browser.new_context(user_agent=ua_string) # Implementing User Agent thing
+        context = browser.new_context(
+            user_agent=ua_string, # Implementing User Agent thing
+            viewport={"width": 1366, "height": 768}   # Changing Viewport thing for the Scrolling part 
+            ) 
         page = browser.new_page()
         base_url = "https://ph.jora.com/j?sp=homepage&trigger_source=homepage&q=Mechatronics&l="
         page.goto(base_url, timeout=60000)
