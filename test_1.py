@@ -306,13 +306,6 @@ def get_user_agent():
     except Exception as e:
         print(f"[WARNING] fake_useragent failed: {e}")
         return fallback_ua_rotator.get_random_user_agent()
-    
-
-def extract_job_description():
-    # page.wait_for_selector(".quote", state="attached")
-    # description = page.locator(".quote .text").all()
-    # Extracting the Side Part 
-    pass
 
 def scrape_jora_title():
     with sync_playwright() as p:
