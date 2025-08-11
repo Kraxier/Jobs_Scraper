@@ -105,6 +105,8 @@ def extraction_job_description(page):
 
     indexes = list(range(count_job_post))
     random.shuffle(indexes)  # randomize the order
+    # job-description-container
+    
 
     for i in indexes:
         time.sleep(random.uniform(0.8, 2.3))
@@ -112,7 +114,23 @@ def extraction_job_description(page):
         time.sleep(random.uniform(0.2, 0.5))
         locator.nth(i).click()
         value = locator.nth(i).inner_text()
+        page.wait_for_selector(".job-description-container", state="visible")
+        description_extraction = page.locator(".job-description-container").inner_text()
+        print(description_extraction)
+        print("################## Another Job Description #####################")
         print(f"{i}: {value}")
+
+
+    # description_extraction = page.locator(".job-description-container p").inner_text()
+    # print(description_extraction)
+
+    # description_extraction = page.locator(".job-description-container").inner_text()
+    # print(description_extraction)
+    r'''
+    Use .inner_text() on the parent container
+        * This grabs all visible text inside .job-description-container at once.
+        * The output will include all <p> text in reading order.
+    '''
 
     # Understanding : indexes = list(range(count_job_post))
     r'''
@@ -146,85 +164,85 @@ def extraction_job_description(page):
 
 
 
-def extract_Job_Description(page):
+# def extract_Job_Description_old(page):
 
-    scrolling_attempt_max = 15 
-    scrolling_attempt_page = 0 
-    # This Code is For the termination Part:
-    initial_counting_job = len(page.locator("a.job-link.-no-underline.-desktop-only.show-job-description").all()) 
-    scrolling_max_termination = 5
-    scrolling_fail_buffer = 0
+#     scrolling_attempt_max = 15 
+#     scrolling_attempt_page = 0 
+#     # This Code is For the termination Part:
+#     initial_counting_job = len(page.locator("a.job-link.-no-underline.-desktop-only.show-job-description").all()) 
+#     scrolling_max_termination = 5
+#     scrolling_fail_buffer = 0
 
-    while scrolling_attempt_max > scrolling_attempt_page:
+#     while scrolling_attempt_max > scrolling_attempt_page:
   
         
-        # Job Post Cards      
-        cards = page.locator('a.job-link.-no-underline.-desktop-only.show-job-description')
+#         # Job Post Cards      
+#         cards = page.locator('a.job-link.-no-underline.-desktop-only.show-job-description')
 
-        count = cards.count()
-        print(f"How many Jobs are There: {count}")
-        for i in range(initial_counting_job):
-            cards.click()
-            print("cards get Clicked")
+#         count = cards.count()
+#         print(f"How many Jobs are There: {count}")
+#         for i in range(initial_counting_job):
+#             cards.click()
+#             print("cards get Clicked")
            
-        initial_height_page = page.evaluate("document.body.scrollHeight")
-        print(f'Intial Height of the Page{initial_height_page}')
-        scrolling_profiles = {
-            "scroll_magnitude":(200.0, 768.0), # Scroll Magnitude right to the max for range
-            "scroll_timing": (0.2, 1.5),
-            "scroll_think": (3.0, 8.0)
-        }
-        # Scrolling Method that are Based on Viewport Height
-        viewport_height = page.viewport_size["height"] 
-        min_px, max_px = scrolling_profiles["scroll_magnitude"]
-        scroll_amount_px = random.uniform(min_px, max_px)
-        max_scroll = viewport_height * 0.8
-        scroll_amount = min(scroll_amount_px, max_scroll)
-        page.mouse.wheel(0, scroll_amount)
-        # Time Delay for Every Scroll 
-        min_scroll_delay, max__scroll_delay = scrolling_profiles["scroll_timing"] # For Short Term Scrolling 
-        min_scroll_think, max_scroll_think = scrolling_profiles["scroll_think"] # For Longer Interval of Thinking 
-        time_delay = random.uniform(min_scroll_delay, max__scroll_delay)
-        print(f"Time Delay: {time_delay}secods")
-        time.sleep(time_delay)
+#         initial_height_page = page.evaluate("document.body.scrollHeight")
+#         print(f'Intial Height of the Page{initial_height_page}')
+#         scrolling_profiles = {
+#             "scroll_magnitude":(200.0, 768.0), # Scroll Magnitude right to the max for range
+#             "scroll_timing": (0.2, 1.5),
+#             "scroll_think": (3.0, 8.0)
+#         }
+#         # Scrolling Method that are Based on Viewport Height
+#         viewport_height = page.viewport_size["height"] 
+#         min_px, max_px = scrolling_profiles["scroll_magnitude"]
+#         scroll_amount_px = random.uniform(min_px, max_px)
+#         max_scroll = viewport_height * 0.8
+#         scroll_amount = min(scroll_amount_px, max_scroll)
+#         page.mouse.wheel(0, scroll_amount)
+#         # Time Delay for Every Scroll 
+#         min_scroll_delay, max__scroll_delay = scrolling_profiles["scroll_timing"] # For Short Term Scrolling 
+#         min_scroll_think, max_scroll_think = scrolling_profiles["scroll_think"] # For Longer Interval of Thinking 
+#         time_delay = random.uniform(min_scroll_delay, max__scroll_delay)
+#         print(f"Time Delay: {time_delay}secods")
+#         time.sleep(time_delay)
 
-        if random.random() < 0.25:  # 25% chance
-            think_min, think_max = scrolling_profiles["scroll_think"]
-            time_delay_long = random.uniform(think_min, think_max)
-            print(f"Long Thinking Scrolling {time_delay_long}seconds")
-            time.sleep(time_delay_long)
-                # time.sleep(random.uniform(think_min, think_max))
+#         if random.random() < 0.25:  # 25% chance
+#             think_min, think_max = scrolling_profiles["scroll_think"]
+#             time_delay_long = random.uniform(think_min, think_max)
+#             print(f"Long Thinking Scrolling {time_delay_long}seconds")
+#             time.sleep(time_delay_long)
+#                 # time.sleep(random.uniform(think_min, think_max))
 
-            # ||||||||||| Scroll Amount Going up for 30% Chance |||||||||||
-        direction = 1  # Default down
-        if random.random() < 0.3:  # 30% chance to scroll up
-            direction = -1
-            print(f"Scrolling Up (30% Chance)")
-        scroll_amount *= direction
-        page.mouse.wheel(0, scroll_amount)
+#             # ||||||||||| Scroll Amount Going up for 30% Chance |||||||||||
+#         direction = 1  # Default down
+#         if random.random() < 0.3:  # 30% chance to scroll up
+#             direction = -1
+#             print(f"Scrolling Up (30% Chance)")
+#         scroll_amount *= direction
+#         page.mouse.wheel(0, scroll_amount)
 
-        counting_job = len(page.locator("a.job-link.-no-underline.-desktop-only.show-job-description").all())
-        print(f"Counting How many Jobs: {counting_job}")
-         #||||||||||| Second Termination: Counting The Quotes ||||||||| 
-        if counting_job == initial_counting_job:
-            scrolling_fail_buffer += 1
-            # print(f"No new quotes found. Fail count: {scrolling_fail_buffer}")
-            if scrolling_fail_buffer == scrolling_max_termination:
-                break
-        else:
-            scrolling_fail_buffer = 0
-            initial_counting_job = counting_job
+#         counting_job = len(page.locator("a.job-link.-no-underline.-desktop-only.show-job-description").all())
+#         print(f"Counting How many Jobs: {counting_job}")
+#          #||||||||||| Second Termination: Counting The Quotes ||||||||| 
+#         if counting_job == initial_counting_job:
+#             scrolling_fail_buffer += 1
+#             # print(f"No new quotes found. Fail count: {scrolling_fail_buffer}")
+#             if scrolling_fail_buffer == scrolling_max_termination:
+#                 break
+#         else:
+#             scrolling_fail_buffer = 0
+#             initial_counting_job = counting_job
 
-            # print(f"There are New Quotes Found so It will Reset to: {scrolling_fail_buffer}")
-            # print(f" New Number for the Comparison counting_quotes and initial_count_quotes not 10 anymore: {initial_count_quotes}")
+#             # print(f"There are New Quotes Found so It will Reset to: {scrolling_fail_buffer}")
+#             # print(f" New Number for the Comparison counting_quotes and initial_count_quotes not 10 anymore: {initial_count_quotes}")
         
-        r'''
-        Putting a "Why" instead of What is really a necessary thing in Doing things 
-        Second Termination is the Best Way 
-        '''
-        scrolling_attempt_page += 1 #
-        print(f"How many attempt currently  {scrolling_attempt_page}")
-        # In Attempt 10 is Enough for the Maximum Scroll of the Page
+#         r'''
+#         Putting a "Why" instead of What is really a necessary thing in Doing things 
+#         Second Termination is the Best Way 
+#         '''
+#         scrolling_attempt_page += 1 #
+#         print(f"How many attempt currently  {scrolling_attempt_page}")
+#         # In Attempt 10 is Enough for the Maximum Scroll of the Page
 
 
 software_names = [SoftwareName.CHROME.value, SoftwareName.FIREFOX.value]
