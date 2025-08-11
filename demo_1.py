@@ -5,7 +5,7 @@ import time
 from fake_useragent import UserAgent
 from random_user_agent.user_agent import UserAgent as RandomUA
 from random_user_agent.params import SoftwareName, OperatingSystem
-
+import csv # Working CSV 
 
 r'''
 Problem 
@@ -39,10 +39,10 @@ Full Stack of Job Post Scrape the:
         <div class="content">Hybrid</div>
 '''
 
-import csv # Working CSV 
+
 
 # Creating CSV files for this 
-def saving_csv():
+def saving_csv_understanding():
     csv_file = open("data_1.csv", "w", newline="", encoding="utf-8")
     ############# Concept of the Line of Code ##############
     # "data.csv" → The file name you’re creating (or overwriting if it already exists).
@@ -61,16 +61,29 @@ def saving_csv():
     writer.writerow(["Column1", "Column2", "Column3"])
     '''
     writer.writerow(["Column1", "Column2", "Column3"])
+    r'''
+    Code for CSV Files:
+    csv_file = open("job_data_1.csv", "w", newline="", encoding="utf-8")
+    writer = csv.writer(csv_file)
+    writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
+    '''
     ############# Concept of the Line of Code ##############
     # writer.writerow() → Writes one row to the CSV file.
     # Here, we’re writing the headers — the column names that appear at the top of the CSV.
 
-def extraction_job_description(page):
+def saving_csv():
+    csv_file = open("data_1.csv", "w", newline="", encoding="utf-8")
+    writer = csv.writer(csv_file)
+    writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
+    return csv_file, writer  # return so other functions can use them,  Return both the csv_file and writer so other functions can use them:
+
+
+def extraction_job_description(page, writer):
     locator = page.locator(".job-link.-no-underline.-desktop-only.show-job-description")
     count_job_post = locator.count()
-
     indexes = list(range(count_job_post))
-    random.shuffle(indexes)  
+    random.shuffle(indexes) 
+
 
     for i in indexes:
         time.sleep(random.uniform(0.8, 2.3))
@@ -92,15 +105,18 @@ def extraction_job_description(page):
         # elements = page.locator('.badge.-work-arrangement-badge .content')
         # for i in range(elements.count()):
         #     print(elements.nth(i).inner_text())
-        r'''
-        Output is always on the Damn Repeat of things 
-        '''
+
         
         print("-" * 10)
-        description_extraction = page.locator(".job-description-container").inner_text()
+        description_extraction = page.locator(".job-description-container").inner_text().lower()
         print(description_extraction)
         print("-" * 50)
         # print(f"{i}: {value}")
+
+        writer.writerow([roles_of_jobs, company_name, company_location, type_of_work, description_extraction])
+        r'''
+        writer.writerow(["roles_of_jobs", "company_name", "company_location", "type_of_work", "description_extraction"])
+        '''
 
 def basic_search_extraction(page):
     roles_of_jobs = page.locator('a.job-link.-no-underline.-desktop-only.show-job-description').all_text_contents()
@@ -123,14 +139,14 @@ def basic_search_extraction(page):
         print("-" * 50)
 
 
-def pagination(page, base_url):
+def pagination(page, base_url, writer):
     while True:
         # Wait for the current page to fully load jobs
         page.wait_for_load_state("networkidle")
 
         # ✅ Call your extraction here for the *current* page
         # basic_search_extraction(page)
-        extraction_job_description(page)
+        extraction_job_description(page,writer)
 
         try:
             # Wait for the "next page" button
@@ -179,6 +195,7 @@ def get_user_agent():
         return fallback_ua_rotator.get_random_user_agent()
 
 def scrape_jora_title():
+    csv_file, writer = saving_csv()  # create CSV here
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         ua_string = get_user_agent()
@@ -189,15 +206,12 @@ def scrape_jora_title():
         page = browser.new_page()
         base_url = "https://ph.jora.com/j?sp=homepage&trigger_source=homepage&q=Mechatronics&l="
         page.goto(base_url, timeout=60000)
-        # pagination(page, base_url) 
-        extraction_job_description(page)
-
-
-
-
+        pagination(page, base_url, writer) 
+        # extraction_job_description(page)
 
         input()
         browser.close()
+    csv_file.close()  # close after done
 
 if __name__ == "__main__":
     scrape_jora_title()
