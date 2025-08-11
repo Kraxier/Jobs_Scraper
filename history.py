@@ -3,8 +3,26 @@
 
 # Timeline/History:
 
+# August 12:
+r'''
+1. Re learning the CSV 
+2. RE Learning how to store a damn data in a CSV 
+3. Handling the Pop up Menu 
+4. Somehow Extract the Necessary Data In term of Scrapping 
+5. 
+'''
+
+# August 11:
+r'''
+I Just Figure out that Clicking in a certain Elements playwright can automatically scroll it 
+I can just fix this part to make it more Human thing because my current stuff is more on randomize but still 
+a human behaviour in a project
+'''
 
 # August 10:
+r'''
+Re Practice the clicking Part in the Things 
+'''
 
 # To Do List
 r'''

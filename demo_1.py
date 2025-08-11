@@ -7,6 +7,56 @@ from random_user_agent.user_agent import UserAgent as RandomUA
 from random_user_agent.params import SoftwareName, OperatingSystem
 
 
+r'''
+Problem 
+    I have 2 Way of Extracting a Website 
+        1. Overview of a Job Post 
+            * Role 
+            * Company 
+            * Short Description of the Job 
+        2. A Full Stack of Job Post 
+            * I can Scrape the Description 
+Based on the csv File i needed to somehow fix this part
+    1. Problem is the Randomization of the Full Stack Thing
+    2. How i can Connect the 2? 
+    3. Should i even Connect the 2? 
+
+Should i Seperate the 2? 
+    1. Because in Terms of Saving the File
+    2. Maybe that a lot of Work at Cleaning so i should not seperate it 
+
+Solution:
+    1. In term of the Overview and Full Stack Post 
+        * I Should Scrape the Role, Company and Connect the 2 of those in a 1 CSV files
+        * I Should Create a Demo in Terms of Just Scrapping the  Full Stack thing because that is the most critical thing i should focus on 
+        
+'''
+
+import csv # Working CSV 
+
+# Creating CSV files for this 
+def saving_csv():
+    csv_file = open("data_1.csv", "w", newline="", encoding="utf-8")
+    ############# Concept of the Line of Code ##############
+    # "data.csv" → The file name you’re creating (or overwriting if it already exists).
+    # "w" → Write mode. This means
+        # If the file exists → It will be overwritten.
+        # If it doesn’t exist → It will be created.
+    # newline="" → Prevents Python from adding extra blank lines between rows in Windows. 
+        # Without it, you might get a weird double-line spacing in your CSV.
+    # encoding="utf-8" → Ensures the file can store special characters (e.g., accents, emojis) without corruption.
+    writer = csv.writer(csv_file)
+    ############# Concept of the Line of Code ##############
+    # csv.writer() → Creates a writer object that knows how to turn Python lists
+        # (e.g., ["Title", "Price"]) into properly formatted CSV rows.
+    # This writer is tied to csv_file, so every writer.writerow() call writes directly to that file.
+    r'''
+    writer.writerow(["Column1", "Column2", "Column3"])
+    '''
+    writer.writerow(["Column1", "Column2", "Column3"])
+    ############# Concept of the Line of Code ##############
+    # writer.writerow() → Writes one row to the CSV file.
+    # Here, we’re writing the headers — the column names that appear at the top of the CSV.
 
 def extraction_job_description(page):
     locator = page.locator(".job-link.-no-underline.-desktop-only.show-job-description")
@@ -77,6 +127,14 @@ def pagination(page, base_url):
             go_to_next_page = urljoin(base_url, next_page)
             print(f"Going to: {go_to_next_page}")
             page.goto(go_to_next_page, timeout=60000)
+            try:
+                close_button = page.locator(".popup-close")  # adjust selector
+                if close_button.is_visible():
+                    close_button.click()
+                    print("Closed popup")
+            except:
+                print("No popup detected")
+            # input("Paused. Press Enter to continue...")
 
         except Exception as e:
             print(f"Error or no more pages: {e}")
