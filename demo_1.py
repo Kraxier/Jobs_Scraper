@@ -169,12 +169,17 @@ def pagination(page, base_url, writer):
             print(f"Going to: {go_to_next_page}")
             page.goto(go_to_next_page, timeout=60000)
             try:
-                close_button = page.locator(".popup-close")  # adjust selector
-                if close_button.is_visible():
+                # Adjust the selector for your modal's close/dismiss button
+                close_button = page.locator("#suggest-better-alert-modal .dismiss")
+                
+                if close_button.is_visible(timeout=2000):  # waits up to 2 seconds
                     close_button.click()
                     print("Closed popup")
-            except:
-                print("No popup detected")
+                else:
+                    print("Popup detected but close button not visible")
+            except Exception as e:
+                print(f"No popup detected or error closing popup: {e}")
+
             # input("Paused. Press Enter to continue...")
 
         except Exception as e:
