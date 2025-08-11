@@ -1,5 +1,8 @@
 
 # History or Timeline of What I currently Gonna do In "Project_Job_PH"
+# Website i can Try: https://ph.jora.com/ 
+# git rm -r --cached job_venv
+#  .\job_venv\Scripts\activate
 
 # Timeline/History:
 

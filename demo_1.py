@@ -29,7 +29,14 @@ Solution:
     1. In term of the Overview and Full Stack Post 
         * I Should Scrape the Role, Company and Connect the 2 of those in a 1 CSV files
         * I Should Create a Demo in Terms of Just Scrapping the  Full Stack thing because that is the most critical thing i should focus on 
-        
+
+Full Stack of Job Post Scrape the:
+    Role: job-title heading -size-xxlarge -weight-700
+    Company: class="company"
+    Location: 
+        <span class="location">Makati City, Metro Manila</span>
+    Type of Work:
+        <div class="content">Hybrid</div>
 '''
 
 import csv # Working CSV 
@@ -72,10 +79,28 @@ def extraction_job_description(page):
         locator.nth(i).click()
         value = locator.nth(i).inner_text()
         page.wait_for_selector(".job-description-container", state="visible")
+        print(f"{i}: {value}")
+        roles_of_jobs = page.locator('.job-title.heading.-size-xxlarge.-weight-700').inner_text()
+        company_name = page.locator('.company').inner_text()
+        company_location = page.locator('.location').inner_text()
+        type_of_work = page.locator('.badge.-work-arrangement-badge .content').first.inner_text()
+        print(f"Role of the Job: {roles_of_jobs}")
+        print(f"Company Name: {company_name}")
+        print(f"Company Location: {company_location}")
+        print(f"Type of Work(Full Time, Hybrid, PartTime): {type_of_work}")
+        
+        # elements = page.locator('.badge.-work-arrangement-badge .content')
+        # for i in range(elements.count()):
+        #     print(elements.nth(i).inner_text())
+        r'''
+        Output is always on the Damn Repeat of things 
+        '''
+        
+        print("-" * 10)
         description_extraction = page.locator(".job-description-container").inner_text()
         print(description_extraction)
-        print("################## Another Job Description #####################")
-        print(f"{i}: {value}")
+        print("-" * 50)
+        # print(f"{i}: {value}")
 
 def basic_search_extraction(page):
     roles_of_jobs = page.locator('a.job-link.-no-underline.-desktop-only.show-job-description').all_text_contents()
@@ -104,7 +129,7 @@ def pagination(page, base_url):
         page.wait_for_load_state("networkidle")
 
         # ✅ Call your extraction here for the *current* page
-        basic_search_extraction(page)
+        # basic_search_extraction(page)
         extraction_job_description(page)
 
         try:
@@ -164,7 +189,10 @@ def scrape_jora_title():
         page = browser.new_page()
         base_url = "https://ph.jora.com/j?sp=homepage&trigger_source=homepage&q=Mechatronics&l="
         page.goto(base_url, timeout=60000)
-        pagination(page, base_url) 
+        # pagination(page, base_url) 
+        extraction_job_description(page)
+
+
 
 
 
