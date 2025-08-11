@@ -97,10 +97,51 @@ def extraction_job_description(page):
     It Solve Every Problem that i have I don't need to automatic Scrolling Things in term of this 
     Question: 
         If It can Solve many things 
-
-
     '''
 
+
+    locator = page.locator(".job-link.-no-underline.-desktop-only.show-job-description")
+    count_job_post = locator.count()
+
+    indexes = list(range(count_job_post))
+    random.shuffle(indexes)  # randomize the order
+
+    for i in indexes:
+        time.sleep(random.uniform(0.8, 2.3))
+        locator.nth(i).hover()
+        time.sleep(random.uniform(0.2, 0.5))
+        locator.nth(i).click()
+        value = locator.nth(i).inner_text()
+        print(f"{i}: {value}")
+
+    # Understanding : indexes = list(range(count_job_post))
+    r'''
+    * If count_job_post is 5, this gives:
+    * range(0, 5) → represents 0, 1, 2, 3, 4
+    The Output of this is: indexes = [0, 1, 2, 3, 4]
+    Why?
+        Because we want a list of indexes that correspond to .nth(i) for your locator elements.
+    '''
+
+    # Understanding : random.shuffle(indexes) 
+    r'''
+    What is Random.Shuffle:
+        random.shuffle(...) takes a list and rearranges its items in-place into a random order.
+    indexes = [0, 1, 2, 3, 4]
+    random.shuffle(indexes)
+    print(indexes)  
+    # might print: [3, 1, 4, 0, 2]
+    '''
+
+    # I have all things that i need in terms of Scrolling and Stuff that can Automatically Handle for me and i don't need to engineer tings 
+    r'''
+    I need to Just
+        1. Click
+        2. Wait for the Elements to Load 
+        3. Extract the Job Description 
+        4. Click Again 
+        Rinse and Repeat 
+    '''
     
 
 
