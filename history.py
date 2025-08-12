@@ -7,11 +7,61 @@
 # Timeline/History:
 
 # August 12:
+
+# New goal:
 r'''
-1. Re learning the CSV 
-2. RE Learning how to store a damn data in a CSV 
-3. Handling the Pop up Menu 
-4. Somehow Extract the Necessary Data In term of Scrapping 
+Instead of Manually Typing the Things i should automate it because i'm a freaking programmer
+https://ph.jora.com/
+    Starting from this Website i should do things properly
+'''
+
+r'''
+I have a Script to Scrape the Things that i want what is the next thing i supposed to do 
+1. Run the Script to gather Data 
+While Running the Script 
+    In terms of Running the Sript 
+    Overall Goal of the Project I needed to Rethink this stuff
+
+    I Should Automate this Stuff in terms of Autosearching in the terms of searching things like inputting in the field
+
+    My Script can run on the Website for 
+    1. Mechatronics 
+    2. Robotics Engineer
+    3. Control Systems Engineer
+    4. Electromechanical Engineer
+    5. Process Control Engineer
+    Industrial Automation Specialist
+    Manufacturing Engineer (with automation focus)
+    Test & Commissioning Engineer
+    Maintenance Engineer (industrial/mechanical/electrical)
+    Embedded Systems Engineer
+    Electrical Design Engineer
+    Firmware Engineer (for industrial equipment)
+    Field Service Engineer (automation/instrumentation equipment)
+    System Integration Engineer
+    Production Engineer (automation-heavy industries)
+    Plant Engineer
+    SCADA Engineer
+    PLC Programmer
+    Instrumentation Technician
+    LabVIEW Developer
+    Process Instrumentation Specialist
+    Robotics Technician
+    Motion Control Engineer
+
+
+2. I should Study the How to Extract and Read things While Studying at my things 
+    How to Extract the Keywords and Stuff 
+
+3. I'm Thinking should i lowercase everything but based on chatgpt he said during scrapping i should keep the original format if i'm not sure in terms of collection 
+so in terms of description that is the lowercase of things 
+'''
+
+r'''
+1. Re learning the CSV (Done)
+2. RE Learning how to store a damn data in a CSV (Done)
+3. Handling the Pop up Menu (Done)
+4. Somehow Extract the Necessary Data In term of Scrapping (Done) 
 5. 
 '''
 

@@ -199,6 +199,14 @@ def get_user_agent():
         print(f"[WARNING] fake_useragent failed: {e}")
         return fallback_ua_rotator.get_random_user_agent()
 
+def auto_search():
+    r'''
+    <input data-action="autocomplete-selectcomplete-&gt;hubble--keyword-autocomplete#track" data-url="/rpc/search_keywords/suggest" icon="search" icon-position="right" id="q" maxlength="512" name="q" placeholder="Job title, company, keyword" type="search" value="" autocomplete="off" aria-expanded="false" aria-owns="autocomplete_list_1" role="combobox">
+    <button type="submit" class="search-jobs-button rounded-button -primary -size-lg -w-full"><span class="content">Search jobs</span></button>
+    
+    '''
+    pass
+
 def scrape_jora_title():
     csv_file, writer = saving_csv()  # create CSV here
     with sync_playwright() as p:
