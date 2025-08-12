@@ -25,11 +25,11 @@ While Running the Script
     I Should Automate this Stuff in terms of Autosearching in the terms of searching things like inputting in the field
 
     My Script can run on the Website for 
-    1. Mechatronics 
-    2. Robotics Engineer
-    3. Control Systems Engineer
-    4. Electromechanical Engineer
-    5. Process Control Engineer
+    Mechatronics 
+    Robotics Engineer
+    Control Systems Engineer
+    Electromechanical Engineer
+    Process Control Engineer
     Industrial Automation Specialist
     Manufacturing Engineer (with automation focus)
     Test & Commissioning Engineer
