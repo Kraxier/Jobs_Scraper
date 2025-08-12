@@ -8,38 +8,6 @@ from random_user_agent.params import SoftwareName, OperatingSystem
 import csv # Working CSV 
 
 
-
-
-# Creating CSV files for this 
-def saving_csv_understanding():
-    csv_file = open("data_1.csv", "w", newline="", encoding="utf-8")
-    ############# Concept of the Line of Code ##############
-    # "data.csv" → The file name you’re creating (or overwriting if it already exists).
-    # "w" → Write mode. This means
-        # If the file exists → It will be overwritten.
-        # If it doesn’t exist → It will be created.
-    # newline="" → Prevents Python from adding extra blank lines between rows in Windows. 
-        # Without it, you might get a weird double-line spacing in your CSV.
-    # encoding="utf-8" → Ensures the file can store special characters (e.g., accents, emojis) without corruption.
-    writer = csv.writer(csv_file)
-    ############# Concept of the Line of Code ##############
-    # csv.writer() → Creates a writer object that knows how to turn Python lists
-        # (e.g., ["Title", "Price"]) into properly formatted CSV rows.
-    # This writer is tied to csv_file, so every writer.writerow() call writes directly to that file.
-    r'''
-    writer.writerow(["Column1", "Column2", "Column3"])
-    '''
-    writer.writerow(["Column1", "Column2", "Column3"])
-    r'''
-    Code for CSV Files:
-    csv_file = open("job_data_1.csv", "w", newline="", encoding="utf-8")
-    writer = csv.writer(csv_file)
-    writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
-    '''
-    ############# Concept of the Line of Code ##############
-    # writer.writerow() → Writes one row to the CSV file.
-    # Here, we’re writing the headers — the column names that appear at the top of the CSV.
-
 def saving_csv():
     csv_file = open("data_1.csv", "w", newline="", encoding="utf-8")
     writer = csv.writer(csv_file)
@@ -70,22 +38,15 @@ def extraction_job_description(page, writer):
         print(f"Company Name: {company_name}")
         print(f"Company Location: {company_location}")
         print(f"Type of Work(Full Time, Hybrid, PartTime): {type_of_work}")
-        
-        # elements = page.locator('.badge.-work-arrangement-badge .content')
-        # for i in range(elements.count()):
-        #     print(elements.nth(i).inner_text())
 
         
         print("-" * 10)
         description_extraction = page.locator(".job-description-container").inner_text().lower()
         print(description_extraction)
         print("-" * 50)
-        # print(f"{i}: {value}")
+
 
         writer.writerow([roles_of_jobs, company_name, company_location, type_of_work, description_extraction])
-        r'''
-        writer.writerow(["roles_of_jobs", "company_name", "company_location", "type_of_work", "description_extraction"])
-        '''
 
 def basic_search_extraction(page):
     roles_of_jobs = page.locator('a.job-link.-no-underline.-desktop-only.show-job-description').all_text_contents()
@@ -168,61 +129,91 @@ def get_user_agent():
         print(f"[WARNING] fake_useragent failed: {e}")
         return fallback_ua_rotator.get_random_user_agent()
 
+def auto_search(page):
+    r'''
+    <input data-action="autocomplete-selectcomplete-&gt;hubble--keyword-autocomplete#track" data-url="/rpc/search_keywords/suggest" icon="search" icon-position="right" id="q" maxlength="512" name="q" placeholder="Job title, company, keyword" type="search" value="" autocomplete="off" aria-expanded="false" aria-owns="autocomplete_list_1" role="combobox">
+    <button type="submit" class="search-jobs-button rounded-button -primary -size-lg -w-full"><span class="content">Search jobs</span></button>
+    '''
+    keywords = [
+    "Mechatronics",
+    "Robotics Engineer",
+    "Control Systems Engineer",
+    "Electromechanical Engineer",
+    "Process Control Engineer",
+    "Industrial Automation Specialist",
+    "Manufacturing Engineer (with automation focus)",
+    "Test & Commissioning Engineer",
+    "Maintenance Engineer (industrial/mechanical/electrical)",
+    "Embedded Systems Engineer",
+    "Electrical Design Engineer",
+    "Firmware Engineer (for industrial equipment)",
+    "Field Service Engineer (automation/instrumentation equipment)",
+    "System Integration Engineer",
+    "Production Engineer (automation-heavy industries)",
+    "Plant Engineer",
+    "SCADA Engineer",
+    "PLC Programmer",
+    "Instrumentation Technician",
+    "LabVIEW Developer",
+    "Process Instrumentation Specialist",
+    "Robotics Technician",
+    "Motion Control Engineer"
+    ]
+    for term in keywords:
+        page.fill('#q', term)
+        page.click('button.search-jobs-button')
+        page.wait_for_selector('.job-result-item')
 
 def scrape_jora_title():
-    csv_file, writer = saving_csv()  # create CSV
+    csv_file, writer = saving_csv()  # create CSV here
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         ua_string = get_user_agent()
         context = browser.new_context(
-            user_agent=ua_string,
-            viewport={"width": 1366, "height": 768}
-        )
-        page = context.new_page()
+            user_agent=ua_string, 
+            viewport={"width": 1366, "height": 768}   
+            )
+        page = browser.new_page()
         base_url = "https://ph.jora.com/"
-
-        # ✅ Your keyword list
         keywords = [
-            "Mechatronics",
-            "Robotics Engineer",
-            "Control Systems Engineer",
-            "Electromechanical Engineer",
-            "Process Control Engineer",
-            "Industrial Automation Specialist",
-            "Manufacturing Engineer (with automation focus)",
-            "Test & Commissioning Engineer",
-            "Maintenance Engineer (industrial/mechanical/electrical)",
-            "Embedded Systems Engineer",
-            "Electrical Design Engineer",
-            "Firmware Engineer (for industrial equipment)",
-            "Field Service Engineer (automation/instrumentation equipment)",
-            "System Integration Engineer",
-            "Production Engineer (automation-heavy industries)",
-            "Plant Engineer",
-            "SCADA Engineer",
-            "PLC Programmer",
-            "Instrumentation Technician",
-            "LabVIEW Developer",
-            "Process Instrumentation Specialist",
-            "Robotics Technician",
-            "Motion Control Engineer"
+        "Mechatronics",
+        "Robotics Engineer",
+        "Control Systems Engineer",
+        "Electromechanical Engineer",
+        "Process Control Engineer",
+        "Industrial Automation Specialist",
+        "Manufacturing Engineer (with automation focus)",
+        "Test & Commissioning Engineer",
+        "Maintenance Engineer (industrial/mechanical/electrical)",
+        "Embedded Systems Engineer",
+        "Electrical Design Engineer",
+        "Firmware Engineer (for industrial equipment)",
+        "Field Service Engineer (automation/instrumentation equipment)",
+        "System Integration Engineer",
+        "Production Engineer (automation-heavy industries)",
+        "Plant Engineer",
+        "SCADA Engineer",
+        "PLC Programmer",
+        "Instrumentation Technician",
+        "LabVIEW Developer",
+        "Process Instrumentation Specialist",
+        "Robotics Technician",
+        "Motion Control Engineer"
         ]
-
-        # ✅ Loop through all keywords
-        for index, term in enumerate(keywords, start=1):
-            print(f"\n🔍 [{index}/{len(keywords)}] Searching for: {term}")
-
-            page.goto(base_url, timeout=60000)
+        for term in keywords:
+            print(f"Searching for: {term}")
+            page.goto(base_url, timeout=60000)  # always start fresh
             page.fill('#q', term)
             page.click('button.search-jobs-button')
-            page.wait_for_selector('.job-result-item', timeout=10000)
+            page.wait_for_selector('.job-result-item')
+            pagination(page, base_url, writer) 
+        # extraction_job_description(page)
 
-            pagination(page, base_url, writer)
-
-            print(f"✅ Finished: {term}")
-
+        
         browser.close()
-    csv_file.close()
+    csv_file.close()  # close after done
+
+
 
 if __name__ == "__main__":
     scrape_jora_title()
@@ -240,4 +231,3 @@ in terms of Pagination thing after reaching the last page in mechatronics it wil
 
 Where i should put the thing in there ? 
 '''
-
