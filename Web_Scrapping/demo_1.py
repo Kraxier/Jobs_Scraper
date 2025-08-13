@@ -47,17 +47,17 @@ def saving_csv_understanding():
 #     writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
 #     return csv_file, writer  # return so other functions can use them,  Return both the csv_file and writer so other functions can use them:
 
-# def saving_csv():
-#     # Create filename with current date (YYYY-MM-DD)
-#     date_str = datetime.now().strftime("%Y-%m-%d")
-#     filename = f"mechatronics_jobs_{date_str}.csv"
+def saving_csv():
+    # Create filename with current date (YYYY-MM-DD)
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    filename = f"overall_automation_jobs_{date_str}.csv"
 
-#     csv_file = open(filename, "w", newline="", encoding="utf-8")
-#     writer = csv.writer(csv_file)
-#     writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
+    csv_file = open(filename, "w", newline="", encoding="utf-8")
+    writer = csv.writer(csv_file)
+    writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
 
-#     print(f"📁 Saving results to: {filename}")
-#     return csv_file, writer
+    print(f"📁 Saving results to: {filename}")
+    return csv_file, writer
 
 r'''
 Deepseek Critc:
@@ -65,12 +65,12 @@ Deepseek Critc:
     Issue: The CSV file remains open throughout the entire scraping process. If the script crashes, the file might not close properly, risking data loss/corruption.
     Fix: Use context managers (with open()) or ensure proper error handling:
 '''
-def saving_csv():
-    filename = f"mechatronics_jobs_{datetime.now().strftime('%Y-%m-%d')}.csv"
-    with open(filename, "w", newline="", encoding="utf-8") as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(["Role of Job", ...])
-        return writer  # Only return the writer
+# def saving_csv():
+#     filename = f"instrumentation_jobs_{datetime.now().strftime('%Y-%m-%d')}.csv"
+#     with open(filename, "w", newline="", encoding="utf-8") as csv_file:
+#         writer = csv.writer(csv_file)
+#         writer.writerow(["Role of Job", ...])
+#         return writer  # Only return the writer
 
 # def extraction_job_description(page, writer):
 #     locator = page.locator(".job-link.-no-underline.-desktop-only.show-job-description")
@@ -293,7 +293,9 @@ def scrape_jora_title():
         base_url = "https://ph.jora.com/"
         # ✅ Your keyword list
         keywords = [
-            "Mechatronics",
+            # "Mechatronics",
+            # "Instrumentation Technician",
+            # "Instrumentation Engineer"
             "Robotics Engineer",
             "Control Systems Engineer",
             "Electromechanical Engineer",
@@ -311,7 +313,6 @@ def scrape_jora_title():
             "Plant Engineer",
             "SCADA Engineer",
             "PLC Programmer",
-            "Instrumentation Technician",
             "LabVIEW Developer",
             "Process Instrumentation Specialist",
             "Robotics Technician",

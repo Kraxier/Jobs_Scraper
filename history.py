@@ -6,6 +6,16 @@
 
 # Timeline/History:
 
+
+# August 13:
+r'''
+I been Rushing things that i left to Chatgpt and even Deepseek do the Work that i didn't study it properly so i needed to fix that stuff for me and 
+to understand the damn code man i been basically Cheating things 
+
+I didn't write the code this day and i didn't even bother debugging it myself so that is a mistake so i needed to fix my mistake 
+'''
+
+
 # August 12:
 
 # New goal:
