@@ -71,6 +71,7 @@ def start_csv_writer():
     r'''
     2025-08-14
     '''
+
     # File naming 
     # f to Add the date_str so it automatically get the current date during scrapping 
     # f is basically adding the variable in a string format here
@@ -103,3 +104,39 @@ def start_csv_writer():
 
     Reading the COntent of the file(data.txt)
     '''
+
+    # What is the Purpose of this code? 
+    r'''
+    It Create an Object designed to write CSV data because it is complexx
+    '''
+    writer = csv.writer(csv_file)
+    # Opening a File Using $ open(filename, "w", ...) it only know how to write raw text
+    # While $ csv.writer is a specialized tool for CSV 
+    # csv.writer help you write in CSV files instead of manually to format each of the line
+
+    # writer.writerow
+    writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
+    r'''Is a Method Call that instruct the csv.writer object to write in a single row
+    "Role of Job", "Company Name", "Company Location", "Type of Work", "Description" a list of string represent the data for  the row 
+    '''
+    
+    # Basically to Debug Things out if it Currently Saving or not 
+    print(f"📁 Streaming results to: {filename}")
+
+    # Why it Return?
+    r'''
+    A Function is responsbile for setting up the files and writer object
+    But the Rest of the program(Scrapping a Website) needed to use the object to actually write the data
+    which in my case the pagination part and by returning them you can use the function everywhere 
+    '''
+    return csv_file, writer
+
+# Going Back to Basics
+# Why Use Function and return statement 
+r'''Function is a reusable code that perform a specific task, it break down the program
+into a smaller,manageable pieces which my code is easier to read, debug and maintain'''
+r''' is a way for a function to send value or values back to the part of the code that called it
+'''
+
+
+
