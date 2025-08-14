@@ -1,3 +1,4 @@
+
 import csv
 import random
 import time
@@ -45,27 +46,27 @@ def start_csv_writer():
     return csv_file, writer
 # start_csv_writer look like a function similar to starting things 
 
-def write_job(writer, csv_file, job_data):
-    """Write a single job row and flush immediately."""
-    writer.writerow(job_data)
-    csv_file.flush()  # Ensure data is written to disk immediately
+# def write_job(writer, csv_file, job_data):
+#     """Write a single job row and flush immediately."""
+#     writer.writerow(job_data)
+#     csv_file.flush()  # Ensure data is written to disk immediately
 
-# --- Example usage ---
-# Start the file
-csv_file, writer = start_csv_writer()
+# # --- Example usage ---
+# # Start the file
+# csv_file, writer = start_csv_writer()
 
-try:
-    # Pretend we're scraping in a loop
-    jobs = [
-        ["Automation Engineer", "TechCorp", "New York, NY", "Full-time", "Responsible for automation systems."],
-        ["QA Analyst", "InnoSoft", "Remote", "Contract", "Test automation tools."]
-    ]
-    for job in jobs:
-        write_job(writer, csv_file, job)
+# try:
+#     # Pretend we're scraping in a loop
+#     jobs = [
+#         ["Automation Engineer", "TechCorp", "New York, NY", "Full-time", "Responsible for automation systems."],
+#         ["QA Analyst", "InnoSoft", "Remote", "Contract", "Test automation tools."]
+#     ]
+#     for job in jobs:
+#         write_job(writer, csv_file, job)
 
-finally:
-    csv_file.close()
-    print("✅ CSV file closed.")
+# finally:
+#     csv_file.close()
+#     print("✅ CSV file closed.")
 
 
 
