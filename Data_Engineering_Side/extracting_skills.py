@@ -22,10 +22,10 @@ python -m spacy download en_core_web_lg   # large
 '''
 
 # # Importing spaCy
-# import spacy
+import spacy
 
 # # Imports spaCy’s PhraseMatcher, a fast rule-based matcher for finding exact phrases (token sequences) in a Doc.
-# from spacy.matcher import PhraseMatcher
+from spacy.matcher import PhraseMatcher
 
 # Importing Pandas in my Script 
 import pandas as pd
@@ -108,10 +108,24 @@ terms = [
 
 
 # 4. Create the PhraseMatcher
-# matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
-# patterns = [nlp.make_doc(t) for t in terms]
-# matcher.add("TECH_TERMS", patterns)
+r'''
+Creates a PhraseMatcher, a fast rule-based matcher for exact phrases (sequences of tokens).
+'''
+matcher = PhraseMatcher(nlp.vocab, attr="LOWER") # It shares your pipeline’s vocabulary (nlp.vocab) so matches use the same lexicon/tokenization as your Doc.
+# attr="LOWER" means “match on the lowercased form of tokens,” so "PLC", "plc", and "Plc" all match the same pattern.
+# (If you omit this, matching is case-sensitive. Other options include "ORTH" exact text, "LEMMA" lemma, "NORM" normalized text.)
 
+
+patterns = [nlp.make_doc(t) for t in terms]
+# Turns each string in your terms list (e.g., ["PLC", "HMI", "SCADA", "ladder logic"]) into a Doc using spaCy’s tokenizer only.
+# Multi-word terms like "ladder logic" become a two-token Doc, so the matcher will look for that exact token sequence in your text.
+
+matcher.add("TECH_TERMS", patterns)
+r'''
+Registers all those Docs as patterns under the rule name "TECH_TERMS".
+Internally, that name is mapped to an integer match_id; when you iterate matches you can recover the name with nlp.vocab.strings[match_id]. # What do you mean by this part?
+You can call add multiple times with different names to group different sets of phrases (e.g., "HARDWARE_TERMS", "SOFTWARE_TERMS"). # Also on this part 
+'''
 
 
 ######################################### Concepts ###############################
@@ -159,6 +173,56 @@ Some common tasks in NLP include:
     Summarization – condensing large documents into shorter summaries
 '''
 
+##################### Concept of spaCy #####################
+
+# What does it mean by Sequence of Tokens in spaCy? 
+r'''
+    * A token is a single unit of text — usually a word, punctuation mark, or number.
+    * A sequence of tokens means multiple tokens appearing in order.
+Example:
+Text: "ladder logic"
+Tokens: ["ladder", "logic"]
+Sequence: both tokens together in the same order
+PhraseMatcher works by matching these token sequences, not just raw substrings.
+'''
+
+# What does it mean by "doc" in spaCy?
+r'''
+A Doc is spaCy’s main data structure for a processed text.
+It contains:
+    * Tokens (words, punctuation, spaces)
+    * Linguistic annotations (POS tags, lemmas, entities)
+    * A reference to the shared Vocabulary
+
+doc = nlp("This is text.")
+
+doc = nlp.make_doc("This is text.")  # tokens only, no full analysis
+'''
+# What is Pipeline Vocabulary?
+r'''
+Vocabulary (nlp.vocab) is a shared storage for all lexical information spaCy uses: # What is LeXical Information?
+    Words it’s seen
+    Their string forms
+    Lexical attributes (like is_alpha, lowercase form, etc.)
+All Doc objects created by the same pipeline share the same Vocab.
+This sharing makes lookups (like converting "TECH_TERMS" ↔ integer ID) super fast.    
+'''
+# What is Tokenizer?
+r'''
+The tokenizer is the part of spaCy that splits raw text into tokens according to rules.
+Example: 
+doc = nlp.make_doc("We program PLCs.")
+for token in doc:
+    print(token.text)
+We
+program
+PLCs
+.
+
+'''
+
+
+
 # What is Pandas in python?
 r'''
 is a powerful open-source data analysis and manipulation library.
@@ -203,3 +267,5 @@ pip install pandas
 # # Print named entities
 # for ent in doc.ents:
 #     print(ent.text, ent.label_)
+
+

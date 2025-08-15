@@ -12,7 +12,11 @@ r'''
 Targeted Things i needed to do:
     1. Let the Scrapper Run While Studying how to Extract the Skills
     2. Study the Extraction part 
-    
+
+Welp I needed to Study spaCy and i learning some of the concepts here and there 
+And i also need to study or Relearn the Pandas and Combining them Both which is think is necessary to extract some of the files
+
+
 '''
 
 # August 15:
