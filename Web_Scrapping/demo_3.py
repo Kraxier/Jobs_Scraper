@@ -13,7 +13,7 @@ from random_user_agent.user_agent import UserAgent as RandomUA
 def start_csv_writer():
     """Open a CSV for streaming writes during scraping."""
     date_str = datetime.now().strftime("%Y-%m-%d")
-    filename = f"overall_automation_jobs_{date_str}.csv"
+    filename = f"automation_{date_str}.csv"
 
     csv_file = open(filename, "w", newline="", encoding="utf-8")
     writer = csv.writer(csv_file)
@@ -220,7 +220,7 @@ def scrape_jora_title():
             page.fill('#q', term)
             page.click('button.search-jobs-button')
 
-            pagination(page, base_url, writer)
+            pagination(page, base_url, writer, csv_file)
 
             print(f"✅ Finished: {term}")
 

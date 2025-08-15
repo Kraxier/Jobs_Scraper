@@ -6,6 +6,15 @@
 
 # Timeline/History:
 
+
+# August 16 
+r'''
+Targeted Things i needed to do:
+    1. Let the Scrapper Run While Studying how to Extract the Skills
+    2. Study the Extraction part 
+    
+'''
+
 # August 15:
 r'''
 Forgotten to Write in August 14 but in terms of August 15:
