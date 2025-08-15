@@ -22,3 +22,14 @@ If failure should not stop the entire program, protect it with try/except and lo
 
 # When you don’t need try/except
     # For debugging during development — wrapping everything hides useful error messages.
+
+# Risks of always using except Exception as e:
+r'''
+You might hide bugs
+Example: a typo in your code or a variable not defined would also be caught,
+and instead of fixing it, you might just keep getting "N/A" without realizing something is wrong.
+
+Harder to debug
+If every problem is caught the same way, you lose context on what kind of error it really was.
+'''
+
