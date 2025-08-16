@@ -4,35 +4,8 @@ from spacy.matcher import PhraseMatcher
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
-df = pd.read_csv("mechatronics_jobs_2025-08-13.csv")
-job_description = df['Description']
-
-
-# print(job_description) 
-# for x in job_description:
-#     print(x)
-r'''
-In terms of Pandas the Difference in Output is in for loop it print everything 
-from the start to the end while the printing it as "job_description = df['Description']"
-
-0      work setup: hybrid (open to 2x a week in the o...
-1      educational requirements:\nbachelor's degree i...
-2      deliver predictive and intelligent delivery ap...
-3      designing and developing robust and efficient ...
-4      position summary:this position holder is respo...
-                             ...
-712    select how often (in days) to receive an alert...
-713    join to apply for the devops engineer role at ...
-714    your roleyou will be a member of a highly skil...
-715    job description\n\n\nconceptualize design and ...
-716    🔍 what we’re looking for:\n\n\n✅ college under...
-Name: Description, Length: 717, dtype: object
-
-In Some Organize Way
-'''
-
 nlp = spacy.load("en_core_web_sm")
-terms = [
+hard_skills = [
     "abb robotics",
     "arduino",
     "autocad electrical",
@@ -94,138 +67,117 @@ terms = [
     "vfd programming",
     "wonderware intouch"
 ]
-matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
-patterns = [nlp.make_doc(t) for t in terms]
-matcher.add("TECH_TERMS", patterns)
-
-
-def extract_skills(text):
-    doc = nlp(text)
-    found = [skill for skill in skills_list if skill.lower() in text.lower()]
-    return found
-
-
-
-
-# Component from the Chatgpt:
-r'''
-import pandas as pd
-import spacy
-from collections import Counter # What is this Code? 
-
-
-# Load model
-nlp = spacy.load("en_core_web_sm")
-
-# Example DataFrame
-# In terms of DataFrame What does it mean by that ? 
-# If i can Extract the Description(job_description by Doing this)
-
-df = pd.DataFrame({
-    "job_description": [
-        "Looking for an engineer with PLC and Python experience.",
-        "Must have SQL, Tableau, and data visualization skills."
-    ]
-})
-# If i can access the description in my program this means i can do this? 
-# my code is 
-# df = pd.read_csv("mechatronics_jobs_2025-08-13.csv")
-# job_description = df['Description']
-
-
-# # print(job_description) 
-# # for x in job_description:
-# #     print(x)
-# What does it mean by data frame?
-
-# Simple skill extraction (dummy example)
-skills_list = ["PLC", "Python", "SQL", "Tableau", "data visualization"]
-
-def extract_skills(text):
-    doc = nlp(text)
-    found = [skill for skill in skills_list if skill.lower() in text.lower()]
-    return found
-    # I don't Understand the For Loop of this can you Simplified this? 
-    # something like for skill in skill_list? 
-    # What kind Writing is this part? 
-
-# Apply function to each row
-df["extracted_skills"] = df["job_description"].apply(extract_skills)
-# Based on my Analyzing your code 
-# Why df["extracted_skills"]
-# Why df["job_description"].apply(extract_skills) 
-# Explain me this line by line of this code
-
-# Also this Code can you Explain this line by line 
-# Analyze most common skills
-all_skills = df["extracted_skills"].explode()
-skill_counts = all_skills.value_counts()
-
-print(df)
-print(skill_counts)
-'''
-
-
-
-# Analyzing the code that Chatgpt give me: 
-r'''
-import pandas as pd
-import spacy
-from collections import Counter
-'''
-# pandas as pd → we import pandas, and give it the nickname pd (convention).
-
-# spacy → loads the NLP library for text processing.
-
-# Counter → comes from Python’s collections module. 
-# It counts how many times each item appears. 
-# (we didn’t use it directly here, but it’s often used for frequency analysis, 
-#  like counting words or skills).
-
-############## 
-
-r'''nlp = spacy.load("en_core_web_sm")'''
-# Loads a small English NLP model.
-
-# With nlp(text), you turn text into a Doc object that 
-# spaCy can analyze (tokens, POS tags, named entities, etc.).
-
-############## 
-
-r'''
-What is DataFrame?
-    Think of a spreadsheet in Python.
-    Rows = entries (e.g., job postings).
-    Columns = features (e.g., job description, salary, location).
-'''
-r'''
 df = pd.read_csv("mechatronics_jobs_2025-08-13.csv")
-job_description = df["Description"]
-'''
-# ✅ If you load your real CSV:
-
-############## 
-
-# This is a List Comprehension a Shortvut for a loop
-
-r'''
+# job_description = df["Description"]
 def extract_skills(text):
     doc = nlp(text)
-    found = [skill for skill in skills_list if skill.lower() in text.lower()]
+    found = [skill for skill in hard_skills if skill.lower() in text.lower()]
     return found
+df["extracted_skills"] = df["Description"].apply(extract_skills)
+
+
+# Save new file
+df.to_csv("mechatronics_jobs_2025-08-13_with_skills.csv", index=False)
+# df.to_csv("mechatronics_jobs_2025-08-13.csv", index=False) This Overwrite the File which is not good at all
+r'''
+to_csv → writes the DataFrame back to a file.
+
+"mechatronics_jobs_2025-08-13_with_skills.csv" → creates a new file with extracted skills.
+
+index=False → prevents pandas from writing row numbers into the CSV.
 '''
-# Analyzing this based on my Understanding 
-# an Extraction of Skills in a text 
+print("✅ Done Extracting Skills. Saved to new CSV file.")
 
 r'''
-[skill for skill in skills_list if skill.lower() in text.lower()]
+My Files are currently at 2k kb and it taking a time to do all of it 
 '''
-# Equivalent in a long form:
+################################################
+########## Determining Output ##################
+################################################
 r'''
-found = []
-for skill in skills_list:
-    if skill.lower() in text.lower():
-        found.append(skill)
+Option 1: List Format → ['PLC', 'Python']
+
+✅ Pros
+Perfect for pandas/Python:
+    You can easily .explode() the list into separate rows.
+    You can count frequencies directly.
+    Keeps skills structured as a true data type (list of strings).
+    Works well if you’ll keep analyzing inside Python.
+
+❌ Cons
+    If you open it in Excel → it looks messy (['PLC', 'Python']).
+    Harder to filter/sort in Excel or BI tools.
+
+Option 2: String Format → "PLC, Python"
+✅ Pros
+    Clean & human-readable in Excel, CSV, Tableau, Power BI.
+    Easy to share with non-programmers.
+    Looks like normal text (no brackets/quotes).
+
+❌ Cons
+    In Python, you lose the “list” structure:
+    If you want to re-analyze, you need to split it back:
+        df["extracted_skills"].str.split(", ")
+⚖️ So which is better?
+If you’re going to do most of your analysis in pandas/Python → keep it as a list (['PLC', 'Python']).
+If you’re going to share/export to Excel, Tableau, Power BI → use a string ("PLC, Python").
+
+or You can Keep both:
+df["extracted_skills_list"] = df["Description"].apply(extract_skills)              # List format
+df["extracted_skills_text"] = df["extracted_skills_list"].apply(lambda x: ", ".join(x))  # String format
+extracted_skills_list: ['PLC', 'Python']
+extracted_skills_text: PLC, Python
 '''
 
-############## 
+###################### Wanting to See the Progress of the Extraction 
+r'''
+🚀 Recommendation
+If you’re serious about analyzing big CSVs → use tqdm. 
+It integrates with pandas, is lightweight, 
+and gives you a real progress bar without changing much code.
+'''
+
+r'''
+1. Use tqdm Progress Bar
+from tqdm import tqdm
+tqdm.pandas()  # adds .progress_apply to pandas
+
+# Instead of apply()
+df["extracted_skills"] = df["Description"].progress_apply(extract_skills)
+
+100%|██████████████████████████| 5000/5000 [00:45<00:00, 110/s]
+'''
+
+r'''
+2. Print Every N Rows (manual feedback)
+def extract_skills_with_progress(text, idx=None, total=None):
+    found = []
+    for skill in hard_skills:
+        if skill.lower() in str(text).lower():
+            found.append(skill)
+    if idx is not None and idx % 100 == 0:  # print every 100 rows
+        print(f"Processed {idx}/{total}")
+    return found
+
+total_rows = len(df)
+df["extracted_skills"] = [
+    extract_skills_with_progress(text, idx, total_rows)
+    for idx, text in enumerate(df["Description"])
+]
+
+Processed 0/5000
+Processed 100/5000
+Processed 200/5000
+'''
+
+# 3. Time Estimation
+r'''
+import time
+start = time.time()
+
+df["extracted_skills"] = df["Description"].progress_apply(extract_skills)
+
+end = time.time()
+print(f"✅ Done in {end - start:.2f} seconds")
+'''
+

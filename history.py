@@ -6,6 +6,11 @@
 
 # Timeline/History:
 
+# August 17:
+r'''
+Create a Analyze Component(Combining spaCy and Pandas)
+'''
+
 # August 16 or 17:
 r'''
 1. Properly Study the Damn spaCy 
