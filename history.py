@@ -6,6 +6,13 @@
 
 # Timeline/History:
 
+# August 16 or 17:
+r'''
+1. Properly Study the Damn spaCy 
+2. Relearn the Necessary Tools in Pandas 
+3. Try to Combine the Both Extracting Skills and Creating a Table for that
+
+'''
 
 # August 16 
 r'''

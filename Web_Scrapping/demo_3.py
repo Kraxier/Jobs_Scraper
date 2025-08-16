@@ -192,13 +192,13 @@ def scrape_jora_title():
             # "Robotics Engineer",
             # "Control Systems Engineer", Due to 5,k Jobs i Stop this Midway I'm Going to Continue this later
             # "Electromechanical Engineer", Not this Part more on Mechanical and electrical 
-            "Process Control Engineer",
-            "Industrial Automation Specialist",
+            # "Process Control Engineer",
+            # "Industrial Automation Specialist",
             # "Manufacturing Engineer (with automation focus)",
            #  "Test & Commissioning Engineer",
             # "Maintenance Engineer (industrial/mechanical/electrical)",
-            "Embedded Systems Engineer",
-            "Electrical Design Engineer",
+            # "Embedded Systems Engineer",
+            # "Electrical Design Engineer", # I Stop Mid Here there are 2k Jobs are like this 
            #  "Firmware Engineer (for industrial equipment)",
             # "Field Service Engineer (automation/instrumentation equipment)",
             "System Integration Engineer",

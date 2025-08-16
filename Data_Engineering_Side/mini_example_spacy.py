@@ -124,16 +124,16 @@ You convert this back to a string later.
 r'''
 Creates a PhraseMatcher, a fast rule-based matcher for exact phrases (sequences of tokens).
 '''
-matcher = PhraseMatcher(nlp.vocab, attr="LOWER") # It shares your pipeline’s vocabulary (nlp.vocab) so matches use the same lexicon/tokenization as your Doc.
+# matcher = PhraseMatcher(nlp.vocab, attr="LOWER") # It shares your pipeline’s vocabulary (nlp.vocab) so matches use the same lexicon/tokenization as your Doc.
 # attr="LOWER" means “match on the lowercased form of tokens,” so "PLC", "plc", and "Plc" all match the same pattern.
 # (If you omit this, matching is case-sensitive. Other options include "ORTH" exact text, "LEMMA" lemma, "NORM" normalized text.)
 
 
-patterns = [nlp.make_doc(t) for t in terms]
+# patterns = [nlp.make_doc(t) for t in terms]
 # Turns each string in your terms list (e.g., ["PLC", "HMI", "SCADA", "ladder logic"]) into a Doc using spaCy’s tokenizer only.
 # Multi-word terms like "ladder logic" become a two-token Doc, so the matcher will look for that exact token sequence in your text.
 
-matcher.add("TECH_TERMS", patterns)
+# matcher.add("TECH_TERMS", patterns)
 r'''
 Registers all those Docs as patterns under the rule name "TECH_TERMS".
 Internally, that name is mapped to an integer match_id; when you iterate matches you can recover the name with nlp.vocab.strings[match_id]. # What do you mean by this part?
