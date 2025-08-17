@@ -75,7 +75,7 @@ must be willing to be 2 year project based employment term.
 soft skills:
 strong problem-solving and analytical skills.
 excellent communication and teamwork abilities for coordinating with multi-disciplinary teams.
-willingness to work in tarlac power plant site","['dcs', 'distributed control system', 'hmi', 'human-machine interface', 'modbus', 'plc', 'programmable logic controller', 'sis', 'scada', 'supervisory control and data acquisition']"
+willingness to work in tarlac power plant site","['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition', 'dcs', 'distributed control system', 'modbus', 'cybersecurity for industrial systems', 'sis']"
 Application Automation Engineer,Accenture,"Taguig, Metro Manila",,deliver predictive and intelligent delivery approaches based on automation and analytics. drive the automation of delivery analytics to gather insights from data.,[]
 System (Automation) Engineer,"Icontroltech, Inc.","Marikina City, Metro Manila",,"designing and developing robust and efficient industrial automation systems.
 
@@ -91,7 +91,7 @@ engineering design, project working documents, wiring diagrams and others includ
 
 maintains computer and database
 
-project commissioning","['plc', 'programmable logic controller', 'sis', 'scada']"
+project commissioning","['plc', 'programmable logic controller', 'scada', 'sis']"
 Energy Management System Specialist,AboitizPower,"Dumaguete, Negros",,"position summary:this position holder is responsible for the technical and commercial aspect of the energy management system including distributed control systems (dcs) and supervisory control and data acquisition (scada) systems. this includes designing and reviewing contractor design drawings, developing, supervising the installation of equipment which is used to monitor and control energy storage systems, machinery and processes. he/she will ensure that these systems and processes operate effectively, efficiently, safely and in accordance with the contract package.
 
 minimum qualificationsbs electronic and communication engineerlicensed electronic and communication engineer2 years of relevant industry experience in project execution of power or storage.2 years of project experience
@@ -105,7 +105,7 @@ ladder diagrams design and development
 proficient with network communication protocols (bacnet, modbus, modbus tcp, opc, lonworks,tcp/ip, irig-b)proficient with microsoft application (operating system (win 7 or above) , (win 2003 or above) office applications (2003 or above), wrikeexperience on report application programming and development (mssql, mysql, citect historian, report server etc.)please note that this is a project-based role initially for 12 months. extension of employment period is a sole discretion of the company, subject to the individual's approval.
 
 
-#j-18808-ljbffr","['dcs', 'distributed control system', 'hmi', 'modbus', 'plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition', 'dcs', 'distributed control system', 'modbus']"
 Automation Engineer (UiPath) - 6290,Cambridge University Press & Assessment,"Manila, Metro Manila",,"work setup: hybrid (open to 2x a week in the office)work schedule: 10am to 6pm manila time when in the office, 3pm to 12am when remote
 
 employment type: permanentlocation: makati city, metro manilapay range: php 60,000 to php 81,000we value transparency and encourage applicants comfortable with this range to apply. discover a world of endless possibilities with cambridge university press & assessment, a distinguished global academic publisher and assessment organisation proudly affiliated with the prestigious university of cambridge. we are looking for an automation engineer to join our automation team.
@@ -349,7 +349,7 @@ assist in conducting seminars regarding plc programming.
 
 design and fabricate pcb.
 
-compiling designs, wiring diagrams, plc programs, and project files.","['plc', 'sis']"
+compiling designs, wiring diagrams, plc programs, and project files.","['plc', 'sis', 'c programming']"
 Automation Engineer,Acbel PolyTech,"Calamba City, Calabarzon",,"about the role
 
 join acbel polytech (phils.), inc. as an automation engineer. in this full-time position located in calamba city, laguna, you will play a pivotal role in driving the company's automation initiatives and ensuring the smooth operation of its manufacturing processes.
@@ -435,7 +435,7 @@ engineering design, project working documents, wiring diagrams and others includ
 
 maintains computer and database
 
-project commissioning","['plc', 'programmable logic controller', 'sis', 'scada']"
+project commissioning","['plc', 'programmable logic controller', 'scada', 'sis']"
 Robotic Process Automation Engineer,,"Makati City, Metro Manila",,"key responsibilities
 1. automation implementation: design, develop, and implement automated workflows and solutions using make.com to streamline and enhance business processes across departments.
 
@@ -508,7 +508,7 @@ you are the site expert on electrical and controls and automation systems. provi
 
 support in the development of the plant masterplan for electrical systems and controls and automation. technical resource to the category engineering team for new products and re-stages (innovation and renovation).3. value engineering; bringing new
 
-ways of working to the engineering community in our continued pursuit of the lowest installed cost, while living our core values (value vs. values proposition).4. on time, in full (otif) end to end delivery of assigned capital projects (typical value","['dcs', 'hmi', 'plc', 'sis', 'scada']"
+ways of working to the engineering community in our continued pursuit of the lowest installed cost, while living our core values (value vs. values proposition).4. on time, in full (otif) end to end delivery of assigned capital projects (typical value","['plc', 'scada', 'dcs', 'sis']"
 "AI and Automation Engineer (Office-based, NOT WFH, NOT Hybrid)",FIT BUSINESS SERVICES INC,"Clark, Central Luzon",Hybrid,"about the role
 we are looking for an experienced ai and automation engineer to lead the automation of our proprietary it platform. your goal is to minimise or remove unnecessary human touches in operational processes, integrate ai into workflows, and deliver measurable efficiency gains across all service lines.
 
@@ -650,7 +650,7 @@ excellent problem-solving and analytical skills.
 
 amenable to work in calamba laguna
 
-ability to work independently and as part of a team.","['ladder logic', 'plc', 'sis']"
+ability to work independently and as part of a team.","['plc', 'ladder logic', 'sis', 'c programming']"
 Data & Control Programmer (PLC Programmer),Motolite,"Santa Maria, Central Luzon",Hybrid,"job summary:
 
 
@@ -694,7 +694,7 @@ familiarity with industrial communication protocols (e.g., modbus, profibus, eth
 
 experience with system modeling tools (e.g., matlab/simulink) is a plus.
 
-excellent problem-solving, analytical, and communication skills.","['dcs', 'ethernet/ip', 'hmi', 'matlab', 'simulink', 'modbus', 'plc', 'profibus', 'scada']"
+excellent problem-solving, analytical, and communication skills.","['plc', 'scada', 'dcs', 'ethernet/ip', 'modbus', 'profibus', 'c programming', 'matlab', 'simulink']"
 ELECTRICAL & CONTROL ENGINEER,Smartech Le Control Inc.,"Carmona, Calabarzon",Hybrid,"job summary:
 
 we are looking for a electrical control engineer who will lead and support automation and electrical control projects. you will be responsible for plc/scada programming, control panel design, system integration, and field commissioning across industrial clients.
@@ -733,7 +733,7 @@ skills/certifications:
 
 with tesda certification or prc license is an advantage
 
-willing to do site work and client coordination","['hmi', 'plc', 'scada']"
+willing to do site work and client coordination","['plc', 'scada']"
 "Project Engineer Cavite, Philippines",Unilever,"Ayos Lomboy, Central Luzon",Hybrid,"job title: project engineerlocation: philippinesmain scopereports to site transformation engineering managerthe project engineer covers the leadership in terms of project execution and delivery of identified projects for bwpc cavite to drive the transformation agenda of the site. this includes the overall responsibility of implementing and execution of the different stages of the project/s safely, on-time, in-full, and within budget. s/he needs to control, monitor, and manage the project including all aspects of safe execution, costs, project network, contractor management, quality of results, installation, commissioning and ramp-up of the project.
 
 plan, craft, manage, and execute the following phases of work which form the execution part of the project: project engineering and management, resourcing appointments, reporting and meetings, capital budgeting & financial management, contract procedures, change management. the project engineer will also be responsible for day-to-day oversight of controls and electrical reliability. in addition, this person will drive the site masterplan for electrical systems and controls and automation aligned with the unilever design teams including end to end execution of site controls / automation capital investment projects.
@@ -748,7 +748,7 @@ you are the site expert on electrical and controls and automation systems. provi
 
 support in the development of the plant masterplan for electrical systems and controls and automation. technical resource to the category engineering team for new products and re-stages (innovation and renovation).3. value engineering; bringing new
 
-ways of working to the engineering community in our continued pursuit of the lowest installed cost, while living our core values (value vs. values proposition).4. on time, in full (otif) end to end delivery of assigned capital projects (typical value","['dcs', 'hmi', 'plc', 'sis', 'scada']"
+ways of working to the engineering community in our continued pursuit of the lowest installed cost, while living our core values (value vs. values proposition).4. on time, in full (otif) end to end delivery of assigned capital projects (typical value","['plc', 'scada', 'dcs', 'sis']"
 Mechatronics,"DAC Industrial Electronics, Inc.","San Juan, Metro Manila",Hybrid,"key responsibilities:
 
 - design and develop automated systems, robotics, and electro-mechanical equipment
@@ -767,7 +767,7 @@ qualifications:
 - skilled in cad software (e.g., solidworks, autocad) and circuit design
 - strong analytical, problem-solving, and communication skills
 - knowledge of lean manufacturing and industrial safety standards is an advantage
-- ability to work independently and in a multidisciplinary team environment","['embedded systems', 'plc', 'solidworks']"
+- ability to work independently and in a multidisciplinary team environment","['plc', 'embedded systems', 'solidworks']"
 Lead Control Systems Engineer,Thermo Systems LLC.,"Parañaque, Metro Manila",Hybrid,"career opportunities with thermo systems llccareers at thermo systems llccurrent job opportunities are posted here as they become available. subscribe to our rss feeds to receive instant updates as new positions become available.
 
 thermo systems is a global, full-service control systems integration partner, delivering world-class automation solutions in the district energy, life sciences, and mission critical markets. our diverse leadership and dedicated engineering team are committed to excellence and consistent growth. our unique company culture, known as ""the thermo
@@ -813,7 +813,7 @@ tuition reimbursement: we encourage academic advancement and professional creden
 culture & extras: we provide free lunches, regular team bonding & fun office events, and plenty of company swag. thermo systems provides equal employment opportunities (eeo) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics.salary range: $75,000.00 - $90,000.00/annually
 
 
-#j-18808-ljbffr","['hmi', 'human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'sis']"
 "Automation Assistant Engineer (ME, Mechatronics, Automation, EE, COE, ECE)",Sercomm,"Calamba City, Calabarzon",Hybrid,"job summary:
 
 the automation robot engineer is responsible for the installation, programming, troubleshooting, and maintenance of robotic systems used in industrial automation processes. the role supports production efficiency, safety, and continuous improvement through the integration and optimization of robotic and automation technologies.
@@ -854,7 +854,7 @@ experience with cad for fixture/tooling design.
 
 experience in automotive, electronics, or manufacturing industries.
 
-ability to work under pressure and in cross-functional teams.",['plc']
+ability to work under pressure and in cross-functional teams.","['plc', 'c programming']"
 PLC Programmer,SABPPTECH SERVICES INCORPORATED,"Santo Tomas, Calabarzon",Hybrid,"qualifications:
 
 - bachelor’s degree in electronics engineering, electrical engineering, mechatronics, instrumentation & control, or a related field.
@@ -869,7 +869,7 @@ key responsibilities:
 - troubleshoot and optimize control systems for reliability and performance.
 - collaborate with project teams to analyze automation needs and propose appropriate solutions.
 - conduct on-site commissioning, start-up, and support for automated systems
-- support the preventive and corrective maintenance of automation systems.",['plc']
+- support the preventive and corrective maintenance of automation systems.","['plc', 'c programming']"
 Plant Engineer - Mechatronics,Coca-Cola Europacific Aboitiz Philippines,Central Luzon,Hybrid,"the plant engineer – mechatronics is responsible in providing specialist technical support and diagnostic for the plant’s line equipment. the role is also responsible for the troubleshooting and execution of maintenance either preventive or corrective for the plant’s line equipment.
 
 key responsibilities
@@ -944,7 +944,7 @@ experience with cad for fixture/tooling design.
 
 experience in automotive, electronics, or manufacturing industries.
 
-ability to work under pressure and in cross-functional teams.",['plc']
+ability to work under pressure and in cross-functional teams.","['plc', 'c programming']"
 Automation Engineer (UiPath) - 6290,Cambridge University Press & Assessment,"Manila, Metro Manila",,"work setup: hybrid (open to 2x a week in the office)
 
 work schedule: 10am to 6pm manila time when in the office, 3pm to 12am when remote
@@ -1032,7 +1032,7 @@ willing to transfer or relocate at cabuyao laguna
 
 willing to grow with the new company
 
-kindly send email updated resume at ****@nicarobotics.com",['plc']
+kindly send email updated resume at ****@nicarobotics.com","['plc', 'c programming']"
 Lead Control Systems Engineer,Thermo Systems LLC.,"Parañaque, Metro Manila",,"career opportunities with thermo systems llccareers at thermo systems llccurrent job opportunities are posted here as they become available. subscribe to our rss feeds to receive instant updates as new positions become available.
 
 thermo systems is a global, full-service control systems integration partner, delivering world-class automation solutions in the district energy, life sciences, and mission critical markets. our diverse leadership and dedicated engineering team are committed to excellence and consistent growth. our unique company culture, known as ""the thermo
@@ -1078,7 +1078,7 @@ tuition reimbursement: we encourage academic advancement and professional creden
 culture & extras: we provide free lunches, regular team bonding & fun office events, and plenty of company swag. thermo systems provides equal employment opportunities (eeo) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics.salary range: $75,000.00 - $90,000.00/annually
 
 
-#j-18808-ljbffr","['hmi', 'human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'sis']"
 Cloud Infrastructure Automation Engineer,Accenture,"Manila, Metro Manila",,"the work:
 
 as an application lead, you will oversee the design, construction, and configuration of applications, serving as the main liaison. your typical day will involve leading the team, making critical decisions, and collaborating with various teams to ensure project success.
@@ -1162,7 +1162,7 @@ strong understanding of engineering design principles and practices
 
 
 excellent communication and teamwork skills
-","['hmi', 'plc', 'scada']"
+","['plc', 'scada']"
 Energy Management System Specialist,AboitizPower,"Dumaguete, Negros",,"position summary:this position holder is responsible for the technical and commercial aspect of the energy management system including distributed control systems (dcs) and supervisory control and data acquisition (scada) systems. this includes designing and reviewing contractor design drawings, developing, supervising the installation of equipment which is used to monitor and control energy storage systems, machinery and processes. he/she will ensure that these systems and processes operate effectively, efficiently, safely and in accordance with the contract package.
 
 minimum qualificationsbs electronic and communication engineerlicensed electronic and communication engineer2 years of relevant industry experience in project execution of power or storage.2 years of project experience
@@ -1176,7 +1176,7 @@ ladder diagrams design and development
 proficient with network communication protocols (bacnet, modbus, modbus tcp, opc, lonworks,tcp/ip, irig-b)proficient with microsoft application (operating system (win 7 or above) , (win 2003 or above) office applications (2003 or above), wrikeexperience on report application programming and development (mssql, mysql, citect historian, report server etc.)please note that this is a project-based role initially for 12 months. extension of employment period is a sole discretion of the company, subject to the individual's approval.
 
 
-#j-18808-ljbffr","['dcs', 'distributed control system', 'hmi', 'modbus', 'plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition', 'dcs', 'distributed control system', 'modbus']"
 Automation Engineer,"Tyler Technologies, Inc.","Manila, Metro Manila",,"we are seeking an experienced automation engineer to help elevate the quality and reliability of our web applications. in this key role, you'll collaborate closely with engineering, product, and qa teams to design and implement robust, scalable test automation solutions. we welcome candidates with hands-on experience in any modern automation framework or tool, and especially value experience using playwright and typescript.
 
 in this position, you will play a crucial part in ensuring fast, reliable releases by integrating automated testing into our workflows, reporting on product quality, and contributing to continuous improvement initiatives across the tech organization
@@ -1382,7 +1382,7 @@ excellent problem-solving and analytical skills.
 
 amenable to work in calamba laguna
 
-ability to work independently and as part of a team.","['ladder logic', 'plc', 'sis']"
+ability to work independently and as part of a team.","['plc', 'ladder logic', 'sis', 'c programming']"
 Industrial Automation Technician,"Philsearch Consulting, Inc.","Tarlac City, Central Luzon",,"qualifications:
 
 1. diploma or degree in electrical/electronics engineering, mechatronics, or related field
@@ -1405,7 +1405,7 @@ skill sets
 
 6. strong analytical and communication skills
 
-7. ability to work independently and collaboratively in a team","['hmi', 'plc', 'scada']"
+7. ability to work independently and collaboratively in a team","['plc', 'scada']"
 Master Control Engineer,GMA Network,"Manila, Metro Manila",,"the master control engineer is responsible for airing programs, commercials, sponsors, and promo plugs and ensures smooth and uninterrupted sequence of on-air broadcast either on automation or manual switching. he/she properly coordinates on-air concerns with clients and technical support groups for the accurate schedule of on-air playlist schedule.
 
 to be successful in this role, candidate should have knowledge in basic broadcast operations and familiarity with tv broadcast equipment and systems, with experience in a related field or should have at least rendered ojt in a broadcast company.
@@ -1471,7 +1471,7 @@ paid training
 
 pay raise
 
-staff meals provided","['hmi', 'plc', 'scada', 'wonderware intouch']"
+staff meals provided","['plc', 'scada', 'wonderware intouch']"
 Senior Automation Engineer,ONIS Corporation,"San Juan, Metro Manila",,"overview:
 
 we are seeking a highly skilled senior automation engineer with expertise in automation platforms such as n8n, zapier, and make (integromat), as well as strong experience in working with apis. the ideal candidate will design, build, and optimize automated workflows to streamline business processes, integrate systems, and improve operational efficiency.
@@ -1750,7 +1750,7 @@ taguig, national capital region, philippines 1 week ago
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['hmi', 'modbus', 'plc', 'sis', 'scada', 'supervisory control and data acquisition']"
+#j-18808-ljbffr","['plc', 'scada', 'supervisory control and data acquisition', 'modbus', 'sis']"
 ELECTRICAL & CONTROL ENGINEER,Smartech Le Control Inc.,"Carmona, Calabarzon",,"job summary:
 
 we are looking for a electrical control engineer who will lead and support automation and electrical control projects. you will be responsible for plc/scada programming, control panel design, system integration, and field commissioning across industrial clients.
@@ -1789,7 +1789,7 @@ skills/certifications:
 
 with tesda certification or prc license is an advantage
 
-willing to do site work and client coordination","['hmi', 'plc', 'scada']"
+willing to do site work and client coordination","['plc', 'scada']"
 QA Automation Engineer,apkudo,Philippines,,"full time
 
 device intelligence: support + training
@@ -1888,7 +1888,7 @@ vision
 sensor
 network configuration
 communication skills
-customer service","['hmi', 'plc', 'sis']"
+customer service","['plc', 'sis']"
 AI Strategy & Automation Engineer (Remote),"Legalmatch Philippines, Inc.","Cebu City, Central Visayas",,"as an ai strategy & automation engineer, you will lead the design and implementation of ai-driven solutions that power legalmatch’s growth. this role requires strong technical expertise in coding and automation, paired with product-minded leadership to deliver cost-efficient, scalable, and innovative ai workflows. you’ll play a key role in driving case generation, optimizing business processes, and enabling cross-functional teams to fully leverage ai in their work.
 
 your responsibilities includedesigning and building scalable ai-powered workflows across marketing, intake, support, and sales. developing, testing, and optimizing automations using python, javascript, and diy platforms to deliver quickly and efficiently. pulling, parsing, and integrating data from apis to support reporting and workflow automation.
@@ -1949,7 +1949,7 @@ three years working knowledge and relevant experience in automation.
 
 skilled with the preparation of tenders for automation/electrical solutions.
 
-experience of implementing automation/electrical solutions and writing software code","['hmi', 'plc', 'scada']"
+experience of implementing automation/electrical solutions and writing software code","['plc', 'scada']"
 Automation Specialist,,"Laguna, Calabarzon",,"job summary
 
 coordinates and reviews all assigned jobs with the coordinator and project management.
@@ -1992,7 +1992,7 @@ required education, skills, and qualifications
 
 • willing to be assigned to in any parts of the country, eg, visayas and mindanao
 
-open for the fresh graduate","['hmi', 'plc', 'sis', 'scada']"
+open for the fresh graduate","['plc', 'scada', 'sis', 'c programming']"
 Customer Experience & Support Manager (Industrial Automation),WHR Global Consulting,Metro Manila,,"qualifications:
 - bachelor’s degree in electrical, electronics, instrumentation, or mechatronics engineering, or a closely related field.
 - minimum of 3–5 years of experience in technical customer support or service roles in industrial automation.
@@ -2010,7 +2010,7 @@ key responsibilities:
 - lead the technical support team in providing remote and on-site troubleshooting for deployed scada, plc, mes, and hmi systems.
 - serve as the voice of the customer within the organization, providing feedback to engineering, product, and quality teams.
 - develop internal support knowledge base, training modules, and incident handling workflows to ensure consistent service delivery across shifts.
-- collaborate with sales and account managers to identify upsell or service contract opportunities.","['hmi', 'plc', 'sis', 'scada']"
+- collaborate with sales and account managers to identify upsell or service contract opportunities.","['plc', 'scada', 'sis']"
 Automation Engineer,"Tyler Technologies, Inc.","Manila, Metro Manila",,"we are seeking an experienced automation engineer to help elevate the quality and reliability of our web applications. in this key role, you'll collaborate closely with engineering, product, and qa teams to design and implement robust, scalable test automation solutions. we welcome candidates with hands-on experience in any modern automation framework or tool, and especially value experience using playwright and typescript.
 
 in this position, you will play a crucial part in ensuring fast, reliable releases by integrating automated testing into our workflows, reporting on product quality, and contributing to continuous improvement initiatives across the tech organization
@@ -2168,7 +2168,7 @@ alternative locations:
 
 job segment: machinist, electronics engineer, manufacturing engineer, r&d engineer, inspector, manufacturing, engineering, quality
 
-#j-18808-ljbffr","['ladder logic', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'ladder logic', 'sis']"
 Industrial Automation Technician,"Philsearch Consulting, Inc.","Tarlac City, Central Luzon",,"qualifications:
 
 1. diploma or degree in electrical/electronics engineering, mechatronics, or related field
@@ -2191,7 +2191,7 @@ skill sets
 
 6. strong analytical and communication skills
 
-7. ability to work independently and collaboratively in a team","['hmi', 'plc', 'scada']"
+7. ability to work independently and collaboratively in a team","['plc', 'scada']"
 Mechatronics Technician,,"Cabuyao, Calabarzon",,"for mechatronics technician, tesda grad. mechatronics engg. grad.
 
 2-3 yrs experienced
@@ -2216,7 +2216,7 @@ willing to transfer or relocate at cabuyao laguna
 
 willing to grow with the new company
 
-kindly send email updated resume at ****@nicarobotics.com",['plc']
+kindly send email updated resume at ****@nicarobotics.com","['plc', 'c programming']"
 Instrumentation and Control Engineer (Water Treatment),HR Network,"Muntinlupa, Metro Manila",,"the a&i engineer will join the design-build project for a water treatment plant. you will handle engineering design, site supervision, and coordination for automation and instrumentation works under an epc project.
 
 key responsibilities
@@ -2282,7 +2282,7 @@ three years working knowledge and relevant experience in automation.
 
 skilled with the preparation of tenders for automation/electrical solutions.
 
-experience of implementing automation/electrical solutions and writing software code","['hmi', 'plc', 'scada']"
+experience of implementing automation/electrical solutions and writing software code","['plc', 'scada']"
 Automation Engineer,Ikon Solutions,"Qatar POEA, DMW",,"
 dmw license no: poea-002-lb-010421-r
 accreditation no: 10273902
@@ -2339,7 +2339,7 @@ alternative locations:
 
 job segment: machinist, electronics engineer, manufacturing engineer, r&d engineer, inspector, manufacturing, engineering, quality
 
-#j-18808-ljbffr","['ladder logic', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'ladder logic', 'sis']"
 ENGINEER,City Employment Center Inc,"Manila, Metro Manila",,"work in taiwan electronics company
 
 salary 47,700 nt (80,000-85,00hp)
@@ -2424,7 +2424,7 @@ assist in conducting seminars regarding plc programming.
 
 design and fabricate pcb.
 
-compiling designs, wiring diagrams, plc programs, and project files.","['plc', 'sis']"
+compiling designs, wiring diagrams, plc programs, and project files.","['plc', 'sis', 'c programming']"
 Electro-Mechanical/ Mechatronics,Ultra Packaging Corporation,"Bunawan, Davao",,"about the role
 
 we're seeking an experienced electro-mechanical/ mechatronics technician to join our team at ultra packaging corporation in bunawan davao city, davao del sur. this is a full-time role where you'll play a crucial part in maintaining and repairing our state-of-the-art packaging equipment, ensuring the smooth and efficient operation of our manufacturing processes.
@@ -2533,7 +2533,7 @@ machine maintenance planning
 plc, hmi, scada, programming knowledge or experience
 basic autocad knowledge and other drawing softwares
 basic it programming softwares (phyton, c++, etc.)
-ms office (outlook, excel, and powerpoint)","['hmi', 'plc', 'sis', 'scada']"
+ms office (outlook, excel, and powerpoint)","['plc', 'scada', 'sis']"
 Automation Engineer,"Tyler Technologies, Inc.","Manila, Metro Manila",,"we are seeking an experienced automation engineer to help elevate the quality and reliability of our web applications. in this key role, you'll collaborate closely with engineering, product, and qa teams to design and implement robust, scalable test automation solutions. we welcome candidates with hands-on experience in any modern automation framework or tool, and especially value experience using playwright and typescript.
 
 in this position, you will play a crucial part in ensuring fast, reliable releases by integrating automated testing into our workflows, reporting on product quality, and contributing to continuous improvement initiatives across the tech organization
@@ -2698,7 +2698,7 @@ the project engineer oversees controls and electrical reliability, drives the el
 
 collaborate daily with line crews, act as a technical trainer, and support automation and electrical projects, ensuring standards and reliability. provide expertise on factory systems like scada, plc, hmi, dcs, and control systems.2. establish and ensure compliance with electrical engineering and automation standards, support the plant masterplan, and contribute to innovation and renovation efforts.3.
 
-implement value engineering to optimize costs while adhering to core values.4. deliver assigned capital projects (typically","['dcs', 'hmi', 'plc', 'scada']"
+implement value engineering to optimize costs while adhering to core values.4. deliver assigned capital projects (typically","['plc', 'scada', 'dcs']"
 Sales Engineer - Gate Automation,Doortech System,"Quezon City, Metro Manila",Remote,"job summary:
 the sales engineer is responsible for promoting and selling gate automation products and solutions to residential, commercial, and industrial clients. this role combines technical knowledge with sales skills to provide support before and after the sale. the sales engineer will identify customer needs, propose suitable automation solutions, and ensure customer satisfaction through product demonstrations, quotations, and technical consultation.
 
@@ -2759,7 +2759,7 @@ perform electrical load analysis, voltage drop calculations, short-circuit asses
 
 monitor contractor activities and ensure conformance with design, specifications and safety regulations
 
-performs other related tasks as assigned","['hmi', 'plc', 'sis', 'scada']"
+performs other related tasks as assigned","['plc', 'scada', 'sis']"
 ENGINEER,City Employment Center Inc,"Manila, Metro Manila",Remote,"work in taiwan electronics company
 
 salary 47,700 nt (80,000-85,00hp)
@@ -2876,7 +2876,7 @@ registered electrical engineer in calamba - lagunarpa (robotic process automatio
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['hmi', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'sis']"
 "Mid-Level IT Automation Engineer (Powershell, Power Automate) #34510",Manila Recruitment,"Pasig, Metro Manila",Remote,"company profile:our client is a uk-based company they improve the performance of pigs by combining advanced science with a practical understanding of the biology of the pig and the needs of producers. they select traits that are commercially relevant for producers and fulfill market demands. focus on uncovering or developing technologies that they believe and will help accelerate the rate of genetic gain. duties & responsibilities:automation and solution delivery
 
 design, build, and maintain automation workflows using tools such as powershell, power automate, logic apps, and power apps.
@@ -2996,7 +2996,7 @@ unit 411, alabang corporate center km 25 west service road, south superhighway, 
 company url:     http://ph.fasflexible.com/
 
                                   http://www.cehgroup.com/
-","['hmi', 'plc', 'scada']"
+","['plc', 'scada']"
 Senior QA Automation Engineer,AMCS Group,"Cebu City, Central Visayas",,"who we are
 
 sustainability software specialist, amcs, is headquartered in ireland, with offices in europe, usa, canada and australasia. with over 1,300 highly-skilled employees across 22 countries, we specialize in delivering technology solutions to facilitate a carbon neutral future.
@@ -3163,7 +3163,7 @@ thermo systems provides equal employment opportunities (eeo) to all employees an
 
 salary range: $75,000.00 - $90,000.00/annually
 
-#j-18808-ljbffr","['hmi', 'human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'sis']"
 Level 2 Automation Engineer (Clark Office-based),Jobs360,Angeles,Remote,"roles and responsibilities
 
 develop in-house automations to support and assist the helpdesk team (e.g., pia, connectwise rpa, power automate, powershell)
@@ -3303,7 +3303,7 @@ taguig, national capital region, philippines 1 week ago
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['hmi', 'modbus', 'plc', 'sis', 'scada', 'supervisory control and data acquisition']"
+#j-18808-ljbffr","['plc', 'scada', 'supervisory control and data acquisition', 'modbus', 'sis']"
 "Customer Technical Support, SCADA and EMS Systems (Philippines)",Power Factors,"Santa Rosa, Calabarzon",,"about power factors
 
 power factors is a software and solutions provider leading the next generation of clean energy with unity, one of the most extensive and widely deployed renewable energy management suites (rems) in the market. with over 300 gw of wind, solar, and energy storage assets managed worldwide across more than 600 customers and 18,000 sites, power factors manages 25% of the world’s renewable energy data.*  
@@ -3377,7 +3377,7 @@ by joining the power factors team, you’ll be part of a dynamic group of innova
 
 we are an equal opportunity employer
 
-power factors is an equal opportunity employer committed to engaging a diverse workforce and sustaining an inclusive culture. all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status","['sis', 'scada']"
+power factors is an equal opportunity employer committed to engaging a diverse workforce and sustaining an inclusive culture. all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status","['scada', 'sis']"
 Application Engineer,"Industrial Controls Systems, Inc. (Icon)","Manila, Metro Manila",Remote,"duties and responsibilities:
 
 providing technical support and troubleshooting for icon's range of industrial automation and control products
@@ -3394,7 +3394,7 @@ registered electrical engineer
 strong problem-solving and troubleshooting skills, with the ability to diagnose and resolve complex issues.
 excellent communication and customer service skills, with the ability to translate technical information into easy-to-understand terms.
 familiarity with industrial control systems, plc programming, and related software tools.
-willingness to travel to customer sites as needed.","['plc', 'sis']"
+willingness to travel to customer sites as needed.","['plc', 'sis', 'c programming']"
 Field Application Engineer,Solenergy Systems Inc.,"Makati City, Metro Manila",Remote,"job description:
  support project management for projects in the commercial rooftop project and other solar pv system related
 opportunities.
@@ -3434,7 +3434,7 @@ renewable energy projects in philippines and pdc and pgc.
  proficient in microsoft word, powerpoint and excel, autocad
  interest in renewable energy projects.
  willingness to travel and spend time on site.  experience with modbus, dnp and other communication protocols is an advantage.
- must have a driven and positive ""can-do"" attitude and be interested in learning, experimentation and r&d.","['modbus', 'scada']"
+ must have a driven and positive ""can-do"" attitude and be interested in learning, experimentation and r&d.","['scada', 'modbus']"
 "Electrical, Mechanical Engineer, Mechatronics, Industrial Engineer and Technician Professionals (Pooling)",Pilmico Foods Corporation,"Capas, Central Luzon",Remote,"company description
 
 
@@ -3624,7 +3624,7 @@ familiarity with industrial communication protocols (e.g., modbus, profibus, eth
 
 experience with system modeling tools (e.g., matlab/simulink) is a plus.
 
-excellent problem-solving, analytical, and communication skills.","['dcs', 'ethernet/ip', 'hmi', 'matlab', 'simulink', 'modbus', 'plc', 'profibus', 'scada']"
+excellent problem-solving, analytical, and communication skills.","['plc', 'scada', 'dcs', 'ethernet/ip', 'modbus', 'profibus', 'c programming', 'matlab', 'simulink']"
 Mechatronics Instructor,Gokongwei Brothers Foundation,"Calamba City, Calabarzon",,"gokongwei brothers foundation, inc. (gbf) has silently been making an impact on the education sector for over 30 years now.  born from the vision of mr. john gokongwei to build our country’s industrial competitiveness through an educated workforce, gbf has been implementing programs that empower students and learners with opportunities for skills mastery and practical application.  its key focus is on -
 
 elevating educators’ professional development
@@ -3820,7 +3820,7 @@ unit 411, alabang corporate center km 25 west service road, south superhighway, 
 company url:     http://ph.fasflexible.com/
 
                                   http://www.cehgroup.com/
-","['hmi', 'plc', 'scada']"
+","['plc', 'scada']"
 Automation Engineer (UiPath) - 6290,Cambridge University Press & Assessment,"Manila, Metro Manila",,"join to apply for the automation engineer (uipath) - 6290 role at cambridge university press & assessment3 days ago be among the first 25 applicants
 
 join to apply for the automation engineer (uipath) - 6290 role at cambridge university press & assessmentget ai-powered advice on this job and more exclusive features.work setup: hybrid (open to 2x a week in the office)work schedule: 10am to 6pm manila time when in the office, 3pm to 12am when remote
@@ -4134,7 +4134,7 @@ working hour
 holiday
 
 
-ph holiday","['ethernet/ip', 'plc', 'servo motor control']"
+ph holiday","['servo motor control', 'plc', 'ethernet/ip']"
 Manager Electronic Engineer,Advanced Energy,"Manila, Metro Manila",,"position: principal electronic engineerabout advanced energyadvanced energy industries, inc. (nasdaq: aeis), enables design breakthroughs and drives growth for leading semiconductor and industrial customers. our precision power and control technologies, along with our applications know-how, inspire close partnerships and innovation in thin-film and industrial manufacturing. we are proud of our rich heritage, award-winning technologies, and we value the talents and contributions of all advanced energy's employees worldwide.
 
 responsibilitiesanalyze & understand the control requirements of ac-dc & dc-dc converters
@@ -4168,7 +4168,7 @@ as part of our total rewards philosophy, we believe in offering and maintaining 
 we are committed to protecting and respecting your privacy. we take your privacy seriously and will only use your personal information to administer your application in accordance with the ra no. 10173 also known as the data privacy act of 2012.
 
 
-#j-18808-ljbffr","['daq', 'matlab', 'simulink', 'sis']"
+#j-18808-ljbffr","['sis', 'matlab', 'simulink']"
 "Control Systems Project Engineer - Role located in Montgomery, AL",Thermo Systems LLC.,"Parañaque, Metro Manila",,"career opportunities with thermo systems llc
 
 careers at thermo systems llc
@@ -4274,7 +4274,7 @@ thermo systems provides equal employment opportunities (eeo) to all employees an
 
 salary range: $95,000.00 - $120,000.00/annually
 
-#j-18808-ljbffr","['hmi', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'sis']"
 Level 2 Automation Engineer (Clark Office-based),Jobs360,Angeles,,"roles and responsibilitiesdevelop in-house automations to support and assist the helpdesk team (e.g., pia, connectwise rpa, power automate, powershell)create clear documentation for automations and their implementation
 
 deliver client-facing automation projects focused on the microsoft power platformaccurately identify the root cause of issues and communicate professionally with clients
@@ -4308,7 +4308,7 @@ free parking and shuttle services
 employee referral incentives (bronze)
 
 
-#j-18808-ljbffr","['hmi', 'sis']"
+#j-18808-ljbffr",['sis']
 Electro-Mechanical/ Mechatronics,Ultra Packaging Corporation,"Bunawan, Davao",,"about the role
 
 we're seeking an experienced electro-mechanical/ mechatronics technician to join our team at ultra packaging corporation in bunawan davao city, davao del sur. this is a full-time role where you'll play a crucial part in maintaining and repairing our state-of-the-art packaging equipment, ensuring the smooth and efficient operation of our manufacturing processes.
@@ -4489,7 +4489,7 @@ thermo systems provides equal employment opportunities (eeo) to all employees an
 
 salary range: $95,000.00 - $120,000.00/annually
 
-#j-18808-ljbffr","['hmi', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'sis']"
 "Electrical Engineer - Planning & Design, and Protection",AboitizPower,"Davao City, Davao",Remote,"job id: 2963location: davaocompany: hedcor, inc. department: technical servicesemployment type: probationarywork arrangement: on-sitethe electrical engineer - planning & design, and protection is responsible for conceptualizing and designing of protection, automation and control systems as well as monitoring of its implementation. this system should comply and conform to the company's protection philosophy and in accordance with the company’s goals and objectives to develop and operate efficient electrical power systems.
 
 the incumbent is also responsible for simulating and foreseeing protection methods to protect the company’minimum qualificationsbachelor’s degree in electrical engineeringmust be a licensed electrical engineer preferably with experience in analysis & protection of power systems, automation, control and protective relay testing. preferably with experience in handling works related to power system protection, automation and control
@@ -4569,7 +4569,7 @@ free uniform
 
 free use of gym
 
-free parking","['modbus', 'plc', 'sis', 'scada']"
+free parking","['plc', 'scada', 'modbus', 'sis']"
 "Electrical Engineer - Planning & Design, and Protection",AboitizPower,"Davao City, Davao",Remote,"select how often (in days) to receive an alert:electrical engineer - planning & design, and protectionjob id: 2963location: davaocompany: hedcor, inc. department: technical serviceswork arrangement: on-sitethe electrical engineer - planning & design, and protection is responsible for conceptualizing and designing protection, automation, and control systems, as well as monitoring their implementation. this system should comply with the company's protection philosophy and align with the company’s goals to develop and operate efficient electrical power systems.
 
 the incumbent is also responsible for simulating and foreseeing protection methods to safeguard the company's assets. minimum qualifications:bachelor’s degree in electrical engineeringmust be a licensed electrical engineer, preferably with experience in analysis & protection of power systems, automation, control, and protective relay testing. preferably with experience in handling work related to power system protection, automation, and control
@@ -5054,7 +5054,7 @@ at axelum resources corp., we are dedicated to providing a supportive and reward
 
 if you are passionate about driving excellence through calibration and automation, we encourage you to apply for this exciting opportunity. join our team and be part of our continued success.
 
-apply now","['plc', 'scada']"
+apply now","['plc', 'scada', 'c programming']"
 Electrical Engineer for Planning and Design and Protection,Aboitiz Renewables,"Davao del Sur, Davao",Remote,"the electrical engineer - planning & design, and protection is responsible for conceptualizing and designing of protection, automation and control systems as well as monitoring of its implementation. this system should comply and conform to the company's protection philosophy and in accordance with the company’s goals and objectives to develop and operate efficient electrical power systems. the incumbent is also responsible for simulating and foreseeing protection methods to protect the company’s electrical system assets during abnormal and fault conditions on the system; and for providing technical assistance
 
 conducts power system fault analysis using simulation software tools to anticipate abnormal/fault system conditions, potential problems and determine possible solutions to protect the system. conceptualizes & designs protection systems for new and expansion projects. this includes, protection one-line and schematic diagrams and trip/alarm matrix and inputs/outputs assignments.
@@ -5084,7 +5084,7 @@ must have experience in designing protection systems of substation, switchyard a
 must be knowledgeable on teleprotection, automation and control.can supervise field electrical engineers at site and monitor site activities1 vacant position in astorga, sta. cruz, davao del sur
 
 
-#j-18808-ljbffr","['sis', 'supervisory control and data acquisition']"
+#j-18808-ljbffr","['supervisory control and data acquisition', 'sis']"
 Senior QA Automation Engineer,AMCS Group,"Cebu City, Central Visayas",,"who we are
 
 sustainability software specialist, amcs, is headquartered in ireland, with offices in europe, usa, canada and australasia. with over 1,300 highly-skilled employees across 22 countries, we specialize in delivering technology solutions to facilitate a carbon neutral future.
@@ -5223,7 +5223,7 @@ must have experience in designing protection systems of substation, switchyard a
 must be knowledgeable on teleprotection, automation and control.can supervise field electrical engineers at site and monitor site activities1 vacant position in astorga, sta. cruz, davao del sur
 
 
-#j-18808-ljbffr","['sis', 'supervisory control and data acquisition']"
+#j-18808-ljbffr","['supervisory control and data acquisition', 'sis']"
 Lead Control Systems Engineer,Thermo Systems LLC.,"Parañaque, Metro Manila",,"career opportunities with thermo systems llc
 
 careers at thermo systems llc
@@ -5323,7 +5323,7 @@ thermo systems provides equal employment opportunities (eeo) to all employees an
 
 salary range: $75,000.00 - $90,000.00/annually
 
-#j-18808-ljbffr","['hmi', 'human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'sis']"
 DevOps Engineer / Automation Engineer,Scalable OS,"Manila, Metro Manila",,"summary
 
 
@@ -5546,7 +5546,7 @@ paid training
 
 pay raise
 
-staff meals provided","['hmi', 'plc', 'scada']"
+staff meals provided","['plc', 'scada', 'c programming']"
 n8n Automation Specialist (Remote),Reef,Philippines,,"1 day ago be among the first 25 applicants
 
 this range is provided by reef. your actual pay will be based on your skills and experience — talk with your recruiter to learn more.base pay range$6,240.00/yr - $8,320.00/yr
@@ -5621,7 +5621,7 @@ job responsibilities - develop and write plc programs for industrial automation,
 • right and modified new existing omron program.
 • wiring omron plc /hmi together with input/output devices and troubleshooting existing omron.
 location site: san fernanado, pampanga
-we offer high salary","['hmi', 'human-machine interface', 'plc']"
+we offer high salary",['plc']
 LEAD ELECTRONICS DESIGN ENGINEER,Line Seiki Phils. Inc.,"Cavite, Calabarzon",,"responsibilities:
 
 design and development of new products:
@@ -5668,7 +5668,7 @@ extensive laboratory experience with photonics test and measurement (measurement
 familiar with industry equipment communication interfaces - gpib, rs232, usb, etc. able to communicate equipment with each other and create a routine specific to the assembly and test automation process. familiar with microcontroller, plc, and hmi automation.
 good industry automation skills - motion control, vision system, automatic optical inspection, data management and analysis.
 able to interpret product design and specification then develop automated robust test and assembly processes to achieve these requirements considering productivity, product quality, and product reliability
-able to interpret materials safety data sheets to create or form proper safety practices in each process. keen to operations safety details considering health and safety of individuals as top priority in all actions.","['hmi', 'plc', 'sis']"
+able to interpret materials safety data sheets to create or form proper safety practices in each process. keen to operations safety details considering health and safety of individuals as top priority in all actions.","['plc', 'sis', 'labview']"
 Industrial Electrician,WHR Global Consulting,"Taguig, Metro Manila",,"whr global consulting is hiring a full time industrial electrician role in taguig, ncr. apply now to be part of our team.
 
 
@@ -5728,7 +5728,7 @@ serve as the voice of the customer within the organization, providing feedback t
 
 develop internal support knowledge base, training modules, and incident handling workflows to ensure consistent service delivery across shifts.
 
-collaborate with sales and account managers to identify upsell or service contract opportunities.","['hmi', 'plc', 'sis', 'scada']"
+collaborate with sales and account managers to identify upsell or service contract opportunities.","['plc', 'scada', 'sis']"
 AI & Automation Engineer,Bold Business,Philippines,,"1 week ago be among the first 25 applicants
 
 get ai-powered advice on this job and more exclusive features.about the rolewe’re seeking a detail-oriented and innovative
@@ -6070,7 +6070,7 @@ culture & extras: we provide free lunches, regular team bonding & fun office eve
 
 thermo systems provides equal employment opportunities (eeo) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics.
 
-#j-18808-ljbffr","['hmi', 'human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'sis']"
 Production Equipment Engineer,John Clements,"Batangas City, Calabarzon",,"diagnose machine breakdowns, fitting new parts and ensure that equipment is working reliably
 
 assist and review procurement of machine spare parts planning and consumption
@@ -6188,7 +6188,7 @@ registered electrical engineer
 strong problem-solving and troubleshooting skills, with the ability to diagnose and resolve complex issues.
 excellent communication and customer service skills, with the ability to translate technical information into easy-to-understand terms.
 familiarity with industrial control systems, plc programming, and related software tools.
-willingness to travel to customer sites as needed.","['plc', 'sis']"
+willingness to travel to customer sites as needed.","['plc', 'sis', 'c programming']"
 Solutions Engineer / Automation Engineer (AU Company),Better Rehab,"Taguig, Metro Manila",,"about us
 at better rehab, we began with a simple idea: better quality allied health services for people living with a disability. this proved to be exactly what the community needed, as better rehab has grown into a leading national allied health provider. our team of likeminded community based occupational therapists, physiotherapists, exercise physiologists, speech pathologists and positive behaviour support practitioners are committed to offering the highest quality of support to people living with a disability or neurological disorder.
 
@@ -6525,7 +6525,7 @@ schedule: 10 hour shift
 
 supplemental pay:
 13th month salary
-yearly bonus","['hmi', 'plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']"
+yearly bonus","['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']"
 Senior QA Automation Engineer (Remote),"Legalmatch Philippines, Inc.","Cebu City, Central Visayas",,"join to apply for the senior qa automation engineer (remote) role at legalmatch philippines, inc.1 week ago be among the first 25 applicants
 
 join to apply for the senior qa automation engineer (remote) role at legalmatch philippines, inc. as a senior qa automation engineer, you will play a pivotal role in ensuring the quality, reliability, and performance of our websites and software applications. you will collaborate closely with developers, qa team members, and other stakeholders to define, establish, and execute both manual and automated testing strategies.
@@ -6693,7 +6693,7 @@ project attachment allowances
 
 overseas opportunities
 
-by responding to yokogawa philippines inc.’s (ypi) job advertisement, consent is considered given to ypi to collect the required personal data for the purpose of recruitment and processing of your application with expectation that ypi will protect personal data with security safeguards that are reasonable and appropriate to the sensitivity of the personal data, to protect it from unauthorized access, use or disclosure and complies with applicable regulatory requirements with respect to the retention of personal data.","['dcs', 'plc', 'programmable logic controller', 'sis']"
+by responding to yokogawa philippines inc.’s (ypi) job advertisement, consent is considered given to ypi to collect the required personal data for the purpose of recruitment and processing of your application with expectation that ypi will protect personal data with security safeguards that are reasonable and appropriate to the sensitivity of the personal data, to protect it from unauthorized access, use or disclosure and complies with applicable regulatory requirements with respect to the retention of personal data.","['plc', 'programmable logic controller', 'dcs', 'sis']"
 Testing and Commissioning Engineer,Hyundai Rotem Company,"Manila, Metro Manila",,"summary:
 
 we are seeking a highly motivated and experienced testing and commissioning engineer to join our team and play a key role in ensuring the successful implementation of railway electrical & mechanical (e&m) systems. 
@@ -6888,7 +6888,7 @@ project attachment allowances
 
 overseas opportunities
 
-by responding to yokogawa philippines inc.’s (ypi) job advertisement, consent is considered given to ypi to collect the required personal data for the purpose of recruitment and processing of your application with expectation that ypi will protect personal data with security safeguards that are reasonable and appropriate to the sensitivity of the personal data, to protect it from unauthorized access, use or disclosure and complies with applicable regulatory requirements with respect to the retention of personal data.","['dcs', 'plc', 'programmable logic controller', 'sis']"
+by responding to yokogawa philippines inc.’s (ypi) job advertisement, consent is considered given to ypi to collect the required personal data for the purpose of recruitment and processing of your application with expectation that ypi will protect personal data with security safeguards that are reasonable and appropriate to the sensitivity of the personal data, to protect it from unauthorized access, use or disclosure and complies with applicable regulatory requirements with respect to the retention of personal data.","['plc', 'programmable logic controller', 'dcs', 'sis']"
 Automation Specialist,Maya Bank,"Manila, Metro Manila",,"overview:
 
 the automation specialist leads end-to-end project delivery—including planning, execution, monitoring, and closure—ensuring timely completion in accordance with defined specifications and standards. responsibilities include resource and stakeholder management, risk mitigation, executive reporting, problem identification and analysis, and driving data-driven, solution-oriented decisions. the role also conducts post-project impact assessments to measure outcomes and identify areas for improvement.
@@ -7401,7 +7401,7 @@ must be knowledgeable in protection system technical specification.
 must be knowledgeable on basic protection and coordination
 must be knowledgeable on teleprotection, automation and control.
 can supervise field electrical engineers at site and monitor site activities
-1 vacant position in astorga, sta. cruz, davao del sur","['sis', 'supervisory control and data acquisition']"
+1 vacant position in astorga, sta. cruz, davao del sur","['supervisory control and data acquisition', 'sis']"
 Robotics Process Automation Engineer (UiPath),Med-Metrix International,"Ortigas, Metro Manila",,"join our dynamic team and make a meaningful impact in the healthcare industry. you'll play a pivotal role while advancing your career in a supportive and innovative environment. enjoy competitive benefits upon hire, ongoing professional development, and the satisfaction of helping others every day. take the next step in your career with med-metrix!
 
 experience these exceptional benefits when you join med-metrix!
@@ -7599,7 +7599,7 @@ cebu, central visayas, philippines 4 days ago
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['plc', 'sis', 'scada']"
+#j-18808-ljbffr","['plc', 'scada', 'sis']"
 QA Automation Engineer,Teamified Pty,"Cebu, Central Visayas",,"get ai-powered advice on this job and more exclusive features. teamified works with top enterprises and digital native businesses in australia helping them build their remote teams in india, philippines and sri lanka. we pride ourselves with hiring great teams to work on exciting game changing technology.
 
 teamified currently has 200+ engineers, testers, product managers etc. working across 20+ partners. we focus on uplifting the way organisations build and manage their remote teams through great working relationships, trust, integrity, culture and hiring processes. additional to this we are building our own technology product offerings.
@@ -7754,7 +7754,7 @@ with safety and flexibility always top of mind, we’ve gone beyond traditional 
 
 #li-sl1
 
-please note:  if you are being represented by a recruitment agency you will not be considered, to be considered you will need to apply directly to jacobs.","['ethernet/ip', 'hmi', 'modbus', 'plc', 'profibus', 'scada']"
+please note:  if you are being represented by a recruitment agency you will not be considered, to be considered you will need to apply directly to jacobs.","['plc', 'scada', 'ethernet/ip', 'modbus', 'profibus']"
 Image Lead Automation Test Engineer,Azeus,"Pasig City, Metro Manila",,"join us in building reliable, intelligent, and future-ready software.
 
 we're looking for a lead automation test engineer who is passionate about quality and innovation. this role is perfect for someone who thrives in a fast-paced environment, loves solving complex problems, and wants to take a leadership role in ensuring high-quality product releases.
@@ -7891,7 +7891,7 @@ free uniform
 
 free use of gym
 
-free parking","['modbus', 'plc', 'sis', 'scada']"
+free parking","['plc', 'scada', 'modbus', 'sis']"
 Automation Developer I,RELX (Singapore) Pte Ltd,"Manila, Metro Manila",,"job summary
 
 main responsibility of this role is to provide automation development expertise to reph and to the business unit(s) that this role supports. this role will work closely with the automation supervisor, opex managers and operations leaders to ensure successfully delivery of automation projects. he/she will be responsible in the successful execution of the automation life cycle specifically the develop phase, maintenance and troubleshoot (as the need arises) of automation solutions deployed. he/she is expected to work closely with onshore and offshore business partners mainly to
@@ -8370,7 +8370,7 @@ serve as the voice of the customer within the organization, providing feedback t
 
 develop internal support knowledge base, training modules, and incident handling workflows to ensure consistent service delivery across shifts.
 
-collaborate with sales and account managers to identify upsell or service contract opportunities.","['hmi', 'plc', 'sis', 'scada']"
+collaborate with sales and account managers to identify upsell or service contract opportunities.","['plc', 'scada', 'sis']"
 Senior Project Technical Engineer,Hitachi Energy,"Parañaque, Metro Manila",,"the opportunity:
 
 our grid automation business unit has a comprehensive portfolio of solutions. these range from substation automation, communication networks, grid automation services, grid edge solutions to enterprise software solutions. these solutions address all key segments connected to the energy system including generation, transmission distribution, industries, transportation and infrastructure sectors.
@@ -8487,7 +8487,7 @@ serve as the voice of the customer within the organization, providing feedback t
 
 develop internal support knowledge base, training modules, and incident handling workflows to ensure consistent service delivery across shifts.
 
-collaborate with sales and account managers to identify upsell or service contract opportunities.","['hmi', 'plc', 'sis', 'scada']"
+collaborate with sales and account managers to identify upsell or service contract opportunities.","['plc', 'scada', 'sis']"
 Data Automation Engineer,Coherent,"Rosario, Calabarzon",,"join to apply for the data automation engineer role at coherent corp.1 day ago be among the first 25 applicants
 
 join to apply for the data automation engineer role at coherent corp.updating and maintenance of existing software applications as required.development of new software applications to improve productivity of production and other support groups.debugging and troubleshooting of software issues in a timely manner.setup and management of databases for storage and access of information as required
@@ -8593,7 +8593,7 @@ registered electrical engineer in calamba - lagunarpa (robotic process automatio
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['hmi', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'sis']"
 Automation Specialist,Bounty Fresh Food Inc.,"Taguig, Metro Manila",,"job summary: 
 
 automation specialist are experts in researching and designing innovative technology solutions that automate manual processes and repetitive tasks. they use technologies such as artificial intelligence (ai), internet of things (iot) devices, and software development to create systems that help businesses speed up processes, reduce human error, and improve efficiency. these specialists ensure that the systems they develop are reliable, efficient and maintain data integrity. their work not only streamlines operations but also supports businesses in adapting to modern technological demands. 
@@ -8677,7 +8677,7 @@ project management: ability to manage and finish project on time
 
 problem solving: ability to determine the problem and execute solutions
 
-ai, iot or machine learning certifications","['plc', 'programmable logic controller', 'sis', 'sensor integration']"
+ai, iot or machine learning certifications","['plc', 'programmable logic controller', 'sensor integration', 'sis', 'python programming']"
 QA Automation Engineer,Full Scale LLC,"Quezon City, Metro Manila",,"3 months ago be among the first 25 applicants
 
 direct message the job poster from full scalehelping companies hire top tech talent | recruitment managerjoin one of the philippine’s fastest-growing tech companies! role description:we are seeking an experienced automation tester to join our dynamic team. the automation tester will be responsible for designing, developing, and executing automated test scripts to ensure the quality and reliability of our software applications.
@@ -8846,7 +8846,7 @@ required education, skills, and qualifications
 
 • willing to be assigned to in any parts of the country, eg, visayas and mindanao
 
-open for the fresh graduate","['hmi', 'plc', 'sis', 'scada']"
+open for the fresh graduate","['plc', 'scada', 'sis', 'c programming']"
 Senior Quality Assurance Automation Engineer,Datacom,"Manila, Metro Manila",,"description
 requirements
 benefits
@@ -9164,7 +9164,7 @@ basic scripting (python, matlab) for test automation or data capture
 
 experience in a small company or startup environment
 
-leadership experience with small teams","['arduino', 'embedded systems', 'matlab', 'sis', 'raspberry pi', 'solidworks']"
+leadership experience with small teams","['sis', 'embedded systems', 'arduino', 'raspberry pi', 'matlab', 'solidworks']"
 Instrumentation and Process Control Engineer,Pilmico Foods Corporation,"Bamban, Central Luzon",,"company description
 
 
@@ -9240,7 +9240,7 @@ with a strong background in plc and scada/hmi.
 
 license/s: 
 
-licensed engineer is an advantage but not required","['hmi', 'plc', 'programmable logic controller', 'sis', 'scada']"
+licensed engineer is an advantage but not required","['plc', 'programmable logic controller', 'scada', 'sis']"
 AI Automation Specialist,magentIQ,"Manila, Metro Manila",,"magentiq national capital region, philippinesjoin or sign in to find your next job
 
 join to apply for the ai automation specialist role at magentiqmagentiq national capital region, philippinesjoin to apply for the ai automation specialist role at magentiq(mid‑ to senior‑level, remote, us hours)ai automation specialist (mid‑ to senior‑level, remote, us hours)build intelligent workflows with global impact. we're seeking a mid to senior-level automation designer / developer to join our remote team and help deliver ai-powered automation solutions to our us-based clients. you'll design workflows in workflow tools (e.g n8n), integrate llm apis, design prompts and data flows, and translate business needs into scalable, automated processes.
@@ -9808,7 +9808,7 @@ free parking and shuttle services
 employee referral incentives (bronze)
 
 
-#j-18808-ljbffr","['hmi', 'sis']"
+#j-18808-ljbffr",['sis']
 Automation Analyst,Pearson,"Manila, Metro Manila",,"job requisition: automation analyst - intelligent automation hr control centergrade: assoc./ b3 please still apply if you’re interested and in a similar grade
 
 about us
@@ -9988,7 +9988,7 @@ shell business operations (sbo) manila forms the operational backbone of busines
 
 disclaimer:
 
-please note: we occasionally amend or withdraw shell jobs and reserve the right to do so at any time, including prior to the advertised closing date. before applying, you are advised to read our data protection policy. this policy describes the processing that may be associated with your personal data and informs you that your personal data may be transferred to shell/shell group companies around the world. the shell group and its approved recruitment consultants will never ask you for a fee to process or consider your application for a career with shell. anyone who demands such a fee is not an authorised shell representative and you are strongly advised to refuse any such demand. shell is an equal opportunity employer.","['control valves', 'dcs', 'plc', 'sis']"
+please note: we occasionally amend or withdraw shell jobs and reserve the right to do so at any time, including prior to the advertised closing date. before applying, you are advised to read our data protection policy. this policy describes the processing that may be associated with your personal data and informs you that your personal data may be transferred to shell/shell group companies around the world. the shell group and its approved recruitment consultants will never ask you for a fee to process or consider your application for a career with shell. anyone who demands such a fee is not an authorised shell representative and you are strongly advised to refuse any such demand. shell is an equal opportunity employer.","['plc', 'dcs', 'sis', 'control valves']"
 Image Lead Automation Test Engineer,Azeus,"Pasig, Metro Manila",,"join us in building reliable, intelligent, and future-ready software. we're looking for a lead automation test engineer who is passionate about quality and innovation. this role is perfect for someone who thrives in a fast-paced environment, loves solving complex problems, and wants to take a leadership role in ensuring high-quality product releases.
 
 key responsibilities:design and develop weekly test plans, test cases, and test automation frameworks to support rapid development and delivery cycles. develop automated test scripts using industry-standard automation tools and frameworks. maintain and improve existing automation suites, ensuring stability, scalability, and speed.
@@ -10149,7 +10149,7 @@ strong understanding of electrical systems, schematics, and wiring diagrams.
 excellent problem-solving and analytical skills.
 
 amenable to work in calamba laguna
-ability to work independently and as part of a team.","['ladder logic', 'plc', 'sis']"
+ability to work independently and as part of a team.","['plc', 'ladder logic', 'sis', 'c programming']"
 Senior Quality Assurance Automation Engineer - permanent,Datacom,"Taguig, Metro Manila",,"about datacom
 
 with over 6,200 people and centres of technical excellence across australasia, datacom is committed to developing its capabilities in asia. founded in 1965 in new zealand, with over two decades of operations in malaysia and the philippines, datacom has experienced exponential growth. we maintain high profitability while delivering innovative, cost-effective digital and technology solutions through dynamic teams in various locations. our people are skilled, passionate, and dedicated to providing exceptional it services, making datacom a rewarding and fast-paced workplace.
@@ -10233,7 +10233,7 @@ we thank all candidates for their interest in a career with fuelcell energy. how
 
 #li-ad1
 
-#li-hybrid","['modbus', 'sis', 'scada', 'supervisory control and data acquisition']"
+#li-hybrid","['scada', 'supervisory control and data acquisition', 'modbus', 'sis']"
 Business Development Executive (Japanese-Speaking | Factory Automation) – Cebu,RCX Recruitment,"Cebu, Central Visayas",,"join the philippine subsidiary of one of japan’s premier electronics and factory automation (fa) groups. the company provides automation solutions to manufacturers, supporting both japanese and local firms through technical consulting and control system optimization. with a strong reputation and a growing client base, the cebu region is a key area for strategic expansion—and you could be at the forefront of that growth. as a business development executive, you will play a pivotal role in expanding the company’s presence in cebu. you’ll be responsible for cultivating new business relationships, building trust with existing clients, and offering value-driven automation solutions to manufacturing companies. 【responsibilities】 ・lead new business development efforts targeting japanese companies in cebu ・maintain and strengthen relationships with existing clients ・propose tailored solutions involving control devices and automation systems ・conduct business meetings with executives and technical stakeholders ・coordinate with technical teams to deliver the best solutions ・represent the company at trade shows and technical seminars ★why join us?★ ・leverage the trust and innovation of a leading japanese brand ・make a meaningful impact by contributing to the philippine manufacturing sector ・take ownership of cebu market expansion with autonomy and strategic input ・enjoy long-term career development and stability with a growing business
 
 qualifications
@@ -10316,7 +10316,7 @@ proficiency in security tools and technologies used in ot environments, includin
 
 strong communication and interpersonal skills, with the ability to work collaboratively in a team environment.
 
-detail-oriented with a strong commitment to quality and compliance.","['sis', 'scada']"
+detail-oriented with a strong commitment to quality and compliance.","['scada', 'sis']"
 Automation Engineer,"Tyler Technologies, Inc.","Manila, Metro Manila",,"we are seeking an experienced automation engineer to help elevate the quality and reliability of our web applications. in this key role, you'll collaborate closely with engineering, product, and qa teams to design and implement robust, scalable test automation solutions. we welcome candidates with hands-on experience in any modern automation framework or tool, and especially value experience using playwright and typescript.
 
 in this position, you will play a crucial part in ensuring fast, reliable releases by integrating automated testing into our workflows, reporting on product quality, and contributing to continuous improvement initiatives across the tech organization
@@ -10434,7 +10434,7 @@ experience in analyzing test failures and debugging issues efficiently.
 
 background in salesforce application is preferred
 
-must be willing to work night shift",[]
+must be willing to work night shift",['python programming']
 Industrial Electrician,WHR Global Consulting,"Taguig, Metro Manila",,"whr global consulting is hiring a full time industrial electrician role in taguig, ncr. apply now to be part of our team.
 
 
@@ -10494,7 +10494,7 @@ serve as the voice of the customer within the organization, providing feedback t
 
 develop internal support knowledge base, training modules, and incident handling workflows to ensure consistent service delivery across shifts.
 
-collaborate with sales and account managers to identify upsell or service contract opportunities.","['hmi', 'plc', 'sis', 'scada']"
+collaborate with sales and account managers to identify upsell or service contract opportunities.","['plc', 'scada', 'sis']"
 Image Lead Automation Test Engineer,Azeus,"Pasig City, Metro Manila",,"join us in building reliable, intelligent, and future-ready software.
 
 we're looking for a lead automation test engineer who is passionate about quality and innovation. this role is perfect for someone who thrives in a fast-paced environment, loves solving complex problems, and wants to take a leadership role in ensuring high-quality product releases.
@@ -10626,7 +10626,7 @@ working experience with low-code/no-code automation platforms (e.g., uipath, pow
 python programming certifications (pcep, pcap) or equivalent practical experience
 uipath advanced rpa developer, microsoft power platform certification (preferred but not mandatory)
 agile scrum master or product owner certification
-lean six sigma green belt (optional) w #j-18808-ljbffr",[]
+lean six sigma green belt (optional) w #j-18808-ljbffr",['python programming']
 IT.Test Automation Engineer,Citco,"Makati City, Metro Manila",,"about citco
 
 citco is a global leader in fund services, corporate governance and related asset services with staff across 80 offices worldwide. with more than $1 trillion in assets under administration, we deliver end-to-end solutions and exceptional service to meet our clients’ needs. for more information about citco, please visit www.citco.com
@@ -10907,7 +10907,7 @@ what your background should look like:
 competencies
 
 
-values: integrity, accountability, inclusion, innovation, teamwork","['ladder logic', 'plc']"
+values: integrity, accountability, inclusion, innovation, teamwork","['plc', 'ladder logic']"
 QA Automation Engineer,Teamified,Philippines,,"teamified works with top enterprises and digital native businesses in australia helping them build their remote teams in india, philippines and sri lanka. we pride ourselves with hiring great teams to work on exciting game changing technology. teamified currently has 200+ engineers, testers, product managers etc. working across 20+ partners.
 
 we focus on uplifting the way organisations build and manage their remote teams through great working relationships, trust, integrity, culture and hiring processes. additional to this we are building our own technology product offerings. we strive to deliver the best outcomes for our customers, our partners and our people.
@@ -11176,7 +11176,7 @@ certified electrical engineer (local licensing as required)
 
 basic haccp or food safety awareness training
 
-plc programming certification (optional)","['hmi', 'plc', 'scada']"
+plc programming certification (optional)","['plc', 'scada', 'c programming']"
 Sales Engineer for Precise Machined Tooling Parts,"Alcro Electronics, Inc.","Muntinlupa, Metro Manila",,"company overview.
 
 alcro electronics inc was incorporated in the philippines in 2007. with a humble start of manufacturing tooling components for our electronics and automation products, we have established ourselves as one of the leading precision tooling manufacturer, electronics design and factory automation components distributor and energy saving lighting solutions provider in the philippines. aimed with the experience in precision engineering for molding and stamping process, alcro electronics inc has gained a solid reputation based on commitment to quality, attention to detail and technical proficiency.
@@ -12502,7 +12502,7 @@ job description:
 bachelor degree in electronics and telecommunication engineer
 ex-abroad, experience in oil & gas, especially aramco project.
 automation & control telecommunication, specific in automation control (plc, esd, dcs, scada & telecommunication (isp/osp, foc, tetra radio system, dwdm, transmission system etc.)
-additional information:","['dcs', 'plc', 'scada']"
+additional information:","['plc', 'scada', 'dcs']"
 QC Automation Engineer,Deltek,"Makati City, Metro Manila",,"position responsibilities :
 
 - work with quality assurance and automation engineers to deliver ai-enhanced automation test scripts and intelligent test execution results of outstanding quality and on time
@@ -12725,7 +12725,7 @@ paid training
 
 pay raise
 
-staff meals provided","['hmi', 'plc', 'scada', 'wonderware intouch']"
+staff meals provided","['plc', 'scada', 'wonderware intouch']"
 URGENT QA Automation Engineer (Hybrid/with 70K Signing Bonus),Genpact,"Makati City, Metro Manila",,"qa automation engineer (robot framework and playwright)
 
 makati city
@@ -13003,7 +13003,7 @@ at axelum resources corp., we are dedicated to providing a supportive and reward
 
 if you are passionate about driving excellence through calibration and automation, we encourage you to apply for this exciting opportunity. join our team and be part of our continued success.
 
-apply now","['plc', 'scada']"
+apply now","['plc', 'scada', 'c programming']"
 Senior Test Automation Engineer - Makati,Avaloq,"Makati City, Metro Manila",,"senior test automation engineer - makati company descriptionfounded and headquartered in switzerland, avaloq is continuously expanding its global footprint with around 2,500 colleagues in 10 countries, and more than 160 clients in 35 countries. we are an industry-leading provider of wealth management technology and services for financial institutions around the world, including private banks and wealth managers, investment managers, as well as retail and neo banks. our research led approach and continual innovation is powered by the passion and creativity of our colleagues.
 
 we are always looking for talented people to join us on our mission to orchestrate the financial ecosystem and democratize access to wealth management. avaloq offers the opportunity to work closely with some of the world’s leading financial institutions as we jointly develop and shape careers. championing a collaborative, supportive and flexible work environment empowers our colleagues to reach their full potential.
@@ -13272,7 +13272,7 @@ thermo systems provides equal employment opportunities (eeo) to all employees an
 
 salary range: $100,000.00 - $135,000.00 annually.
 
-#j-18808-ljbffr","['ignition scada', 'plc', 'scada']"
+#j-18808-ljbffr","['plc', 'scada', 'ignition scada']"
 AUTOMATION PROJECT ENGINEER,RMLogic Systems and Solutions Corporation,"San Pedro, Calabarzon",,"job summary
 
 responsible for all engineering and technical disciplines that the project involves
@@ -13367,7 +13367,7 @@ paid training
 
 pay raise
 
-staff meals provided","['hmi', 'plc', 'scada']"
+staff meals provided","['plc', 'scada', 'c programming']"
 "Electrical Engineer - Protection, Automation, and Control",AboitizPower,"Davao del Sur, Davao",,"electrical engineer - protection, automation, and controlthe electrical engineer- protection, automation, and control is responsible for conceptualizing and designing of protection, automation and control systems as well as monitoring of its implementation. this system should comply and conform to the company's protection philosophy and in accordance with the company’s goals and objectives to develop and operate efficient electrical power systems. the incumbent is also responsible for simulating and foreseeing protection methods to protect the company’s electrical system assets during abnormal and fault conditions on the system; and for providing technical assistance to all hedcor plants located in luzon and mindanao for pac related works.
 
 qualifications:graduate of bachelor’s degree in electrical engineeringmust be a licensed electrical engineerpreferably with experience in analysis & protection of power system, automation, control and protective relay testing. preferably with experience in handling works related to power system protection, automation and control
@@ -14693,7 +14693,7 @@ e. physical requirements
 
 job types: full-time, permanent
 
-pay: from php16,000.00 per month","['hmi', 'plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']"
+pay: from php16,000.00 per month","['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']"
 Service Engineer - PI,"Mettler-Toledo International, Inc","Cebu City, Central Visayas",,"join to apply for the service engineer - pi role at mettler-toledo international, incjoin to apply for the service engineer - pi role at mettler-toledo international, incabout mettler toledomettler toledo is a global leader in precision instruments and services. we are renowned for innovation and quality across laboratory, process analytics, industrial, product inspection, and retailing applications. our sales and service network is one of the most extensive in the industry.
 
 our products are sold in more than 140 countries, and we have a direct presence in approximately 40 countries. for more information, please visit www.mt.com.our opening and
@@ -14796,7 +14796,7 @@ cebu, central visayas, philippines 4 days ago
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['plc', 'sis', 'scada']"
+#j-18808-ljbffr","['plc', 'scada', 'sis']"
 "Developer, Finance Innovation & Automation",Concentrix,"Makati City, Metro Manila",,"developer, finance innovation & automation developer, finance innovation & automation job summary: we are seeking a highly skilled and innovative developer to support the finance organization in creating, optimizing, and automating financial processes across multiple functions—including pricing, planning & forecasting, accounting, receivables, and more. the ideal candidate will have expertise in coding, building web applications, and leveraging cloud platforms such as microsoft azure. they will work closely with finance and business stakeholders to design, develop, and implement cutting-edge tools that drive time and cost efficiencies while ensuring seamless integration with existing systems.
 
 key responsibilities: design, develop, and implement web applications to optimize financial processes, ensuring scalability, maintainability, and security. automate financial workflows and data processes by integrating microsoft 365 applications, power platform (power automate, power apps, power bi), and cloud-based solutions. develop and maintain data storage solutions, ensuring accuracy, security, and compliance with financial regulations.
@@ -15290,7 +15290,7 @@ the project engineer oversees controls and electrical reliability, drives the el
 
 collaborate daily with line crews, act as a technical trainer, and support automation and electrical projects, ensuring standards and reliability. provide expertise on factory systems like scada, plc, hmi, dcs, and control systems.2. establish and ensure compliance with electrical engineering and automation standards, support the plant masterplan, and contribute to innovation and renovation efforts.3.
 
-implement value engineering to optimize costs while adhering to core values.4. deliver assigned capital projects (typically","['dcs', 'hmi', 'plc', 'scada']"
+implement value engineering to optimize costs while adhering to core values.4. deliver assigned capital projects (typically","['plc', 'scada', 'dcs']"
 QA Automation Engineer (AltTester),Pointwest,"Quezon City, Metro Manila",,"as aqa automation engineerat pointwest, you will be instrumental in ensuring software quality through robust automated testing frameworks. you’ll work closely with cross-functional teams to build, execute, and optimize test automation that supports the continuous delivery of high-quality healthcare solutions. this role supports our commitment to
 
 leadership,excellence, and
@@ -15441,7 +15441,7 @@ project management: ability to manage and finish project on time
 
 problem solving: ability to determine the problem and execute solutions
 
-ai, iot or machine learning certifications","['plc', 'programmable logic controller', 'sis', 'sensor integration']"
+ai, iot or machine learning certifications","['plc', 'programmable logic controller', 'sensor integration', 'sis', 'python programming']"
 Intelligent Automation Architect,Yondu,"Taguig, Metro Manila",,"the intelligent automation architect will lead the design, development, and deployment of automation solutions using microsoft power platforms. the role will drive process efficiency by integrating automation tools such as power automate, power apps, and power bi, leveraging ai and machine learning capabilities to deliver scalable solutions.
 
 location: bgc, taguig city
@@ -15820,7 +15820,7 @@ renewable energy projects in philippines and pdc and pgc.
  proficient in microsoft word, powerpoint and excel, autocad
  interest in renewable energy projects.
  willingness to travel and spend time on site.  experience with modbus, dnp and other communication protocols is an advantage.
- must have a driven and positive ""can-do"" attitude and be interested in learning, experimentation and r&d.","['modbus', 'scada']"
+ must have a driven and positive ""can-do"" attitude and be interested in learning, experimentation and r&d.","['scada', 'modbus']"
 Senior Quality Assurance Automation Engineer - permanent,Datacom,"Taguig, Metro Manila",Hybrid,"about datacom
 
 with over 6,200 people and centres of technical excellence across australasia, datacom is committed to developing its capabilities in asia. founded in 1965 in new zealand, with over two decades of operations in malaysia and the philippines, datacom has experienced exponential growth. we maintain high profitability while delivering innovative, cost-effective digital and technology solutions through dynamic teams in various locations. our people are skilled, passionate, and dedicated to providing exceptional it services, making datacom a rewarding and fast-paced workplace.
@@ -15993,7 +15993,7 @@ at vertiv, we’re on a mission to empower the people that will power the future
 
 vertiv is an equal opportunity/affirmative action employer. we promote equal opportunities for all with respect to hiring, terms of employment, mobility, training, compensation, and occupational health, without discrimination as to age, race, color, religion, creed, sex, pregnancy status (including childbirth, breastfeeding, or related medical conditions), marital status, sexual orientation, gender identity / expression (including transgender status or sexual stereotypes), genetic information, citizenship status, national origin, protected veteran status, political affiliation, or disability. if you have a disability and are having difficulty accessing or using this website to apply for a position, you can request help by sending an email ***********@vertivco.com. if you are interested in applying or learning more about this role, please visit the company’s career page located on vertiv.com/careers.
 
-#j-18808-ljbffr","['hmi', 'scada', 'solidworks']"
+#j-18808-ljbffr","['scada', 'solidworks']"
 Engineer I - Laboratory Automation,Tempus AI,"Manila, Metro Manila",,"tempus ai quezon city, national capital region, philippinesjoin or sign in to find your next job
 
 join to apply for the engineer i - laboratory automation role at tempus aitempus ai quezon city, national capital region, philippines15 hours ago be among the first 25 applicants
@@ -16315,7 +16315,7 @@ basic scripting (python, matlab) for test automation or data capture
 
 experience in a small company or startup environment
 
-leadership experience with small teams","['arduino', 'embedded systems', 'matlab', 'sis', 'raspberry pi', 'solidworks']"
+leadership experience with small teams","['sis', 'embedded systems', 'arduino', 'raspberry pi', 'matlab', 'solidworks']"
 Senior QA Automation Engineer (Remote),"Legalmatch Philippines, Inc.","Mandaluyong City, Metro Manila",,"2 days ago be among the first 25 applicants
 
 as a senior qa automation engineer, you will play a pivotal role in ensuring the quality, reliability, and performance of our websites and software applications. you will collaborate closely with developers, qa team members, and other stakeholders to define, establish, and execute both manual and automated testing strategies. your work will contribute to seamless functionality, improved processes, and an enhanced user experience.
@@ -16479,7 +16479,7 @@ certified electrical engineer (local licensing as required)
 
 basic haccp or food safety awareness training
 
-plc programming certification (optional)","['hmi', 'plc', 'scada']"
+plc programming certification (optional)","['plc', 'scada', 'c programming']"
 Senior QA Automation Engineer,iScale Solutions,"Manila, Metro Manila",,"requirements:
 
 ● b.s. or ms in computer science or related field
@@ -17445,7 +17445,7 @@ proficiency in security tools and technologies used in ot environments, includin
 
 strong communication and interpersonal skills, with the ability to work collaboratively in a team environment.
 
-detail-oriented with a strong commitment to quality and compliance.","['sis', 'scada']"
+detail-oriented with a strong commitment to quality and compliance.","['scada', 'sis']"
 Systems Engineer,Azeus,"Pasig City, Metro Manila",,"azeus systems limited is looking for systems engineers to be part of our growing support team for our product, azeus convene. azeus convene is a multi-awarded meeting and collaboration solution for boards and leadership teams. our client base has grown exponentially, and we have extended our global footprint in over 100 countries, which has already been recognized by reputable institutions across the globe. visit azeusconvene.com for more information.
 
 as a systems engineer, you will design and implement systems architectures to ensure security frameworks. you will lead and coordinate with systems administrators and all project team members in managing system configuration and setting up and maintaining the most cost-effective and efficient hardware and software to satisfy project requirements.
@@ -17664,7 +17664,7 @@ competitive salary package
 career opportunity in one of the largest international consulting and engineering companies
 possibility to grow professionally and advance in career
 
-at afry, we engineer change in everything we do. change happens when brave ideas come together. when we collaborate, innovate technology, and embrace challenging points of view. that’s how we're making future. we are actively looking for qualified candidates to join our inclusive and diverse teams across the globe. join us in accelerating the transition towards a sustainable future.","['dcs', 'scada']"
+at afry, we engineer change in everything we do. change happens when brave ideas come together. when we collaborate, innovate technology, and embrace challenging points of view. that’s how we're making future. we are actively looking for qualified candidates to join our inclusive and diverse teams across the globe. join us in accelerating the transition towards a sustainable future.","['scada', 'dcs']"
 AI Automation Specialist,DreamHire,Philippines,,"position overviewwe are seeking a skilled ai automation specialist to design, implement, and maintain cutting-edge ai-powered automation solutions across multiple business functions and industries. this role requires expertise in various automation platforms and ai tools to streamline operations, enhance customer experiences, and drive business growth. key responsibilities
 
 build end-to-end ai automations using
@@ -18060,7 +18060,7 @@ knowledgeable in plc, hmi (particularly in keyence ) and debugging.
 
 knowledgeable in automation is an advantage.
 
-at least 1 year experience.","['hmi', 'plc']"
+at least 1 year experience.",['plc']
 Senior Automation Specialist,Viventis Search Asia,"Taguig, Metro Manila",,"fixed-term contract: 6 months
 
 shift and work arrangement: 3pm – 12mn, hybrid 2-3 days onsite per week
@@ -18203,7 +18203,7 @@ lead by example
 
 at vertiv, we’re on a mission to empower the people that will power the future. from a simple swipe to life-changing medicines, from push notifications to generative ai. we design, manufacture, and service the products and solutions that keep the world connected.  with $6.9 billion in revenue, a strong customer base and global reach spanning over 130  countries, we are uniquely positioned to deliver greater value to our customers and create new opportunities for our people.
 
-vertiv is an equal opportunity/affirmative action employer. we promote equal opportunities for all with respect to hiring, terms of employment, mobility, training, compensation, and occupational health, without discrimination as to age, race, color, religion, creed, sex, pregnancy status (including childbirth, breastfeeding, or related medical conditions), marital status, sexual orientation, gender identity / expression (including transgender status or sexual stereotypes), genetic information, citizenship status, national origin, protected veteran status, political affiliation, or disability. if you have a disability and are having difficulty accessing or using this website to apply for a position, you can request help by sending an email to *********@vertivco.com. if you are interested in applying or learning more about this role, please visit the company’s career page located on vertiv.com/careers.","['modbus', 'plc']"
+vertiv is an equal opportunity/affirmative action employer. we promote equal opportunities for all with respect to hiring, terms of employment, mobility, training, compensation, and occupational health, without discrimination as to age, race, color, religion, creed, sex, pregnancy status (including childbirth, breastfeeding, or related medical conditions), marital status, sexual orientation, gender identity / expression (including transgender status or sexual stereotypes), genetic information, citizenship status, national origin, protected veteran status, political affiliation, or disability. if you have a disability and are having difficulty accessing or using this website to apply for a position, you can request help by sending an email to *********@vertivco.com. if you are interested in applying or learning more about this role, please visit the company’s career page located on vertiv.com/careers.","['plc', 'modbus']"
 QA Automation Engineer (Python),Xurpas Inc.,"Mandaluyong, Metro Manila",,"summary:
 
 you will be responsible for transforming testing into a continuous and efficient end-to-end quality engineering function through the use of quality processes, tools, and methodologies, significantly improving control, accuracy, and integrity. your typical day will involve evolving more predictive and intelligent testing approaches based on automation and innovative testing products and solutions.
@@ -18244,7 +18244,7 @@ experience in analyzing test failures and debugging issues efficiently.
 
 background in salesforce application is preferred
 
-must be willing to work night shift",[]
+must be willing to work night shift",['python programming']
 Principal Engineer (AI Systems and Automation),Codev Solutions Inc,"Davao City, Davao",,"job description
 
 about the role
@@ -18740,7 +18740,7 @@ as part of our total rewards philosophy, we believe in offering and maintaining 
 we are committed to protecting and respecting your privacy. we take your privacy seriously and will only use your personal information to administer your application in accordance with the ra no. 10173 also known as the data privacy act of 2012.
 
 
-#j-18808-ljbffr","['daq', 'matlab', 'simulink', 'sis']"
+#j-18808-ljbffr","['sis', 'matlab', 'simulink']"
 Equipment Engineer,J.C. Piñon Construction Inc.,"West Triangle, Metro Manila",,"duties and responsibilities:
 
  oversee heavy equipment and its operators and give instructions regarding the
@@ -19146,7 +19146,7 @@ perform electrical load analysis, voltage drop calculations, short-circuit asses
 
 monitor contractor activities and ensure conformance with design, specifications and safety regulations
 
-performs other related tasks as assigned","['hmi', 'plc', 'sis', 'scada']"
+performs other related tasks as assigned","['plc', 'scada', 'sis']"
 Field Engineer,A.R.M. Resources Inc.,"Makati City, Metro Manila",,"a.r.m. resources inc. is hiring a full time field engineer role in makati city, ncr. apply now to be part of our team.
 
 
@@ -19184,7 +19184,7 @@ working conditions: primarily office-based with occasional travel to client site
 
 qualities and traits: detail-oriented, adaptable, and a team player with a passion for technology.
 
-excel, powerpoint, industrial automation, plc, hmi, vision sensor, network configuration, communication skills, customer service","['hmi', 'plc', 'sis']"
+excel, powerpoint, industrial automation, plc, hmi, vision sensor, network configuration, communication skills, customer service","['plc', 'sis']"
 Automation Engineer I,PSC Biotech Pte Ltd,"Manila, Metro Manila",,"makati central post office, philippines | posted on 07/07/2025state/province national capital region (manila)country philippinesjob descriptionpsc software, a division of psc biotech, is a leading provider of cutting-edge, cloud-based quality management and regulatory compliance solutions. our software helps organizations streamline processes, ensure compliance, and improves overall efficiency, delivering exceptional value to our clients. with specialization in meeting the needs of pharmaceutical, medical device, and other highly regulated industries.
 
 at psc software, we are passionate about providing innovative software solutions that empower businesses to achieve their full potential. the experiencewith operations spanning the globe and featuring a multicultural team, psc biotech is passionate about bringing the best and brightest together to form something truly special. when you make the decision to join our team, you will be offered the ability to feel inspired in your career, explore your professional passions, and work alongside a group of people who will value and nurture your talents.
@@ -20039,7 +20039,7 @@ experience in analyzing test failures and debugging issues efficiently.
 background in salesforce application – good to have
 strong understanding of software testing principles
 knowledge of continuous integration and deployment tools.
-ability to troubleshoot and debug issues effectively.",[]
+ability to troubleshoot and debug issues effectively.",['python programming']
 QA Automation Engineer (WFH - day shift),Sysgen,"Manila, Metro Manila",,"understanding
 
 - a knowledge and understanding of software development life cycle
@@ -20155,7 +20155,7 @@ our culture & commitment to you
 
 at emerson, we prioritize a workplace where every employee is valued, respected, and empowered to grow. we foster an environment that encourages innovation, collaboration, and diverse perspectives—because we know that great ideas come from great teams. our commitment to ongoing career development and growing an inclusive culture ensures you have the support to thrive. whether through mentorship, training, or leadership opportunities, we invest in your success so you can make a lasting impact. we believe diverse teams, working together are key to driving growth and delivering business results. 
 
-we recognize the importance of employee wellbeing. we prioritize providing competitive benefits plans, a variety of medical insurance plans, employee assistance program, employee resource groups, recognition, and much more. our culture offers flexible time off plans, including paid parental leave (maternal and paternal), vacation and holiday leave.","['dcs', 'hmi', 'human-machine interface', 'plc', 'sis', 'scada']"
+we recognize the importance of employee wellbeing. we prioritize providing competitive benefits plans, a variety of medical insurance plans, employee assistance program, employee resource groups, recognition, and much more. our culture offers flexible time off plans, including paid parental leave (maternal and paternal), vacation and holiday leave.","['plc', 'scada', 'dcs', 'sis']"
 Digital Solutions Engineer,,"Makati City, Metro Manila",,"job summary
 
 the automations and projects engineer is responsible for designing and implementing automated solutions to improve business efficiency and streamline operations. this role focuses on using make.com to develop automated workflows, monday.com to optimize team collaboration, and aws services to build and maintain a secure, scalable digital infrastructure. this position oversees automation and digital transformation projects, working closely with stakeholders to define requirements, set timelines, and ensure successful execution. the role also supports company-wide innovation by identifying new technologies and improving existing workflows to enhance productivity. collaboration is key, as the automations and projects engineer partners with it, finance, operations, and other teams to understand their needs and develop tailored automation solutions. ongoing monitoring and support are essential to ensure optimal performance and continuous improvement of implemented solutions. this role is ideal for a problem-solver who is passionate about automation, technology, and driving efficiency through digital solutions.
@@ -20369,7 +20369,7 @@ culture & extras: we provide free lunches, regular team bonding & fun office eve
 
 thermo systems provides equal employment opportunities (eeo) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics.
 
-#j-18808-ljbffr","['hmi', 'human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+#j-18808-ljbffr","['plc', 'programmable logic controller', 'sis']"
 Test Automation Engineer (TOSCA),Artech Technology Inc,"Manila, Metro Manila",,"job title: tosca test engineer
 
 location: taguig city
@@ -20575,7 +20575,7 @@ equal employment opportunity
 
 we welcome people from different backgrounds and cultures, and respect people’s unique skills, attitudes and experiences. we encourage everyone to be themselves at work because we know that’s how we do our best, for each other, for our customers, for the communities where we work, and for our careers.
 
-we are an equal opportunity employer. if you apply for a role at aggreko, we will consider your application based on your qualifications and experience, and not on your race, colour, ethnicity, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.","['embedded systems', 'matlab', 'simulink', 'plc', 'sis', 'rslogix', 'scada']"
+we are an equal opportunity employer. if you apply for a role at aggreko, we will consider your application based on your qualifications and experience, and not on your race, colour, ethnicity, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.","['plc', 'rslogix', 'scada', 'sis', 'embedded systems', 'matlab', 'simulink']"
 Robotic Process Automation (RPA) Developer – Automation Anywhere,Accenture,"Manila, Metro Manila",,"ready to become part of the dynamic accenture team? we’re seeking candidates with the right skills and experience for this role. think you match the profile? reach out to us, we'd love to hear from you!
 
 
@@ -20939,7 +20939,7 @@ working experience with low-code/no-code automation platforms (e.g., uipath, pow
 python programming certifications (pcep, pcap) or equivalent practical experience
 uipath advanced rpa developer, microsoft power platform certification (preferred but not mandatory)
 agile scrum master or product owner certification
-lean six sigma green belt (optional) w #j-18808-ljbffr",[]
+lean six sigma green belt (optional) w #j-18808-ljbffr",['python programming']
 "WordPress & API Automation Developer (WooCommerce, 3+ yrs exp)","Hi, Neon","Cebu, Central Visayas",,"wordpress & api automation developer (woocommerce, 3+ yrs exp)wordpress & api automation developer (woocommerce, 3+ yrs exp)get ai-powered advice on this job and more exclusive features. direct message the job poster from hineon custom neon signs - led neon lightsnova signage is a leading provider of innovative signage solutions for sign and printing shops across north america. our website serves as a b2b member login portal where we offer custom signage products and services designed to enhance visibility and efficiency for our clients.
 
 we are looking for a senior full stack web developer to join our team. this is a remote, part-time position (starting at 20 hours/week) with the potential to transition to full-time after 9 months. responsibilities:develop and maintain a woocommerce store, including writing custom child themes following ui designs.
@@ -21821,7 +21821,7 @@ Automation Solutions Delivery Lead (OpEx Manager),Metacom,"Quezon City, Metro Ma
 
 work setup: hybrid setup with 2x a month onsite
 schedule: mid shift (2 pm - 10 pm)
-location: quezon city, diliman",[]
+location: quezon city, diliman",['python programming']
 Developer Test Automation Specialist,"MSG Global Solutions Philippines, Inc.","Manila, Metro Manila",,"what will you do?
 
 design, develop, and execute automated test scripts using playwright for functional, regression.
@@ -22289,7 +22289,7 @@ at vertiv, we’re on a mission to empower the people that will power the future
 
 vertiv is an equal opportunity/affirmative action employer. we promote equal opportunities for all with respect to hiring, terms of employment, mobility, training, compensation, and occupational health, without discrimination as to age, race, color, religion, creed, sex, pregnancy status (including childbirth, breastfeeding, or related medical conditions), marital status, sexual orientation, gender identity / expression (including transgender status or sexual stereotypes), genetic information, citizenship status, national origin, protected veteran status, political affiliation, or disability. if you have a disability and are having difficulty accessing or using this website to apply for a position, you can request help by sending an email ***********@vertivco.com. if you are interested in applying or learning more about this role, please visit the company’s career page located on vertiv.com/careers.
 
-#j-18808-ljbffr","['hmi', 'scada', 'solidworks']"
+#j-18808-ljbffr","['scada', 'solidworks']"
 Senior Test Automation Engineer,Indra Philippines,"Ortigas, Metro Manila",,"duties and responsibilities:
 
 1. develop and maintain automated test cases using tricentis tosca
@@ -23261,7 +23261,7 @@ extensive laboratory experience with photonics test and measurement (measurement
 familiar with industry equipment communication interfaces - gpib, rs232, usb, etc. able to communicate equipment with each other and create a routine specific to the assembly and test automation process. familiar with microcontroller, plc, and hmi automation.
 good industry automation skills - motion control, vision system, automatic optical inspection, data management and analysis.
 able to interpret product design and specification then develop automated robust test and assembly processes to achieve these requirements considering productivity, product quality, and product reliability
-able to interpret materials safety data sheets to create or form proper safety practices in each process. keen to operations safety details considering health and safety of individuals as top priority in all actions.","['hmi', 'plc', 'sis']"
+able to interpret materials safety data sheets to create or form proper safety practices in each process. keen to operations safety details considering health and safety of individuals as top priority in all actions.","['plc', 'sis', 'labview']"
 "Commissioning Manager - Role located in Montgomery, AL",Thermo Systems LLC.,"Parañaque, Metro Manila",,"career opportunities with thermo systems llc
 
 careers at thermo systems llc
@@ -23345,7 +23345,7 @@ thermo systems provides equal employment opportunities (eeo) to all employees an
 
 salary range: $100,000.00 - $135,000.00 annually.
 
-#j-18808-ljbffr","['ignition scada', 'plc', 'scada']"
+#j-18808-ljbffr","['plc', 'scada', 'ignition scada']"
 AI Prompt Specialist/Prompt Engineer (BB - 06192025 - PTAPS),Ripped Box Station,"Manila, Metro Manila",,"position: ai prompt specialist/prompt engineer
 
 number of hours: 10 hours/week
@@ -23690,7 +23690,7 @@ passionate and committed
 as part of our total rewards philosophy, we believe in offering and maintaining competitive compensation and benefits programs for our employees in order to attract and retain a talented, highly engaged workforce. our compensation programs are focused on equitable, fair pay practices including market-based base pay, an annual pay-for-performance incentive plan, we offer a strong benefits package in each of the countries in which we operate.
 
 advanced energy is committed to diversity in its workforce including equal employment opportunity for minorities, females, protected veterans, and individuals with disabilities.
-we are committed to protecting and respecting your privacy. we take your privacy seriously and will only use your personal information to administer your application in accordance with the ra no. 10173 also known as the data privacy act of 2012.","['daq', 'matlab', 'simulink', 'sis']"
+we are committed to protecting and respecting your privacy. we take your privacy seriously and will only use your personal information to administer your application in accordance with the ra no. 10173 also known as the data privacy act of 2012.","['sis', 'matlab', 'simulink']"
 Robotic Process Automation (RPA) Developer – Automation Anywhere,Accenture,"Manila, Metro Manila",,"ready to become part of the dynamic accenture team? we’re seeking candidates with the right skills and experience for this role. think you match the profile? reach out to us, we'd love to hear from you!
 
 
@@ -24320,7 +24320,7 @@ read more here...how to apply
 to apply for this position, simply click the “apply” button on this page.source/s:ph.pg.comph.prosple.com
 
 
-#j-18808-ljbffr","['hmi', 'sis']"
+#j-18808-ljbffr",['sis']
 Electro-Mechanical Technician,Goodly Trading,"Bunawan, Davao",Hybrid,"what you'll be doing
 
 install, maintain, and repair automated machinery and computer-controlled mechanical systems in industrial settings
@@ -25070,7 +25070,7 @@ dyson philippines monitors the market to ensure competitive salaries and bonuses
 
 professional growth, leadership development and new opportunities abound, driven by regular reviews and dynamic workshops. and with a vibrant culture, the latest devices and a relaxed dress code reflecting our engineering spirit, it’s an exciting team environment geared to fueling and realising ambition. #li-sl dyson is an equal opportunity employer.
 
-we know that great minds don’t think alike, and it takes all kinds of minds to make our technology so unique. we welcome applications from all backgrounds and employment decisions are made without regard to race, colour, religion, national or ethnic origin, sex, sexual orientation, gender identity or expression, age, disability, protected veteran status or other any other dimension of diversity. #j-18808-ljbffr","['matlab', 'sis']"
+we know that great minds don’t think alike, and it takes all kinds of minds to make our technology so unique. we welcome applications from all backgrounds and employment decisions are made without regard to race, colour, religion, national or ethnic origin, sex, sexual orientation, gender identity or expression, age, disability, protected veteran status or other any other dimension of diversity. #j-18808-ljbffr","['sis', 'matlab']"
 Maintenance Technician - Instrumentation and Control,Cagayan Corn Products Corporation,Northern Mindanao,Remote,"cagayan corn products corporation is hiring a full time maintenance technician - instrumentation and control role in cdo, northern mindanao. apply now to be part of our team.
 
 
@@ -25803,7 +25803,7 @@ experience with aoi (automatic optical inspection) implementations is an advanta
 
 strong problem-solving skills and the ability to debug and troubleshoot complex issues.
 
-knowledge of cybersecurity best practices.",[]
+knowledge of cybersecurity best practices.",['labview']
 Business Development Supervisor,"Industrial Controls Systems, Inc. (Icon)","Manila, Metro Manila",,"job responsibilities:
 
 work with sales team in developing business plans to achieve company goals.
@@ -26570,7 +26570,7 @@ skills: proficient in mechanical, hydraulic, pneumatic, and electrical systems; 
 
 certifications: electrician or welding certificate preferred.
 
-soft skills: strong teamwork, problem-solving, and communication skills.","['plc', 'sis']"
+soft skills: strong teamwork, problem-solving, and communication skills.","['plc', 'sis', 'c programming']"
 CNC Operator with Programming,"JGM Philippines, Inc.","Biñan, Calabarzon",Hybrid,"job overview:
 
 jgm philippines inc., a trusted manufacturer of customized machines and metallic molds, is looking for a skilled cnc operator with programming experience. you will operate and program cnc machine to produce precision parts used in our custom-built machinery, and automation systems.
@@ -26599,7 +26599,7 @@ minimum of 2 years experience in cnc machine operation and programming
 
 ability to read and understand detailed mechanical drawings
 
-responsible, detail-oriented, and willing to work in a team-oriented environment",['sis']
+responsible, detail-oriented, and willing to work in a team-oriented environment","['sis', 'cnc machine operation']"
 Field Technician (CNC Technician)-Year 1 Exp- Quezon City (22k),Dempsey Resource Management Inc.,"Quezon City, Metro Manila",Hybrid,"job qualifications:
 -valid vocational certificate or diploma related to electromechanics or mechatronics
 -knows how to drive 4-wheeled vehicles and a holder of a valid driver’s license (restriction 2 or
@@ -26953,7 +26953,7 @@ knowledgeable in plc, hmi (particularly in keyence ) and debugging.
 
 knowledgeable in automation is an advantage.
 
-at least 1 year experience.","['hmi', 'plc']"
+at least 1 year experience.",['plc']
 QA Automation Engineer,Eclaro,"Manila, Metro Manila",,"eclaro manila, national capital region, philippinesqa automation engineereclaro manila, national capital region, philippines3 days ago be among the first 25 applicants
 
 get ai-powered advice on this job and more exclusive features. direct message the job poster from eclaroeclaro is an award-winning professional services firm headquartered in new york city and operating in the u.s., canada, uk, ireland, australia and the philippines.
@@ -27281,7 +27281,7 @@ facebook: https://www.facebook.com/cocacolaphcareers
 
 instagram: https://www.instagram.com/cocacolaphcareers/
 
-thrive with us at coca-cola europacific philippines and be part of a company that is shaping the future of the beverage industry. together, we can create great moments and make a positive impact on the lives of millions. apply today and let's refresh the world together!","['human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+thrive with us at coca-cola europacific philippines and be part of a company that is shaping the future of the beverage industry. together, we can create great moments and make a positive impact on the lives of millions. apply today and let's refresh the world together!","['plc', 'programmable logic controller', 'sis']"
 Junior Process Engineer,Acbel PolyTech,"Calamba City, Calabarzon",,"about the role
 
 acbel polytech (phils.), inc. is seeking a talented junior process engineer to join our team in calamba city, laguna. this is a full-time position that will play a crucial role in optimising our production processes and driving continuous improvement within our engineering operations.
@@ -27886,7 +27886,7 @@ dyson philippines monitors the market to ensure competitive salaries and bonuses
 
 dyson is an equal opportunity employer. we know that great minds don’t think alike, and it takes all kinds of minds to make our technology so unique. we welcome applications from all backgrounds and employment decisions are made without regard to race, colour, religion, national or ethnic origin, sex, sexual orientation, gender identity or expression, age, disability, protected veteran status or other any other dimension of diversity.
 
-#j-18808-ljbffr","['matlab', 'sis']"
+#j-18808-ljbffr","['sis', 'matlab']"
 Senior Mechanical Engineer,Cal-Comp,"Santo Tomas, Calabarzon",Hybrid,"job description
 
 
@@ -28685,7 +28685,7 @@ read more here...how to apply
 to apply for this position, simply click the “apply” button on this page.source/s:ph.pg.comph.prosple.com
 
 
-#j-18808-ljbffr","['hmi', 'sis']"
+#j-18808-ljbffr",['sis']
 "Manager, Process Development Engineering",Analog Devices,"Manila, Metro Manila",Hybrid,"manager, process development engineering page is loaded
 
 manager, process development engineering
@@ -28751,7 +28751,7 @@ come join adi – a place where innovation meets impact. for more than 55 years,
 
 adi fosters a culture that focuses on employees through beneficial programs, aligned goals, continuous learning opportunities, and practices that create a more sustainable future.
 
-#j-18808-ljbffr","['daq', 'sis']"
+#j-18808-ljbffr",['sis']
 Equipment Senior Engineer,Bonafide Trainology Placement Services,"Santo Tomas, Calabarzon",Hybrid,"minimum requirements:
 • candidate must possess at least bachelor's degree in mechanical / electronics/ electrical/ mechatronics and other related engineering courses.
 • must have a minimum of 5 years or more related working experience in equipment maintenance operations.
@@ -28974,7 +28974,7 @@ strong cad software knowledge
 well versed in using basic to advance measuring instruments and their applications
 strong knowledge on statistical process control and other problem solving methodologies
 strong business acumen
-ability to handle multiple tasks and make sound decisions","['daq', 'sis']"
+ability to handle multiple tasks and make sound decisions",['sis']
 Component & Machine Assembler,The HR Practitioner,"Davao City, Davao",Hybrid,"we're hiring!
  join hgg profiling specialists philippines, inc. (hgg-pspi) — a global leader in high-precision 3d profiling equipment and solutions.
 location: bajada, davao city
@@ -29200,7 +29200,7 @@ learn and seek out development
 
 foster a customer-first mindset
 
-lead by example","['hmi', 'scada', 'solidworks']"
+lead by example","['scada', 'solidworks']"
 Production Staff (Automotive),Asiapro Multi-Purpose Cooperative,"Laguna, Calabarzon",,"job summary:
 assemble and install automobile components while ensuring quality, safety, and efficiency in the production process.
 
@@ -29247,7 +29247,7 @@ dyson philippines monitors the market to ensure competitive salaries and bonuses
 
 professional growth, leadership development and new opportunities abound, driven by regular reviews and dynamic workshops. and with a vibrant culture, the latest devices and a relaxed dress code reflecting our engineering spirit, it’s an exciting team environment geared to fueling and realising ambition. #li-sl dyson is an equal opportunity employer.
 
-we know that great minds don’t think alike, and it takes all kinds of minds to make our technology so unique. we welcome applications from all backgrounds and employment decisions are made without regard to race, colour, religion, national or ethnic origin, sex, sexual orientation, gender identity or expression, age, disability, protected veteran status or other any other dimension of diversity. #j-18808-ljbffr","['matlab', 'sis']"
+we know that great minds don’t think alike, and it takes all kinds of minds to make our technology so unique. we welcome applications from all backgrounds and employment decisions are made without regard to race, colour, religion, national or ethnic origin, sex, sexual orientation, gender identity or expression, age, disability, protected veteran status or other any other dimension of diversity. #j-18808-ljbffr","['sis', 'matlab']"
 Production Staff (with Driving Skills),Asiapro Multi-Purpose Cooperative,"Batangas City, Calabarzon",,"job summary:
 we are looking for production staff to assist in assembling and installing automobile components while ensuring quality, safety, and production efficiency. the role includes inspecting and test-driving newly manufactured vehicles.
 
@@ -29581,7 +29581,7 @@ educational background: bachelor's or master's degree in mechatronics, control s
 experience: 8-10 years in fda/hpra-regulated pharmaceutical or biotech environments.
 leadership: proven experience in managing projects and people.
 technical skills: expertise in batch processing, scada/dcs/plc integration, and regulatory standards.
-success in automation: demonstrated success in leading validated systems and major automation upgrades.","['dcs', 'plc', 'scada']"
+success in automation: demonstrated success in leading validated systems and major automation upgrades.","['plc', 'scada', 'dcs']"
 [PIPELINE] Tender Engineer,Schneider Electric,"Cavite City, Calabarzon",,"job descriptiondescription - externalgreat people make schneider electric a great company. do you dream of working in a company that is driven by a meaningful purpose and that continuously creates an inclusive environment where you are empowered to do your best and be innovative? the role: tender engineerwhat will you do?
 
 review customer requirements and request for quotes (rfq)
@@ -30146,7 +30146,7 @@ facebook: https://www.facebook.com/cocacolaphcareers
 
 instagram: https://www.instagram.com/cocacolaphcareers/
 
-thrive with us at coca-cola beverages philippines and be part of a company that is shaping the future of the beverage industry. together, we can create great moments and make a positive impact on the lives of millions. apply today and let's refresh the world together!","['human-machine interface', 'plc', 'programmable logic controller', 'sis']"
+thrive with us at coca-cola beverages philippines and be part of a company that is shaping the future of the beverage industry. together, we can create great moments and make a positive impact on the lives of millions. apply today and let's refresh the world together!","['plc', 'programmable logic controller', 'sis']"
 Maintenance Planner – Calauan Laguna-based,"BSFIL Technologies, Inc.","Muntinlupa, Metro Manila",,"job descriptionduties & responsibilities:responsible for planning work orders, repairs, servicing and efficient functioning of all machinery and equipment inside the plant. prepare technical documentations that will support the crew in performing their duties. this includes drawings, diagrams, pid and flow charts.
 
 provide a complete record of machine repair history for analysis. identifying, ordering and tracking materials / parts / equipment requirements of planned work. determine schedule sequence and resource requirements to complete planned work.
@@ -30327,7 +30327,7 @@ you can grow a lasting career here. we’ll encourage you, support you, and chal
 
 we believe that a diverse and inclusive workplace fosters creativity, innovation, and a full spectrum of bright ideas. with a global workforce representing 99 nationalities, we are dedicated to creating an inclusive environment where every voice is heard and valued, helping us all achieve more together.
 
-come join us, and together we can light the way.",['plc']
+come join us, and together we can light the way.","['plc', 'c programming']"
 "Call Center Technical Support Bilingual: Nihongo(GCS,Philippines:Cebu)",Teradyne,"Basak, Central Visayas",Hybrid,"our purpose  
 
 teradyne, where experience meets innovation and drives excellence in every connection. we are fueled by creativity and diversity of thought, and in our workforce. our employees are supported to innovate and learn something new every day.  we cultivate a culture of inclusion for all employees that respects their individual strengths, views, and experiences. we believe that our differences enable us to be a better team – one that makes better decisions, drives innovation, and delivers better business results.  
@@ -30871,7 +30871,7 @@ ability to work in teams and collaborate effectively with people in different fu
 strong time management skills that enable on-time project delivery
 demonstrated ability to build strong, influential relationships
 ability to work effectively in a fast-paced and rapidly changing environment
-ability to take the initiative and drive for results","['daq', 'sis']"
+ability to take the initiative and drive for results",['sis']
 Customer Support Associate - Heavy Equipment,"Equiprime Optimum Solutions, Inc.","Manila, Metro Manila",Hybrid,"1.0 general job description
 
 the csa shall be mainly responsible for:
@@ -31023,7 +31023,7 @@ ability to work in teams and collaborate effectively with people in different fu
 strong time management skills that enable on-time project delivery
 demonstrated ability to build strong, influential relationships
 ability to work effectively in a fast-paced and rapidly changing environment
-ability to take the initiative and drive for results","['daq', 'sis']"
+ability to take the initiative and drive for results",['sis']
 Business Development Supervisor,"Industrial Controls Systems, Inc. (Icon)","Manila, Metro Manila",,"job responsibilities:
 
 work with sales team in developing business plans to achieve company goals.
@@ -31993,7 +31993,7 @@ experience with aoi (automatic optical inspection) implementations is an advanta
 
 strong problem-solving skills and the ability to debug and troubleshoot complex issues.
 
-knowledge of cybersecurity best practices.",[]
+knowledge of cybersecurity best practices.",['labview']
 Line Maintenance Technician - Valenzuela City,Q.C. Styropackaging Corporation,"Valenzuela, Metro Manila",,"qualifications :
 
 must possess at least a vocational diploma / short course certificate, bachelor's/college degree , engineering (mechatronic/electromechanical) or equivalent.
@@ -32345,7 +32345,7 @@ registered electrical engineer in calamba - lagunarpa (robotic process automatio
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['hmi', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'sis']"
 Senior Site Reliability Engineer,magentIQ,"Manila, Metro Manila",,"magentiq national capital region, philippinesjoin or sign in to find your next job
 
 join to apply for the senior site reliability engineer role at magentiqmagentiq national capital region, philippines2 days ago be among the first 25 applicants
@@ -32695,7 +32695,7 @@ makati, national capital region, philippines 1 month ago
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr",['embedded systems']
+#j-18808-ljbffr","['embedded systems', 'python programming']"
 Robotics Process Automation Analyst,QBE Insurance,Remote,,"
 primary details
 time type: full timeworker type: contingent workerthe purpose of this role is to develop and implement automation solutions using various tools to streamline processes and eliminate repetitive tasks. this includes building complex automation solutions, such as end user developed applications, robotics, web services, and ensuring operational support through incident management.
@@ -32939,7 +32939,7 @@ makati, national capital region, philippines 1 month ago
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr",['embedded systems']
+#j-18808-ljbffr","['embedded systems', 'python programming']"
 DevOps Engineer,Kuehne & Nagel,"Cebu City, Central Visayas",,"join to apply for the devops engineer role at kuehne+nagel 2 days ago be among the first 25 applicants join to apply for the devops engineer role at kuehne+nagel embark on your path towards a successful career. kuehne+nagel stands out as an innovative logistics company with adaptability and efficiency at our core.
 
 our advanced processes enable us to deliver exceptional services to our clients and customers. your knowledge, expertise and distinct skillsets will play a vital role in driving the organization’s growth. your roleyou will be a member of a highly skilled, international team that supports and ensures operational excellence within kuehne + nagel’s document & master data solutions department.
@@ -33155,7 +33155,7 @@ registered electrical engineer in calamba - lagunarpa (robotic process automatio
 we’re unlocking community knowledge in a new way. experts add insights directly into each article, started with the help of ai.
 
 
-#j-18808-ljbffr","['hmi', 'plc', 'sis']"
+#j-18808-ljbffr","['plc', 'sis']"
 Senior Site Reliability Engineer,magentIQ,"Manila, Metro Manila",,"magentiq national capital region, philippinesjoin or sign in to find your next job
 
 join to apply for the senior site reliability engineer role at magentiqmagentiq national capital region, philippines2 days ago be among the first 25 applicants
@@ -33310,7 +33310,7 @@ by clicking on the ""i'm interested"" button i hereby allow outsourced quality a
 additional information
 hmo + 1 dependent free
 dayshift
-homebased",['embedded systems']
+homebased","['embedded systems', 'python programming']"
 MANUFACTURING ENGINEER II - Molding,TE Connectivity,"City of Tanauan, Calabarzon",,"select how often (in days) to receive an alert:
 
 dnd – manufacturing & process development engineer for molding process, tooling & design), with focus on productivity, reducing time, building systems, maintain iso documents and standards, etc. should get involved in npi’s, coordinate with team and implement teoa. should be a go getter & a team player. must have comprehensive knowledge and thorough understanding of injection molding process, machines, robotics, and auxiliary equipment. knowledge in mold / tooling design is a must.
@@ -34007,4 +34007,4 @@ we prioritize mutual understanding, open communication and empowerment to lead t
 
 intrinsic values and culture
 
-we practice unique values and culture composition where local culture is prioritized and driven to immerse in global culture. it encompasses all aspects inclusive of fostering professional relationship enriched with transparent communication and mutual beliefs on gender equality, demographics, diversity and inclusion.","['arduino', 'sis']"
+we practice unique values and culture composition where local culture is prioritized and driven to immerse in global culture. it encompasses all aspects inclusive of fostering professional relationship enriched with transparent communication and mutual beliefs on gender equality, demographics, diversity and inclusion.","['sis', 'arduino']"

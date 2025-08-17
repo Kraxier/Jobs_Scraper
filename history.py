@@ -9,7 +9,12 @@
 # August 17:
 r'''
 Create a Analyze Component(Combining spaCy and Pandas)
+I finally can extract the job description skills while also i can add the component of progression in terms of extracting skills because it really take a time to do things so i think we are going to data analysis
 '''
+r'''
+Learning about the Data Analysis
+'''
+
 
 # August 16 or 17:
 r'''
