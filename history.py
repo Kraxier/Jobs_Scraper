@@ -6,6 +6,12 @@
 
 # Timeline/History:
 
+
+# August 18:
+r'''
+Thinking the to do List 
+'''
+
 # August 17:
 r'''
 Create a Analyze Component(Combining spaCy and Pandas)
