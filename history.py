@@ -6,10 +6,38 @@
 
 # Timeline/History:
 
+# To Do List: 
+r'''
+1. Rebuild from Scratch:
+    A. implementation.py in Data Engineering Side:
+    B. data_cleaning.py in Data Engineering Side:
+    C. Reflection on Everything from Data Cleaning and Transformation to Data Analysis and Data Visualization and how the Project i will be Moving forward 
+    because right now i think i achieve the Goal and i wonder what to do next
+'''
+
 
 # August 18:
 r'''
 Thinking the to do List 
+    1. Analyzing the Data 
+I just Copy Pasting Code from the Chatgpt and analyzing line by line to see how the code works and i think it is Shallow way of learning things because i don't see it in real time
+
+
+Copy-pasting code and reading it line by line isn’t “bad” — it can give you surface-level familiarity — 
+but you’re right that if you never test, tweak, or build with it, the learning stays shallow. It’s like reading about swimming without ever getting in the water.
+
+The Next Question is Since When i copy pasting Things?
+Ask “what if?”
+    Instead of only asking what this line does, try what would happen if I remove/modify this line?
+    This builds causal understanding instead of just memorization.
+
+Rebuild from scratch
+    After analyzing, close the original code and try to write it again without looking.
+    You’ll quickly discover what you really understood and what you only skimmed over.
+
+Apply to a tiny project
+    Take the same concepts and use them in a simple project (calculator, to-do list, scraper, game, etc.).
+    Application forces you to understand why the code exists, not just what it does.
 '''
 
 # August 17:
