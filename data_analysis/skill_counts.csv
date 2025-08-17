@@ -1,0 +1,44 @@
+skill,count
+[],172
+['sis'],102
+"['plc', 'sis']",8
+"['plc', 'programmable logic controller', 'sis']",6
+"['plc', 'scada']",5
+"['plc', 'c programming']",4
+"['plc', 'scada', 'sis']",4
+['scada'],3
+"['plc', 'ladder logic', 'sis', 'c programming']",3
+"['plc', 'sis', 'c programming']",3
+"['supervisory control and data acquisition', 'sis']",3
+"['plc', 'scada', 'modbus', 'sis']",2
+['solidworks'],2
+"['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition']",2
+['plc'],2
+"['plc', 'scada', 'c programming']",2
+"['plc', 'scada', 'dcs']",2
+['python programming'],2
+"['scada', 'modbus']",2
+"['plc', 'scada', 'supervisory control and data acquisition', 'modbus', 'sis']",2
+"['sis', 'solidworks']",2
+"['plc', 'scada', 'dcs', 'ethernet/ip', 'modbus', 'profibus', 'c programming', 'matlab', 'simulink']",2
+"['sis', 'matlab', 'simulink']",1
+"['plc', 'rslogix', 'scada', 'sis', 'embedded systems', 'matlab', 'simulink']",1
+['embedded systems'],1
+"['sis', 'cnc machine operation']",1
+"['sis', 'matlab']",1
+"['scada', 'solidworks']",1
+"['plc', 'programmable logic controller']",1
+"['embedded systems', 'python programming']",1
+"['plc', 'scada', 'dcs', 'sis']",1
+"['plc', 'programmable logic controller', 'scada', 'supervisory control and data acquisition', 'dcs', 'distributed control system', 'modbus', 'cybersecurity for industrial systems', 'sis']",1
+"['plc', 'modbus']",1
+"['scada', 'dcs']",1
+"['plc', 'ladder logic']",1
+"['scada', 'supervisory control and data acquisition', 'modbus', 'sis']",1
+"['plc', 'dcs', 'sis', 'control valves']",1
+"['plc', 'programmable logic controller', 'scada', 'sis']",1
+"['plc', 'scada', 'ethernet/ip', 'modbus', 'profibus']",1
+"['servo motor control', 'plc', 'ethernet/ip']",1
+"['scada', 'sis']",1
+"['plc', 'embedded systems', 'solidworks']",1
+"['sis', 'arduino']",1
