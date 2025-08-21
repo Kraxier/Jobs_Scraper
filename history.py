@@ -6,6 +6,34 @@
 
 # Timeline/History:
 
+# August 22:
+r'''
+Priority for the Goal:
+    1. Create a Proper Proffessional Project:
+        a. Proper Project Structure 
+    2. Mastery in Web Scrapping 
+        a. Workflow for Investigating a Website:
+            1. Legality of Scrapping 
+            2. Terms and Services
+            3. Robot.txt
+            4. Security of the Website 
+            5. Developer Tools Mastery
+        b. Workflow for Anchor Project Learning + Studying Concept
+        c. Workflow in building a Scrapper
+            1. What Tools i needed to Use? (API,BS4/Request,Playwright,Scrapy)
+            2. Building a Anti Bot Detection
+            3. Single Page Data Extraction (Focusing on the Core Extraction of the Project)
+            5. Multiple Page Data Extraction
+        d. 
+           
+'''
+
+# August 21:
+r'''
+Collecting Resource on how to Write in README.md
+'''
+
+
 # To Do List:
 r'''
 1. README.md Fix the Damn Thing 
