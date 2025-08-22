@@ -6,6 +6,13 @@
 
 # Timeline/History:
 
+
+# August 23:
+r'''
+Compile all the Learning and Studying Part of things
+'''
+
+
 # August 22:
 r'''
 Priority for the Goal:

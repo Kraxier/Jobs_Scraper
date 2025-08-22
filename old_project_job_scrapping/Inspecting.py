@@ -197,3 +197,56 @@ e. CAPTCHAs
     Google reCAPTCHA, hCaptcha, or puzzles to test for human interaction.
 
 '''
+r'''
+
+
+Q: Are there legal or contractual restrictions (ToS, copyright, licensing)? Is the data sensitive or personal?
+Answer:
+Notes: Check Terms of Service, copyright, and data protection laws (e.g., GDPR). If data is personal or copyrighted, consult legal before scraping.
+
+Q: What does robots.txt say? Any disallowed paths or crawl-delay directives?
+Answer:
+Notes: Always check https://<domain>/robots.txt. Respect disallow rules and crawl-delay where practical. If blocked but permitted through other channels, consider contacting site owners.
+
+Q: Is there a sitemap (/sitemap.xml) or internal search that lists content? Are there RSS/feeds or APIs?
+Answer:
+Notes: Sitemaps and feeds are authoritative sources for URLs. APIs are preferable over scraping.
+
+
+Q: Is the data present in HTML (static) or injected by JavaScript (client-rendered)? Show CSS selectors/XPath for each field if possible.
+Answer:
+Notes: Use “View source” vs DevTools Network/Elements. If data is in HTML responses or JSON blobs, prefer HTTP requests. If client-rendered, consider using the site’s API or a headless browser.
+
+APIs & network endpoints
+Q: Are there internal APIs used by the site (XHR/Fetch calls)? What are the request and response formats (URLs, parameters, headers)?
+Answer:
+Notes: Inspect Network tab for XHR/Fetch calls. Capture request URL, method (GET/POST), headers (auth, cookies), payload, and JSON response examples.
+
+
+Authentication & sessions
+Q: Does content require login? What auth type (form, OAuth, token)? How long do sessions last and what cookies are used?
+Answer:
+Notes: Document login flow, CSRF tokens, refresh tokens, multi-factor, and whether scraping an account violates ToS.
+
+Rate limits & throttling
+Q: Are there rate limits or anti-scraping responses (429, 403)? What is a safe request rhythm?
+Answer:
+Notes: Test politely. Start slow, observe HTTP codes and response times. Use exponential backoff, randomized delays, and obey crawl-delay if present.
+
+Anti-bot protections
+Q: Does the site use CAPTCHAs, WAFs (Cloudflare), JavaScript fingerprinting, or bot-detection services?
+Answer:
+Notes: Look for CAPTCHA pages, challenge responses, repeated 403/502 from security layers. If strong anti-bot measures exist, consider contacting the site or using official APIs.
+
+
+Required headers, cookies, and emulation
+Q: Which headers or cookies are necessary? Do you need to emulate a browser (User-Agent, Accept-Language, Referer)?
+Answer:
+Notes: Sites sometimes rely on headers or cookies to serve correct content. Reproduce minimal realistic headers; don’t fake identity to impersonate other users.
+
+
+Throttling, concurrency & proxies
+Q: Do you need proxies or distributed requests? How many concurrent connections are safe?
+Answer:
+Notes: Use proxies only when required and legally acceptable. Keep concurrency low and increase only after monitoring.
+'''
