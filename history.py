@@ -6,6 +6,20 @@
 
 # Timeline/History:
 
+# August 24:
+r'''
+AS i learning the concepts and some of it are already applied at things there are things that i must 
+do it better next time but the thing is i'm constructing the workflow while also learning which is 
+quite nice of things 
+
+
+Concepts in Investigation in Website
+1. I try to Experiment some of the concept some are definitely working but in terms of scrolling it didn't 
+update it sometime like facebook and instagram
+2. AS i Scroll and checking in Developer Tools network Request it keeps pumping things, also not just scrolling
+i can do interaction in the website and it continously call in the network request thing and i see some data there 
+
+'''
 
 # August 23:
 r'''
