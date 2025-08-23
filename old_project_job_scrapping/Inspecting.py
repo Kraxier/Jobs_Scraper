@@ -250,3 +250,257 @@ Q: Do you need proxies or distributed requests? How many concurrent connections 
 Answer:
 Notes: Use proxies only when required and legally acceptable. Keep concurrency low and increase only after monitoring.
 '''
+
+
+r'''
+# Web Scraping — Website Investigation Q\&A Form
+
+> Use this Q\&A as a discovery checklist when preparing to scrape a website. Fill each "Answer" with the site's specific details. Below each question is a short explanation and suggested actions.
+
+---
+
+## 1) Project overview
+
+**Q:** What is the goal of the scrape?
+
+**Answer:**
+
+**Notes:** Describe the business / research goal (eg. price monitoring, content aggregation, lead collection, sentiment analysis). This drives scope, frequency, and legal risk.
+
+---
+
+## 2) Target site identity
+
+**Q:** What is the target website (domain + sections)? Provide example page URLs.
+
+**Answer:**
+
+**Notes:** List the base domain(s), subdomains, and 5–10 representative URLs to inspect.
+
+---
+
+## 3) Legal & ethical checks
+
+**Q:** Are there legal or contractual restrictions (ToS, copyright, licensing)? Is the data sensitive or personal?
+
+**Answer:**
+
+**Notes:** Check Terms of Service, copyright, and data protection laws (e.g., GDPR). If data is personal or copyrighted, consult legal before scraping.
+
+---
+
+## 4) robots.txt and crawl policies
+
+**Q:** What does `robots.txt` say? Any disallowed paths or crawl-delay directives?
+
+**Answer:**
+
+**Notes:** Always check `https://<domain>/robots.txt`. Respect disallow rules and crawl-delay where practical. If blocked but permitted through other channels, consider contacting site owners.
+
+---
+
+## 5) Sitemaps & discovery
+
+**Q:** Is there a sitemap (`/sitemap.xml`) or internal search that lists content? Are there RSS/feeds or APIs?
+
+**Answer:**
+
+**Notes:** Sitemaps and feeds are authoritative sources for URLs. APIs are preferable over scraping.
+
+---
+
+## 6) Page types & templates
+
+**Q:** What different page templates exist (listing pages, detail pages, pagination, search results)? How many templates?
+
+**Answer:**
+
+**Notes:** Identify distinct templates (e.g., product listing, product detail, blog post). Each template may need a different extraction rule.
+
+---
+
+## 7) URL patterns & pagination
+
+**Q:** What are the URL schemes? How does pagination work (page numbers, offsets, cursors)?
+
+**Answer:**
+
+**Notes:** Recognize patterns to generate URL lists. Look for query parameters (`?page=2`, `offset=50`) or cursor tokens used by AJAX.
+
+---
+
+## 8) Data to extract
+
+**Q:** List the exact data fields needed (field name, example, type — string/number/date/image/HTML).
+
+**Answer:**
+
+**Notes:** Be explicit (e.g., `product_name`, `price`, `currency`, `sku`, `availability`, `date_published`). Include sample expected formats.
+
+---
+
+## 9) Location of data on page
+
+**Q:** Is the data present in HTML (static) or injected by JavaScript (client-rendered)? Show CSS selectors/XPath for each field if possible.
+
+**Answer:**
+
+**Notes:** Use “View source” vs DevTools Network/Elements. If data is in HTML responses or JSON blobs, prefer HTTP requests. If client-rendered, consider using the site’s API or a headless browser.
+
+---
+
+## 10) APIs & network endpoints
+
+**Q:** Are there internal APIs used by the site (XHR/Fetch calls)? What are the request and response formats (URLs, parameters, headers)?
+
+**Answer:**
+
+**Notes:** Inspect Network tab for XHR/Fetch calls. Capture request URL, method (GET/POST), headers (auth, cookies), payload, and JSON response examples.
+
+---
+
+## 11) Authentication & sessions
+
+**Q:** Does content require login? What auth type (form, OAuth, token)? How long do sessions last and what cookies are used?
+
+**Answer:**
+
+**Notes:** Document login flow, CSRF tokens, refresh tokens, multi-factor, and whether scraping an account violates ToS.
+
+---
+
+## 12) Rate limits & throttling
+
+**Q:** Are there rate limits or anti-scraping responses (429, 403)? What is a safe request rhythm?
+
+**Answer:**
+
+**Notes:** Test politely. Start slow, observe HTTP codes and response times. Use exponential backoff, randomized delays, and obey `crawl-delay` if present.
+
+---
+
+## 13) Anti-bot protections
+
+**Q:** Does the site use CAPTCHAs, WAFs (Cloudflare), JavaScript fingerprinting, or bot-detection services?
+
+**Answer:**
+
+**Notes:** Look for CAPTCHA pages, challenge responses, repeated 403/502 from security layers. If strong anti-bot measures exist, consider contacting the site or using official APIs.
+
+---
+
+## 14) Required headers, cookies, and emulation
+
+**Q:** Which headers or cookies are necessary? Do you need to emulate a browser (User-Agent, Accept-Language, Referer)?
+
+**Answer:**
+
+**Notes:** Sites sometimes rely on headers or cookies to serve correct content. Reproduce minimal realistic headers; don’t fake identity to impersonate other users.
+
+---
+
+## 15) Throttling, concurrency & proxies
+
+**Q:** Do you need proxies or distributed requests? How many concurrent connections are safe?
+
+**Answer:**
+
+**Notes:** Use proxies only when required and legally acceptable. Keep concurrency low and increase only after monitoring.
+
+---
+
+## 16) Data quality & validation
+
+**Q:** How will you validate extracted data (schema checks, deduplication, sample checks)? What are acceptable error rates?
+
+**Answer:**
+
+**Notes:** Plan validation rules, required fields, type coercion, and fallback strategies for missing data.
+
+---
+
+## 17) Storage & format
+
+**Q:** Where will scraped data be stored (CSV, JSON, DB)? What structure and retention policy?
+
+**Answer:**
+
+**Notes:** Consider normalization, unique keys, and whether to store raw HTML/JSON for audit.
+
+---
+
+## 18) Scheduling & update frequency
+
+**Q:** How often should the site be scraped (one-time, hourly, daily)? Can you use incremental updates (only new/changed items)?
+
+**Answer:**
+
+**Notes:** Frequency should match data volatility and respect site load. Prefer incremental scraping using timestamps or ETags when possible.
+
+---
+
+## 19) Error handling & monitoring
+
+**Q:** How will failures be handled (retries, alerts)? What metrics will you monitor (success rate, latency, HTTP errors)?
+
+**Answer:**
+
+**Notes:** Implement retries with backoff, logging, and alerts for rising error rates or blocks.
+
+---
+
+## 20) Testing plan
+
+**Q:** How will you test the scraper (unit tests, integration, sample runs)? Which pages will be used as canonical test cases?
+
+**Answer:**
+
+**Notes:** Keep a test suite of representative pages and expected outputs. Re-run tests after any code or template changes.
+
+---
+
+## 21) Tech stack & tools
+
+**Q:** What tools/frameworks will you use (requests/BeautifulSoup, Scrapy, Playwright, Selenium, Puppeteer, Headless Chrome)?
+
+**Answer:**
+
+**Notes:** Select tools based on complexity: static HTML -> requests + parser; dynamic JS -> Playwright or headless browser; large-scale -> Scrapy/rotating proxies.
+
+---
+
+## 22) Ethical contact & escalation
+
+**Q:** If scraping is ambiguous or blocked, who will you contact at the site? What information will you include in the contact?
+
+**Answer:**
+
+**Notes:** Prepare a polite email explaining purpose, data needed, expected request rates, and offering to use an API or data feed.
+
+---
+
+## 23) Final risk checklist (quick binary checks)
+
+* [ ] TOS allows scraping for this use
+* [ ] Data is not personal/sensitive or you have consent
+* [ ] robots.txt allows crawling of required paths
+* [ ] No legal/contractual restrictions
+* [ ] Anti-bot is manageable or site provides API
+* [ ] Rate limits/account constraints identified
+
+---
+
+## Appendix: quick commands & inspection tips
+
+* `curl -I https://example.com/page` — check headers and server responses
+* `curl https://example.com/robots.txt` — view robots rules
+* DevTools Network tab — find XHR/Fetch endpoints and JSON responses
+* View page source vs Elements — spot client-rendered content
+* Search for `sitemap.xml`, RSS feeds, or `/api/` endpoints
+* Use `wget --mirror` or `httrack` for cautious local discovery (only when permitted)
+
+---
+
+*When you're ready, I can convert your completed Q\&A into an actionable scraping plan (URL generator, extraction rules, sample code) — tell me which target site and paste your answers.*
+
+'''
