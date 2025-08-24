@@ -8,6 +8,24 @@
 
 # August 24:
 r'''
+
+
+
+FOCUSING ON PUTTING THE ENTIRE CONCEPT IN THE THINGS THAT I CREATED 
+
+Why i do i do this again ? 
+Focus in Applying the learning that i forgotten how important the concept is 
+
+Additional Concept 
+    1. CSV Writing 
+    2. Try and Except Blocks 
+    3. Function 
+    4. Pandas Library and Core Concepts and Fundamentals
+    5. Data Exploration and Data Cleaning Concept 
+    6. spacy
+    7. 
+
+
 AS i learning the concepts and some of it are already applied at things there are things that i must 
 do it better next time but the thing is i'm constructing the workflow while also learning which is 
 quite nice of things 
