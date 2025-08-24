@@ -363,10 +363,6 @@ Question:
 
 
 
-# In terms of Extracting Components in CSS Selectors i notice i will quite use .class always but i think there are more ways to do this stuff
-# 
-# 
-
 ################################# Concept for User Agent ########################################
 
 # 2 Types of User Agent
