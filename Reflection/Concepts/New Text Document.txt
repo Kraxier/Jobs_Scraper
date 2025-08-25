@@ -1,0 +1,122 @@
+Project Management Programming_1:
+
+Define the Purpose: 
+1. What is the Goal of the Project? 
+To Define what is the necessary ones and what things i can add on along the way and to focus on what really matters man 
+
+2. Who will use the scraped data and for what?
+To Determine if the whether a Technical User or Non Technical User
+to Determine the Format and Level of Details of the output 
+
+3. Q: Is this a one-time scrape or ongoing/automated?
+To Determine how clean the code and how simple to more complex the code will be 
+because you can add Error Handling Maintenance of the code in the long term and how efficient you are will be building things 
+
+Define the Data Scope:
+1. What Specific Data do i need? 
+To Avoid the unnecessary one and you can recommend it to the client what is important for them focusing on the key necessary parts of things 
+
+2. Which Website contain this data?
+Determine the URL and the Page because it affect how you scrape and the legality of scrapping 
+
+3. What the Volume of the data? 
+If there are a Ton of Data Spreadsheet matter but if a large data we needed to consider cloud storage and also the scaling affect and processing of the scraper
+
+4. Do I need historical data or only real-time snapshots?
+Historical Data require a Archiving Strategies ( I don't have experience on that level ) While the Real time is a frequent update and monitoring of things (Alert notification i think can do through email)
+
+Technical Consideration 
+
+1. How Often should the data be updated? 
+Frequency Drive infrastructure
+Frequent Scrapping need more robust and scalable system 
+
+
+2. How Structured the Data on the Site?
+Structured Data like API and Tables are Easy while the HTML and JavaScript Rendered Content are a little bit tricky but feasible for me in any case
+
+3. What Tools and library used
+ Depends on the Experience of course
+
+4. Where and how will i store the data?
+Small Projects CSV and JSON format for larger projects  database and clouds 
+
+Feasibility and Constraint 
+
+1. Does Website allow Scrapping 
+TOS and Robot.txt and can result and bans or legal consequence 
+
+2. Are their Site is Dynamic or Static 
+Determine the complexity of the scrapper that you will do man 
+
+3. Are there Anti Scrapping MEasure 
+The More complex it will be the more paid you will got because there are rate limits, captchas and IP ban that require a strategy int o doing things and there are stealth scrapping technique that you can do 
+
+4. Do i need resource to handle the data?
+Scrapping the Large Dataset can overwhelm my processing and storage so planning the infrastructure before starting 
+
+5. What Format should the data be in? 
+CSV , Excel, JSON, data base or API planning 
+
+6. What will happen after the data is collected? 
+A Scrapped Data usually need Data cleaning and transforming and analyzing things 
+
+7. DO i need to Automate and Maintain the Scrapper:
+Website can change and long term projects need monitoring so it depends the how module your code will be how readable will it be 
+
+
+Summary based on my Understanding:
+I need to Properly Planning the Areas: 
+Define the Goal
+Identify the End User (Technical or Non Technical)
+One Time Scraper or On going Scraper
+
+Specific Fields
+Target Website
+Data Volume 
+Historical and Real Time 
+
+Update Frequency 
+Site Strucutre
+Tools 
+Data Storage 
+
+COnstraint
+robot.txt 
+dynamic content 
+anti scrapping measure 
+resources 
+
+Data Proccessing and Usage: 
+Clean and Normalize 
+pRoper Format 
+Integrating to Analysis Tool 
+Document the Data Pipeline 
+
+Automation and Maintaineance 
+Retry Logic 
+Monitoring Scrapper Performance 
+Updating the Code
+
+
+Define The Goal of the Project Jobs Scrapper:
+Figure out What is the Most Demand Skill in Mechatronics and Automation in the Country of the Philippines, for my selfish things to build the portfolio to showcase my ability of a web scrapper 
+
+Identify the End User:
+Me and my Classmate in Mechatronics and ICT determining what we should focus on studying 
+
+I can make it On Going Scrapper for other Jobs to Determine what is the Most Demand and also practice the module and reusability + readability of my code
+
+I can Practice Historical and Archibing Strategies in my code the real time i the problem in terms of Scrapping because i don't have things in that 
+
+Update Frequency Depends on me if i needed to up to date data but weekly i think because the skills will not change overnight but the location is and the company 
+
+Constraint i'm Free in here there are no TOS guidline there are no Robot.txt the dynamic content are perfect for my Playwright Skills 
+
+Data Processing 
+Practice Basic Cleaning and Transofrming and Extracting hte Text and maybe i needed to learn Integratiion of Tools and basics of Data Pipe line 
+
+I can do Retry Logic and Basic of Monitoring and PErformance and updating the code thing for the future projects 
+
+Basically to Enhance my Skills as a Web Scrapper to Gain Some amount of Experience at athings in there 
+ 
