@@ -6,6 +6,33 @@
 
 # Timeline/History:
 
+# August 26:
+r'''
+Deadline is This August Only
+    1. Create the README.md
+        - Study the Concept of README.md
+        - Properly Implement Things 
+    2. Create the Case Study for the Project 
+    3. Python Files:
+        A. Put Python Files in the Proper Places (Proper Structure of Project)
+        B. Understand the Code:
+            1. Meaningful Names:
+            2. Write the Why of Things (Why something it Done)
+            3. Clean Code
+            4. Write a Code that will save in JSON format
+            5. Write a Code that will save in Excel Format 
+            6. Write a Code that will save in MYSQL database and Google Sheet
+            7. Write a code that have a Config files for the whole thing
+            8. Write a Code for UI (Optional I think)
+            9. History of the Code and the Thought Proccess and Reflection
+            10. Find out what is the Reusable of Things in the Code that i can reuse
+            11. Template for the Things that i want to Build 
+                A. Data Cleaning 
+                B. Data Extracting 
+                C. Investigation in the Website 
+    4. Create a Demo Video for the Things in here
+'''
+
 # August 24:
 r'''
 

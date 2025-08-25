@@ -1,5 +1,12 @@
 # What Lack in my Projects? 
 
+# Step by Step Things
+r'''
+
+'''
+
+
+
 # Case Studies 
 r'''
 Simple Case Studies:
@@ -10,6 +17,77 @@ Challenges & How You Solved Them
 Sample Output
 Result/Value
 '''
+
+# Case Studies for the Project: 
+r'''
+
+Problem Statement: 
+1. Most in-demand hard skills.{Done}
+2. High-demand locations for these roles. {Categorizing Luzon, Visayas and Mindanao}
+3. Average salary ranges where available. {Proper Extraction for Php}
+4. Common job requirements and qualifications. {Proper Extraction of Job Requirements means Longer Text}
+5. Trends in skill demand over time.  {Continually Scrapping Things}
+6. Overall job market health for Mechatronics-related careers. {Vague Goal}
+
+Approach and Tool Used:
+Playwright Libary
+Pandas
+Matpolot 
+spaCy 
+
+Challenges and How you Solved Them:
+1. 
+
+
+What Things i Should Focus on?
+1. Study the Concept: 
+2. Understanding the Code:
+    A. History of the Code 
+    B. Thought Proccess 
+    C. What things i can do Better
+3. Fix the Readme.md
+4. Fix the Project Structure of the Code
+5. Create a Config File 
+    A. What Role of Job will it Scrape?
+    B. What kind of files will it saved ? (csv,excel,json)
+    C. What Database will it save mysql,sqllite, and MongoDB
+
+    in "C" part Instead of hard-coding one database (like MySQL only), you make your scraper flexible with a config file (JSON, YAML, or .env). Then your script can read the config and decide:
+        Should it save to MySQL?
+        Or to SQLite?
+        Or to MongoDB?
+    # This means i can beflexible at things i can build that stuff to do things 
+6. How i can Determine if the Project is Complete? 
+    - I can Scrape the Website and their Data
+    - Proper Project Structure
+    - Proper README.md
+No More Thinking Just Do it Man
+    1. Create the README.md
+        - Study the Concept of README.md
+        - Properly Implement Things 
+    2. Create the Case Study for the Project 
+    3. Python Files:
+        A. Put Python Files in the Proper Places (Proper Structure of Project)
+        B. Understand the Code:
+            1. Meaningful Names:
+            2. Write the Why of Things (Why something it Done)
+            3. Clean Code
+            4. Write a Code that will save in JSON format
+            5. Write a Code that will save in Excel Format 
+            6. Write a Code that will save in MYSQL database and Google Sheet
+            7. Write a code that have a Config files for the whole thing
+            8. Write a Code for UI (Optional I think)
+            9. History of the Code and the Thought Proccess and Reflection
+            10. Find out what is the Reusable of Things in the Code that i can reuse
+            11. Template for the Things that i want to Build 
+                A. Data Cleaning 
+                B. Data Extracting 
+                C. Investigation in the Website 
+    4. Create a Demo Video for the Things in here
+
+
+'''
+
 
 # Storing Data: 
 r'''
@@ -123,4 +201,53 @@ Red flag jobs: “Scrape LinkedIn emails” (illegal/too risky), “Need 50k rec
 Green flag jobs: “Scrape product details from XYZ shop and deliver in Excel” (clear + doable).
 ✅ So, in short:
 While you’re building scrapers → package them into portfolio pieces + practice how to communicate them in a business way (profiles, proposals, mini-demos).
+'''
+
+# How to Remember or rather become Familliar in your Code:
+
+# Write a Meaningful name
+r'''
+Use clear variable, function, and class names:
+When you see the code later, names already explain part of the logic.
+'''
+# Add Comments (But Not Too Many)
+r'''
+Comment on why something is done, not what it does (the code already shows the what).
+'''
+# Break Code into Small Functions
+r'''
+Functions act like "chapters in a book," so you only need to recall at a high level what each one does.
+def load_data():
+    ...
+def clean_data():
+    ...
+def analyze_data():
+    ...
+'''
+# Keep a Project Journal / README
+r'''
+Maintain a simple README.md or a personal log where you jot down:
+    What the project does
+    Key files and their purpose
+    Any tricky parts
+Next day, just skim your notes instead of the whole code.
+'''
+# Use Consistent Structure
+r'''
+Follow a predictable layout:
+    Configs in one file
+    Functions grouped logically
+    Separate logic from data
+Familiar structure = less re-learning
+'''
+# Commit with Good Git Messages
+r'''
+When you use Git, write messages like:
+git commit -m "Added data cleaning step for missing values"
+This creates a breadcrumb trail of your thought process.
+'''
+# Practice Writing “Clean Code”
+r'''
+The cleaner and simpler your code, the less mental overhead later.
+Ask yourself: “Will future me understand this without coffee?”
 '''
