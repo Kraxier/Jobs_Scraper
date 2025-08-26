@@ -6,13 +6,34 @@
 
 # Timeline/History:
 
+# August 27:
+r'''
+Analyze 
+
+Demo_3.py MAIN FOCUS
+    What Concept Did i Use? 
+    Putting a Why instead of What
+    Fix Everything (How to Clean the Data)
+Analyze Component in Data Cleaning
+
+Build Excel and JSON format 
+Build a Google Sheet Saving Format 
+Build a Config File
+
+Putting everything in Project Strucure: 
+Demo First 
+
+
+
+'''
+
 # August 26:
 r'''
 Deadline is This August Only
     1. Create the README.md
-        - Study the Concept of README.md
-        - Properly Implement Things 
-    2. Create the Case Study for the Project 
+        - Study the Concept of README.md (DONE)
+        - Properly Implement Things (DONE)
+    2. Create the Case Study for the Project (DONE) 
     3. Python Files:
         A. Put Python Files in the Proper Places (Proper Structure of Project)
         B. Understand the Code:
