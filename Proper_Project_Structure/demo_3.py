@@ -18,7 +18,7 @@ def start_csv_writer():
     csv_file = open(filename, "w", newline="", encoding="utf-8")
     writer = csv.writer(csv_file)
     writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
-    print(f"📁 Streaming results to: {filename}")
+    print(f" Streaming results to: {filename}")
 
     return csv_file, writer
 
@@ -26,7 +26,7 @@ def start_csv_writer():
 def write_job(writer, csv_file, job_data):
     """Write a single job row and flush immediately."""
     writer.writerow(job_data)
-    csv_file.flush()  # 💾 force save to disk immediately
+    csv_file.flush() 
 
 
 def extraction_job_description(page, writer, csv_file): 
@@ -45,7 +45,7 @@ def extraction_job_description(page, writer, csv_file):
             try:
                 time.sleep(random.uniform(0.8, 2.3))
 
-                # Hover safely
+
                 try:
                     locator.nth(i).hover(timeout=3000)
                 except Exception as e:
@@ -54,26 +54,25 @@ def extraction_job_description(page, writer, csv_file):
 
                 time.sleep(random.uniform(0.2, 0.5))
 
-                # Click safely
+   
                 try:
                     locator.nth(i).click(timeout=5000)
                 except Exception as e:
                     print(f"[WARNING] Could not click job {i}: {e}")
                     continue
 
-                # Get job title text safely
                 try:
                     value = locator.nth(i).inner_text(timeout=5000)
                 except Exception as e:
                     print(f"[WARNING] Could not get text for job {i}: {e}")
                     value = "Unknown"
 
-                # Wait for job description container
+         
                 if not page.wait_for_selector(".job-description-container", state="visible", timeout=5000):
                     print(f"[WARNING] No job description loaded for job {i}")
                     continue
 
-                # Extract safely
+  
                 def safe_text(sel):
                     try:
                         return page.locator(sel).inner_text(timeout=3000)
@@ -100,7 +99,7 @@ def extraction_job_description(page, writer, csv_file):
                 print(description_extraction)
                 print("-" * 50)
 
-                # ✅ Use the new write_job function
+       
                 write_job(writer, csv_file, [roles_of_jobs, company_name, company_location, type_of_work, description_extraction])
 
             except Exception as e:
@@ -124,41 +123,34 @@ def get_user_agent():
         return fallback_ua_rotator.get_random_user_agent()
 def pagination(page, base_url, writer, csv_file):
     while True:
-        # Wait for the current page to fully load jobs
+
         page.wait_for_load_state("networkidle")
 
-        # ✅ Call your extraction here for the *current* page
-        # basic_search_extraction(page)
-        # extraction_job_description(page,writer)
-
-        # ✅ Pass csv_file so flushing works
         extraction_job_description(page, writer, csv_file)
 
         try:
-            # Wait for the "next page" button
             page.wait_for_selector('.next-page-button', timeout=5000)
             button = page.locator('.next-page-button')
 
-            # If no next page button exists
+    
             if not button.is_visible():
                 print("No next page found.")
                 break
 
-            # Get the link to the next page
             next_page = button.get_attribute('href')
             if not next_page:
                 print("Next page button exists, but no href found.")
                 break
 
-            # Navigate to next page
+
             go_to_next_page = urljoin(base_url, next_page)
             print(f"Going to: {go_to_next_page}")
             page.goto(go_to_next_page, timeout=60000)
             try:
-                # Adjust the selector for your modal's close/dismiss button
+   
                 close_button = page.locator("#suggest-better-alert-modal .dismiss")
                 
-                if close_button.is_visible(timeout=2000):  # waits up to 2 seconds
+                if close_button.is_visible(timeout=2000):  
                     close_button.click()
                     print("Closed popup")
                 else:
@@ -166,7 +158,6 @@ def pagination(page, base_url, writer, csv_file):
             except Exception as e:
                 print(f"No popup detected or error closing popup: {e}")
 
-            # input("Paused. Press Enter to continue...")
 
         except Exception as e:
             print(f"Error or no more pages: {e}")

@@ -6,6 +6,31 @@
 
 # Timeline/History:
 
+# August 28:
+r'''
+Realization: 
+What is the Main Purpose of the Project?
+
+To Showcase my Skills as a Web Scrapper to make a Script that are working for the Client but Right now after copy pasting the code in chatgpt the realization of 
+that is not really mine and i don't have a sense of ownership and this feel like a chatgpt project more than me because the problem right now is i rush to finish the 
+project and i want it to be done as soon as possible but right now i don't have a proper fundamentals in the tools that i used like spaCy and Pandas and Data Cleaning 
+and even the playwright library that i been using 
+
+To Learn something based on PrimeTime 
+Give you a Component and from that Component is you need to Build Something out of that component and try do to something until you reach the final results 
+What i do is Copy Paste the program which is the final results 
+
+So Right now i have a Final Results from the Code i can analyze the Component of that and say i learn it but i feel like i'm missing something important 
+
+After Asking this to Chatgpt: 
+    1. Redo the Project Thing
+    2. Or Analyze the Component and Breakdown the Fundamentals to Have a Cheat Sheet and Do another project is the best way of doing things 
+
+The Next Thing I Supposed to do is 
+    1. Do the Config File Thing 
+    2. Google Sheet Saving Format Thing 
+'''
+
 # August 27:
 r'''
 Analyze 
