@@ -6,6 +6,26 @@
 
 # Timeline/History:
 
+
+# Defining the Finished Project: 
+r'''
+1. Raw HTML → structured format (CSV, JSON, database). # Create a Code for this 
+2. UI or Simple Script that Automatically Clean the Data 
+    * Data Cleaning, Data Wrangling
+3. Build a config File What ever that means for Web Scrapping Project 
+https://chatgpt.com/c/68af87be-74b4-832c-aa39-46714cf61aa1
+4. Build a Proper README.md 
+    * how to Run it 
+5. Put it to a Google Sheet (Learn the API things)
+6. Put it into a Mysql Database (Learn also the database)
+7. Build a UI for Simple Showing Things 
+8. Presentation of Portfolio 
+    * GitHub repo: Clean code, requirements.txt, README with screenshots.
+    * Case study / blog post: Explain the problem, your solution, and results.
+    * Demo: Short Loom video walking through the project.
+
+'''
+
 # August 28:
 r'''
 Realization: 
@@ -29,6 +49,27 @@ After Asking this to Chatgpt:
 The Next Thing I Supposed to do is 
     1. Do the Config File Thing 
     2. Google Sheet Saving Format Thing 
+
+I'm Going to Ship the Project Thing
+Why my Solution Worked 
+What Problem Thing that i solve 
+
+Read every error message completely
+Use actual debuggers again
+Write code from scratch
+Read source code instead of asking AI
+
+No AI for problems that you haven’t tried to understand first
+Read and understand all AI-suggested solutions
+Regular periods of coding without AI assistance
+Focus on learning patterns, not just fixing immediate issues
+
+
+Adding the Concept and Studying + Programming and Implementation of Things 
+Adding the Rewriting the Code
+Adding the Equation of how to Properly Integrate the AI
+How to Do the Documentation 
+
 '''
 
 # August 27:
