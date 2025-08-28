@@ -26,6 +26,21 @@ https://chatgpt.com/c/68af87be-74b4-832c-aa39-46714cf61aa1
 
 '''
 
+# August 29: 
+r'''
+Creating a Code to Put Excel and JSON file Using Pandas
+
+Research (Under 30 Minutes):
+    1. JSON is the Best for Web Scrapping in terms of Getting the data and 
+    converting it to different Format down later using pandas
+    2. Fundamentals of Saving the Data Using JSON files
+
+Feedback:
+    1. In terms of Project Learning Approach: 
+    * Should i Study after researching of what i research to make it understanding?
+    
+'''
+
 # August 28:
 r'''
 Realization: 
