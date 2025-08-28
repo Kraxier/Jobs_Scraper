@@ -34,6 +34,11 @@ Research (Under 30 Minutes):
     1. JSON is the Best for Web Scrapping in terms of Getting the data and 
     converting it to different Format down later using pandas
     2. Fundamentals of Saving the Data Using JSON files
+Research And Study (15 Minutes)    
+1. "Learning JSON and  Fundamentals around it also the best practice for web scrapping
+
+Implementing the JSON File in my Programming web Scrapping 
+* Learning the Basic of File Handling and Working it to Function is a different experience for me
 
 Feedback:
     1. In terms of Project Learning Approach: 

@@ -10,6 +10,11 @@ from random_user_agent.user_agent import UserAgent as RandomUA
 
 
 
+def start_json_writer():
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    filename = f"automation_{date_str}.json"
+
+
 def start_csv_writer():
     """Open a CSV for streaming writes during scraping."""
     date_str = datetime.now().strftime("%Y-%m-%d")
