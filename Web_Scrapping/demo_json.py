@@ -9,24 +9,40 @@ from random_user_agent.params import SoftwareName, OperatingSystem
 from random_user_agent.user_agent import UserAgent as RandomUA
 
 
-
-def start_csv_writer():
-    """Open a CSV for streaming writes during scraping."""
+def json_csv_writer():
+    # Why putting a date because to gather the meta data 
     date_str = datetime.now().strftime("%Y-%m-%d")
-    filename = f"automation_{date_str}.csv"
-
-    csv_file = open(filename, "w", newline="", encoding="utf-8")
-    writer = csv.writer(csv_file)
-    writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
-    print(f"📁 Streaming results to: {filename}")
-
-    return csv_file, writer
+    # putting a file name while also having a date in a json format
+    filename = f"automation_{date_str}.jsonl"
+    # Opening the File to Gather the Data thing 
+    json_file = open(filename, "w", encoding="utf-8")
+    
 
 
-def write_job(writer, csv_file, job_data):
-    """Write a single job row and flush immediately."""
-    writer.writerow(job_data)
-    csv_file.flush()  # 💾 force save to disk immediately
+# def start_csv_writer():
+#     """Open a CSV for streaming writes during scraping."""
+#     date_str = datetime.now().strftime("%Y-%m-%d")
+#     filename = f"automation_{date_str}.csv"
+
+#     csv_file = open(filename, "w", newline="", encoding="utf-8")
+#     writer = csv.writer(csv_file)
+#     writer.writerow(["Role of Job", "Company Name", "Company Location", "Type of Work", "Description"])
+#     print(f"📁 Streaming results to: {filename}")
+
+#     return csv_file, writer
+
+r'''
+From my Question in start_csv_writer why there are no "with" is because with is used 
+to close the file after using it but right now in terms of web scrapping we keep it open
+as we scrapping things 
+'''
+
+
+# def write_job(writer, csv_file, job_data):
+#     """Write a single job row and flush immediately."""
+#     writer.writerow(job_data)
+#     csv_file.flush()  # 💾 force save to disk immediately
+
 
 
 def extraction_job_description(page, writer, csv_file): 
@@ -229,4 +245,3 @@ def scrape_jora_title():
 
 if __name__ == "__main__":
     scrape_jora_title()
-

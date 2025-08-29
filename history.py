@@ -7,6 +7,7 @@
 # Timeline/History:
 
 
+
 # Defining the Finished Project: 
 r'''
 1. Raw HTML → structured format (CSV, JSON, database). # Create a Code for this 
@@ -24,6 +25,13 @@ https://chatgpt.com/c/68af87be-74b4-832c-aa39-46714cf61aa1
     * Case study / blog post: Explain the problem, your solution, and results.
     * Demo: Short Loom video walking through the project.
 
+'''
+
+# August 30:
+r'''
+Focusing in Creating a Code to Create a JSONL to save the data Thing 
+And Creating the Config File 
+Shipping the Project Thing
 '''
 
 # August 29: 
@@ -44,6 +52,8 @@ Feedback:
     1. In terms of Project Learning Approach: 
     * Should i Study after researching of what i research to make it understanding?
     
+
+BACK TO THE FUCKING FUNDAMENTALS OF FILE HANDLING FOCUSING IN JSON STUFF 
 '''
 
 # August 28:
