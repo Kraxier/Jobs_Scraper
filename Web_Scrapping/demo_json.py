@@ -396,6 +396,3 @@ def scrape_jora_title():
 if __name__ == "__main__":
     scrape_jora_title()
 
-
-if __name__ == "__main__":
-    scrape_jora_title()

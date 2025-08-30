@@ -114,7 +114,7 @@ data = json.loads("""
 """)
 
 df = pd.json_normalize(data)
-print(df)
+# print(df)
 r'''
 Results:
    id        name     contact.email contact.phone
@@ -122,3 +122,50 @@ Results:
 1   2  John Smith  john@example.com      555-5678
 '''
 # Basically the Indentation at the bottom Thing
+# Practising the json.load() vs. json.loads()
+r'''
+json.load()	File	Reading an external file
+json.loads()	String	Parsing an in-memory string
+'''
+# record = json.loads() this is wrong because it is already 
+type_1 = type(data)
+length = len(data)
+index_0 = data[0]
+index_0_name = data[0]['name']
+index_1 = data[1]['contact']['email']
+
+print(type_1) # Output: <class 'list'>
+print(length) # Output: 2
+print(index_0) # Output:{'id': 1, 'name': 'Jane Doe', 'contact': {'email': 'jane@example.com', 'phone': '555-1234'}}
+print(index_0_name) # Output: Jane Doe
+print(index_1) # Output: john@example.com
+
+
+
+
+
+
+
+
+
+r'''
+When you see code, dissect it
+Next time I (or a tutorial) give you code, don’t just run it.
+Ask yourself:
+What is each line doing?
+Could I explain this to a beginner?
+How would I rewrite it in my own words or slightly differently?
+A good trick: retype the code from scratch, but without looking at the original after the first read. This shows what you’ve actually understood.
+'''
+
+r'''
+Work on tiny projects with constraints
+Fundamentals stick best when applied to real problems.
+'''
+
+r'''
+Practice “fundamental-only” problem solving
+Go to coding practice sites (LeetCode easy, HackerRank, Exercism).
+Force yourself to solve problems without Googling.
+'''
+
