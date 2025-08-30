@@ -9,15 +9,72 @@ from random_user_agent.params import SoftwareName, OperatingSystem
 from random_user_agent.user_agent import UserAgent as RandomUA
 
 
-def json_csv_writer():
-    # Why putting a date because to gather the meta data 
-    date_str = datetime.now().strftime("%Y-%m-%d")
-    # putting a file name while also having a date in a json format
-    filename = f"automation_{date_str}.jsonl"
-    # Opening the File to Gather the Data thing 
-    json_file = open(filename, "w", encoding="utf-8")
-    
+import json
+import os
 
+
+def jsonl_writer():
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    filename = f"Mechatronics_{date_str}.jsonl"
+    f = open(filename, "w", encoding="utf-8")
+    print("📁 Writing JSONL to:", filename)
+    r'''
+    Why i need to "return f"
+    basically i needed to return the "f" to let other function write it
+    '''
+    return f
+
+r'''Writing the Record or the Scrape Material
+    Why "f" so it can write things 
+    "record" is where the data will go
+    flush=True is a python to immediately push things to the file 
+    not just in memory because if the program crash we have still a file
+'''
+def write_jsonl_record(f, record, flush=True):
+    f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    r'''
+    * json.dumps(...) turn a python object into a JSON string
+    record = {"Quote": "你好", "Author": "Li"}
+    json.dumps(record, ensure_ascii=False)
+
+    👉 becomes (JSON file)
+    '{"Quote": "你好", "Author": "Li"}'
+    * ensure_ascii=False [keeps characters as they are (like 你好) instead of converting them to]
+
+    * + "\n"     Adds a newline character at the end.
+    {"Quote": "Hello", "Author": "Alice"}
+    {"Quote": "World", "Author": "Bob"}
+
+    f.write(...) Actually writes the text into the open file (f).
+    '''
+
+    if flush:
+        # push Python buffer to OS, then try to sync to disk
+        f.flush()
+        r'''
+        f.flush()
+            * f.write: Write it only in the memory for performance thing 
+            * f.flush Push the Memory into the file itself 
+            * f.flush() forces Python to push everything in that buffer to the operating system.
+        '''
+        try:
+            os.fsync(f.fileno())
+            r'''
+            * Even after flushing, the OS itself may still buffer the data before writing to the physical disk.
+            * os.fsync(...) forces the OS to actually save it to disk immediately.
+            * f.fileno() just gives the OS-level “file number” for the file f.
+            '''
+        except Exception:
+            # Not critical if fsync isn't available or fails
+            r'''
+            * try/except block
+            * Not all environments (or OS’s) support fsync.
+            * If it fails, we just ignore the error (pass) because it’s not fatal — the file will still usually be saved eventually.
+            '''
+            pass
+def close_writer(f):
+    """Close the file handle (JSONL doesn't need array brackets)."""
+    f.close()
 
 # def start_csv_writer():
 #     """Open a CSV for streaming writes during scraping."""
@@ -45,7 +102,19 @@ as we scrapping things
 
 
 
-def extraction_job_description(page, writer, csv_file): 
+# def extraction_job_description(page,write_jsonl_record,jsonl_writer): 
+# def extraction_job_description(page, f, writer):
+def extraction_job_description(page, f):
+    r'''
+    * page → scrape from Playwright
+    * f → the open file handle (from jsonl_writer())
+    * writer → the save function (e.g., write_jsonl_record)
+    '''
+    r'''
+    🔑 Why not jsonl_writer as an argument?
+    Because jsonl_writer() is only called once at the start to open the file.
+    You don’t need to pass the function around — just pass its result (f).
+    '''
     try:
         locator = page.locator(".job-link.-no-underline.-desktop-only.show-job-description")
         count_job_post = locator.count()
@@ -117,8 +186,23 @@ def extraction_job_description(page, writer, csv_file):
                 print("-" * 50)
 
                 # ✅ Use the new write_job function
-                write_job(writer, csv_file, [roles_of_jobs, company_name, company_location, type_of_work, description_extraction])
+                # write_job(writer, csv_file, [roles_of_jobs, company_name, company_location, type_of_work, description_extraction])
 
+                # This is where i needed to Write the Damn Thing:
+                # return {
+                #     "Role": roles_of_jobs,
+                #     "Company": company_name,
+                #     "Location": company_location,
+                #     "Type": type_of_work,
+                #     "Description": description_extraction,
+                # }
+                write_jsonl_record(f, {
+                    "Role": roles_of_jobs,
+                    "Company": company_name,
+                    "Location": company_location,
+                    "Type": type_of_work,
+                    "Description": description_extraction,
+                })
             except Exception as e:
                 print(f"[ERROR] Skipping job {i} due to error: {e}")
                 continue
@@ -138,7 +222,8 @@ def get_user_agent():
     except Exception as e:
         print(f"[WARNING] fake_useragent failed: {e}")
         return fallback_ua_rotator.get_random_user_agent()
-def pagination(page, base_url, writer, csv_file):
+# def pagination(page, base_url, writer, csv_file):
+def pagination(page, base_url, f):
     while True:
         # Wait for the current page to fully load jobs
         page.wait_for_load_state("networkidle")
@@ -148,7 +233,8 @@ def pagination(page, base_url, writer, csv_file):
         # extraction_job_description(page,writer)
 
         # ✅ Pass csv_file so flushing works
-        extraction_job_description(page, writer, csv_file)
+        # extraction_job_description(page, writer, csv_file)
+        extraction_job_description(page, f)
 
         try:
             # Wait for the "next page" button
@@ -188,60 +274,128 @@ def pagination(page, base_url, writer, csv_file):
             print(f"Error or no more pages: {e}")
             break
     
-def scrape_jora_title():
-    csv_file, writer = start_csv_writer()  
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        ua_string = get_user_agent()
-        context = browser.new_context(
-            user_agent=ua_string,
-            viewport={"width": 1366, "height": 768}
-        )
-        page = context.new_page()
+# def scrape_jora_title():
+#     # csv_file, writer = start_csv_writer()  
 
-        base_url = "https://ph.jora.com/"
-        # ✅ Your keyword list
-        keywords = [
-            # "Mechatronics",
-            # "Instrumentation Technician",
-            # "Instrumentation Engineer"
-            # "Robotics Engineer",
-            # "Control Systems Engineer", Due to 5,k Jobs i Stop this Midway I'm Going to Continue this later
-            # "Electromechanical Engineer", Not this Part more on Mechanical and electrical 
-            # "Process Control Engineer",
-            # "Industrial Automation Specialist",
-            # "Manufacturing Engineer (with automation focus)",
-           #  "Test & Commissioning Engineer",
-            # "Maintenance Engineer (industrial/mechanical/electrical)",
-            # "Embedded Systems Engineer",
-            # "Electrical Design Engineer", # I Stop Mid Here there are 2k Jobs are like this 
-           #  "Firmware Engineer (for industrial equipment)",
-            # "Field Service Engineer (automation/instrumentation equipment)",
-            "System Integration Engineer",
-            "Production Engineer", #  (automation-heavy industries)
-            # "Plant Engineer",
-            "SCADA Engineer",
-            "PLC Programmer",
-            "LabVIEW Developer",
-            "Process Instrumentation Specialist",
-            "Robotics Technician",
-            "Motion Control Engineer"
-        ]
+#     f = jsonl_writer()   
+
+#     with sync_playwright() as p:
+#         browser = p.chromium.launch(headless=False)
+#         ua_string = get_user_agent()
+#         context = browser.new_context(
+#             user_agent=ua_string,
+#             viewport={"width": 1366, "height": 768}
+#         )
+#         page = context.new_page()
+
+#         base_url = "https://ph.jora.com/"
+#         # ✅ Your keyword list
+#         keywords = [
+#             # "Mechatronics",
+#             # "Instrumentation Technician",
+#             # "Instrumentation Engineer"
+#             # "Robotics Engineer",
+#             # "Control Systems Engineer", Due to 5,k Jobs i Stop this Midway I'm Going to Continue this later
+#             # "Electromechanical Engineer", Not this Part more on Mechanical and electrical 
+#             # "Process Control Engineer",
+#             # "Industrial Automation Specialist",
+#             # "Manufacturing Engineer (with automation focus)",
+#            #  "Test & Commissioning Engineer",
+#             # "Maintenance Engineer (industrial/mechanical/electrical)",
+#             # "Embedded Systems Engineer",
+#             # "Electrical Design Engineer", # I Stop Mid Here there are 2k Jobs are like this 
+#            #  "Firmware Engineer (for industrial equipment)",
+#             # "Field Service Engineer (automation/instrumentation equipment)",
+#             "System Integration Engineer",
+#             "Production Engineer", #  (automation-heavy industries)
+#             # "Plant Engineer",
+#             "SCADA Engineer",
+#             "PLC Programmer",
+#             "LabVIEW Developer",
+#             "Process Instrumentation Specialist",
+#             "Robotics Technician",
+#             "Motion Control Engineer"
+#         ]
 
         
-        for index, term in enumerate(keywords, start=1):
-            print(f"\n🔍 [{index}/{len(keywords)}] Searching for: {term}")
+#         for index, term in enumerate(keywords, start=1):
+#             print(f"\n🔍 [{index}/{len(keywords)}] Searching for: {term}")
 
-            page.goto(base_url, timeout=60000)
-            page.fill('#q', term)
-            page.click('button.search-jobs-button')
+#             page.goto(base_url, timeout=60000)
+#             page.fill('#q', term)
+#             page.click('button.search-jobs-button')
 
-            pagination(page, base_url, writer, csv_file)
+#             pagination(page, base_url, writer, csv_file)
 
-            print(f"✅ Finished: {term}")
+#             print(f"✅ Finished: {term}")
+        
+#         finally:
+#             # tidy up resources even when interrupted
+#             try:
+#                 context.close()
+#             except Exception:
+#                 pass
+#                 browser.close()
+    
 
-        browser.close()
-    csv_file.close()
+def scrape_jora_title():
+    # open output once (JSONL recommended)
+    f = jsonl_writer()   # returns file handle
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
+        try:
+            ua_string = get_user_agent()
+            context = browser.new_context(
+                user_agent=ua_string,
+                viewport={"width": 1366, "height": 768}
+            )
+            page = context.new_page()
+            base_url = "https://ph.jora.com/"
+
+            keywords = [
+                # "System Integration Engineer",
+                # "Production Engineer",
+                "SCADA Engineer",
+                "PLC Programmer",
+                "LabVIEW Developer",
+                "Process Instrumentation Specialist",
+                "Robotics Technician",
+                "Motion Control Engineer"
+            ]
+
+            for index, term in enumerate(keywords, start=1):
+                print(f"\n🔍 [{index}/{len(keywords)}] Searching for: {term}")
+
+                page.goto(base_url, timeout=60000)
+                page.fill('#q', term)
+                page.click('button.search-jobs-button')
+
+                # wait for results to render — replace selector with a real one if needed
+                try:
+                    page.wait_for_selector(".job-listing, .search-results, .job-card", timeout=10000)
+                except Exception:
+                    # fallback: wait for DOM load, but prefer selector wait
+                    page.wait_for_load_state("domcontentloaded")
+
+                # pass the writer function and file handle to pagination so it can call writer(f, record)
+                # pagination(page, base_url, write_jsonl_record, f)
+                pagination(page, base_url, f)
+
+                print(f"✅ Finished: {term}")
+
+        finally:
+            # tidy up resources even when interrupted
+            try:
+                context.close()
+            except Exception:
+                pass
+            browser.close()
+            close_writer(f)   # close the JSONL file
+
+if __name__ == "__main__":
+    scrape_jora_title()
+
 
 if __name__ == "__main__":
     scrape_jora_title()
