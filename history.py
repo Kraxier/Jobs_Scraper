@@ -25,6 +25,10 @@ https://chatgpt.com/c/68af87be-74b4-832c-aa39-46714cf61aa1
     * Case study / blog post: Explain the problem, your solution, and results.
     * Demo: Short Loom video walking through the project.
 
+Go For Learning Data Cleaning and Transformaton 
+File Handling and Storage 
+
+
 '''
 # 🔹 Components of a Good Web Scraping Project
 r'''
@@ -40,9 +44,6 @@ r'''
     * Normalizing data (e.g., dates, currencies, product variations).
     * Flattening nested data for CSV/Excel output.
     * Deduplication (e.g., avoid double entries with an id or hash).
-
-    
-
 3. File Handling / Storage (your focus now ✅)
     * JSONL/CSV/Excel/Google Sheets.
     * Database inserts (SQLite, MySQL, Postgres, MongoDB).
@@ -87,6 +88,14 @@ r'''
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
 
+# September 2:
+r'''
+In a File, Determining where to Focus:
+    Data Pipeline i should be focusing on the basic of things because my main core service is 
+    Data Extraction, so Data Cleaning should be basics and stuff
+
+    Focusing on Data Cleaning
+'''
 
 # September 1:
 r'''
