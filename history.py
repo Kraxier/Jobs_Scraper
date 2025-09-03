@@ -88,6 +88,18 @@ r'''
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
 
+# September 3:
+r'''
+Web Scraping Component and Projects 
+1. Core Extraction 
+	* Website Investigation
+	* Playwright Skills
+2. Data Cleaning and Transformation 
+	* Regex
+	* Pandas
+	* Spacy 
+'''
+
 # September 2:
 r'''
 In a File, Determining where to Focus:
