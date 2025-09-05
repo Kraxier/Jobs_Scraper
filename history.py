@@ -88,6 +88,12 @@ r'''
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
 
+# September 6: 
+r'''
+Building the basics script for data cleaning:
+
+'''
+
 # September 3:
 r'''
 Web Scraping Component and Projects 
