@@ -247,9 +247,6 @@ Deadline is This August Only
 
 # August 24:
 r'''
-
-
-
 FOCUSING ON PUTTING THE ENTIRE CONCEPT IN THE THINGS THAT I CREATED 
 
 Why i do i do this again ? 
