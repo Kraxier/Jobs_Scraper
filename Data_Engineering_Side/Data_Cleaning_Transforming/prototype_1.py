@@ -179,4 +179,49 @@ r'''
 Parsing the Price turning it into a float number or integer number it really depends
 because in terms of like a job description like my thing i can get the numbers in there 
 for the salary of things 
+
+Getting a Numbers in a Sentence (String Format Data Type)
 '''
+
+# Assuming you get the date 
+# date_str = "Sep 07, 2025" # There are many Different kind of dates but converting it into the iso format
+# '2025-09-07'
+from datetime import datetime # Importing the mOdule of Datetime working with dates 
+
+def parse_date(date_str):
+    try:
+        # Parse a common date format
+        return datetime.strptime(date_str, '%b %d, %Y').date().isoformat()
+        r'''
+        * datetime.strptime() = “string parse time”
+        * It takes a text string (date_str) and a format pattern ('%b %d, %Y') and turns it into a Python datetime object.
+
+        * The format here:
+            * %b = abbreviated month name (Jan, Feb, … Dec)
+            * %d = day of the month (01–31)
+            * %Y = 4-digit year
+        "Sep 07, 2025" → becomes a datetime.datetime(2025, 9, 7, 0, 0)
+
+        * .date()
+            * This takes the datetime object and extracts just the date portion (no time).
+            * Example:
+                * datetime(2025, 9, 7, 0, 0).date() → date(2025, 9, 7)
+        '''
+        # Why do this?
+        # But for analysis, sorting, or storing in a database, you want a consistent, machine-friendly format (YYYY-MM-DD).
+        
+    except ValueError:
+        return None  # Or log the error
+
+# Summary Date and Time for  Conversion in a Machine readable way
+# Converting the Price into a proper data format thing
+
+
+# Standardization (normalizer.py) 
+r'''
+The idea of normalization is not limited to job titles at all. 
+It’s a general data cleaning step where you take messy, inconsistent raw text and map it into a consistent, 
+standardized label that your system can work with.
+'''
+# https://chatgpt.com/share/68bc9f28-83dc-8013-b903-6853574185f4
+# Continue on this part 
