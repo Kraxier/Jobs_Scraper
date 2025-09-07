@@ -225,3 +225,116 @@ standardized label that your system can work with.
 '''
 # https://chatgpt.com/share/68bc9f28-83dc-8013-b903-6853574185f4
 # Continue on this part 
+
+r'''
+Standardization is something putting it in a category for example i have an infinix phone and oppo Phone instead of putting the data 
+Inifinix Phone and Oppo Phone we replace it with --> Phone to categorize the items or standardization the items 
+'''
+
+category_mapping = {
+    "cell phone": "Smartphone",
+    "mobile phone": "Smartphone",
+    "iphone": "Smartphone",
+    "laptop pc": "Laptop",
+    "notebook": "Laptop",
+    "fridge": "Refrigerator",
+    "refrigerator": "Refrigerator",
+}
+
+# Why Use Dictionary in Standardization: 
+r'''
+category mapping is just a name or i should just name it standardization of things 
+The Whole thing is a Dictionary 
+    * Keys ("cell phone", "iphone", etc.) → possible raw values you might scrape from websites.
+    * Values ("Smartphone", "Laptop", "Refrigerator") → the standardized labels you want in your dataset.
+    * When you normalize, you take any messy variant and map it to one consistent category.
+'''
+
+# This is Replacing the Thing to put it into the category parts of the things
+def normalize_category(category): # Defines a function named normalize_category that accepts one argument category (expected to be a string)  
+    category_lower = category.lower()   # Lowering the letters if there are the case of Upper cases 
+    for key, standard in category_mapping.items():
+        r'''
+        Iterates over each (key → standard) pair in category_mapping.
+        Example key: "cell phone", standard: "Smartphone".
+        In Dictionary we Use Keys and the standard is the value of the key something like Key Value Pairs 
+        '''
+        if key in category_lower:
+            '''
+            Checks whether the key (like "cell phone") appears anywhere inside the category_lower string.
+            This is a substring check. If the key is present, the condition is True.
+            This make Sense because we are lowering the files in there 
+            '''
+            return standard # If the if is True, the function immediately returns the standardized label (e.g., "Smartphone"). The loop stops.
+    return category # If none of the keys were found, return the original category string unchanged.
+
+r'''
+Important caveats / edge-cases
+
+category may be None or non-string → .lower() will raise AttributeError.
+
+Fix: check if not category: return category or if not isinstance(category, str): ....
+
+Substring false positives
+
+Example: if key = "phone", then "microphone" contains "phone" and would match incorrectly.
+
+Order matters
+
+If you have both "phone" and "iphone" as keys, whichever key appears first in the dict iteration will match first. For correctness prefer matching longer keys first.
+
+Punctuation & typos
+
+"Cell-Phone" or "cell phone!!!" may work, but "cellphone" (no space) won’t match "cell phone". You may want to normalize punctuation/whitespace first.
+
+Scalability
+
+For a small mapping, this is fine. For hundreds/thousands of keys you should precompile patterns (or build trie/regex) for speed.
+'''
+
+normalize_category("Latest Apple iPhone 14 Pro Max")
+# → "Smartphone"
+
+normalize_category("Brand New Laptop PC, i7")
+# → "Laptop"
+
+normalize_category("Big Capacity Fridge 300L")
+# → "Refrigerator"
+
+
+# More Complicated Code:
+import re
+import unicodedata
+
+# Example mapping
+category_mapping = {
+    "cell phone": "Smartphone",
+    "mobile phone": "Smartphone",
+    "iphone": "Smartphone",
+    "laptop pc": "Laptop",
+    "notebook": "Laptop",
+    "fridge": "Refrigerator",
+    "refrigerator": "Refrigerator",
+}
+
+# Precompile patterns: sort keys by length to prefer longer matches (avoids 'phone' capturing before 'iphone')
+compiled = []
+# for key in sorted(category_mapping.keys(), key=len, reverse=True):
+#     pattern = re.compile(r'\b' + re.escape(key.lower()) + r'\b')
+#     compiled.append((pattern, category_mapping[key]))
+
+# def normalize_category_safe(category):
+#     if not category or not isinstance(category, str):
+#         return category
+
+#     # Unicode normalize, lowercase, strip
+#     cat = unicodedata.normalize('NFKD', category).lower().strip()
+#     # Replace punctuation with spaces, collapse whitespace
+#     cat = re.sub(r'[^\w\s-]', ' ', cat)
+#     cat = re.sub(r'\s+', ' ', cat).strip()
+
+#     for pat, standard in compiled:
+#         if pat.search(cat):
+#             return standard
+
+#     return category  # fallback
