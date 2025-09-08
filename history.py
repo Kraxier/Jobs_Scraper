@@ -88,6 +88,12 @@ r'''
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
 
+# September 7-9:
+r'''
+Building the Basics of Data Cleaning and Stuff in terms of the knowledge 
+September: 9 is Categorizing and Standardization based on the data
+'''
+
 # September 6: 
 r'''
 Building the basics script for data cleaning:

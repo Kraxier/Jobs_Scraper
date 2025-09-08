@@ -272,32 +272,57 @@ r'''
 Important caveats / edge-cases
 
 category may be None or non-string → .lower() will raise AttributeError.
-
-Fix: check if not category: return category or if not isinstance(category, str): ....
-
+F   ix: check if not category: return category or if not isinstance(category, str): ....
 Substring false positives
+    Example: if key = "phone", then "microphone" contains "phone" and would match incorrectly.
+Order matters:
+    If you have both "phone" and "iphone" as keys, whichever key appears first in the dict iteration will match first. For correctness prefer matching longer keys first.
+Punctuation & typos: 
+    "Cell-Phone" or "cell phone!!!" may work, but "cellphone" (no space) won’t match "cell phone". You may want to normalize punctuation/whitespace first.
+Scalability:
+    For a small mapping, this is fine. For hundreds/thousands of keys you should precompile patterns (or build trie/regex) for speed.
 
-Example: if key = "phone", then "microphone" contains "phone" and would match incorrectly.
+Components (what a robust normalize_category needs)
 
-Order matters
+1. Input validation
+Reject or handle None, non-strings, empty strings to avoid crashes.
 
-If you have both "phone" and "iphone" as keys, whichever key appears first in the dict iteration will match first. For correctness prefer matching longer keys first.
+2. Unicode normalization
+Normalize accents and composed characters so “café” and “café” match the same way.
 
-Punctuation & typos
+3. Case normalization
+Lowercasing so matching is case-insensitive.
 
-"Cell-Phone" or "cell phone!!!" may work, but "cellphone" (no space) won’t match "cell phone". You may want to normalize punctuation/whitespace first.
+4. Noise removal / token cleaning
+Remove/replace punctuation, collapse multiple spaces, handle hyphens, parentheses, trailing punctuation.
 
-Scalability
+5. Key-preparation / ordering
+Prefer longer keys first (so "iphone" matches before "phone"). This avoids short-key preemption.
 
-For a small mapping, this is fine. For hundreds/thousands of keys you should precompile patterns (or build trie/regex) for speed.
+6. Match strategy
+* Exact substring? word boundaries (\b)? regex patterns? fuzzy matching for typos?
+* For most cases, word-boundary regex is safer than raw substring (avoids matching "microphone" if key is "phone").
+
+7. Precompilation
+* Compile regexes once (not every call) for speed.
+
+8. Fallback behavior
+* If no mapping found, return a cleaned version, or None, or the original — choose what fits your downstream code.
+
+9. Logging / metrics (optional)
+* Count unmapped categories for later mapping expansion.
+
+10. Caching (optional)
+If you see the same strings a lot, cache results for speed.
+
+11. Optional fuzzy layer
+Use a fuzzy library (e.g., rapidfuzz) only when exact/regex fails. Slower but catches misspellings
 '''
 
 normalize_category("Latest Apple iPhone 14 Pro Max")
 # → "Smartphone"
-
 normalize_category("Brand New Laptop PC, i7")
 # → "Laptop"
-
 normalize_category("Big Capacity Fridge 300L")
 # → "Refrigerator"
 
@@ -338,3 +363,91 @@ compiled = []
 #             return standard
 
 #     return category  # fallback
+######################################################################################################
+######################################################################################################
+
+
+# 4. Deduplication (deduplicate())
+# Goal: Use a unique key to identify duplicates. Often, a combination of title, client, and date is a good key. For this example, let's create a hash of the title and date.
+r'''
+Basically the  Goal of this is to avoid duplicates and mostly do in post proccessing thing
+
+Duplicates affect 
+    * inflates counts (wrong statistics, wrong analysis),
+    * pollutes training data (if you’re using it for ML/AI),
+    * and wastes storage.
+'''
+
+raw_records = [
+    {"title": "Software Engineer", "posted_date": "2025-09-09"},
+    {"title": "Software Engineer", "posted_date": "2025-09-09"},  # duplicate
+    {"title": "Web Developer", "posted_date": "2025-09-09"},
+]
+
+import hashlib
+r'''
+* Imports Python’s hashlib module, which provides hash functions (MD5, SHA-1, SHA-256, etc.).
+
+* Why: we use a hash to produce a short, fixed-length identifier from a (possibly long) string.
+'''
+
+def generate_id(record): # Defines a function named generate_id that expects a record (a dict in this context).
+
+    # Create a unique string based on title and date
+    unique_string = f"{record['title']}_{record['posted_date']}"
+    r'''
+    * Builds a single string from the title and posted_date fields of the record.
+
+    * Why: we need a deterministic string that (ideally) uniquely represents that record. The underscore _ is a simple separator.
+    '''
+
+
+    return hashlib.md5(unique_string.encode()).hexdigest()
+    r'''
+    * unique_string.encode() turns the Python string into bytes (UTF-8 by default).
+
+    * hashlib.md5(...).hexdigest() computes the MD5 hash of those bytes and returns a 32-character hex string (e.g. "a1b2c3...").
+
+    * Why: the hex hash is compact, fixed-size, and reproducible — convenient as an ID.
+    '''
+
+# Add a unique ID to the record
+raw_records['id'] = generate_id(raw_records)
+r'''
+* Calls generate_id and stores the resulting hash in the record under key 'id'.
+
+* Note/caution: generate_id expects the record to have title and posted_date; 
+if missing this will raise a KeyError. Also variable name mismatch: earlier you used raw_record singular; here you used raw_records — be consistent.
+'''
+# Later, you have a list of records `all_records`
+def deduplicate(records, key="id"):
+    r'''
+    Defines a function deduplicate which takes a list records and an optional key name (default "id"). It will remove duplicates based on the value at record[key].
+    '''
+    seen = set()
+    unique_records = []
+    r'''
+    seen is a set() of keys we’ve observed.
+
+unique_records is the list we’ll return containing only the first occurrence of each unique key.
+    '''
+
+
+    for record in records:
+        
+        if record[key] not in seen:
+            seen.add(record[key])
+            unique_records.append(record)
+    return unique_records
+
+r'''
+For each record: check its record[key].
+
+If not seen before → add the key to seen and append the record to unique_records.
+
+If already seen → skip it (this removes duplicates).
+
+Returns the filtered list preserving first-occurrence order.
+'''
+
+
