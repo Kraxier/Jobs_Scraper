@@ -88,10 +88,17 @@ r'''
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
 
+# September 9:
+r'''
+Its currently 6:30 PM which is pretty new to me but Let's do a small bit of programming 
+'''
+
 # September 7-9:
 r'''
 Building the Basics of Data Cleaning and Stuff in terms of the knowledge 
 September: 9 is Categorizing and Standardization based on the data
+
+Also I have a Goal in implementing the prototype_1.py
 '''
 
 # September 6: 
