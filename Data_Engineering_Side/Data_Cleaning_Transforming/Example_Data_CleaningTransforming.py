@@ -177,6 +177,7 @@ errors = validate_record(raw_record)
 if errors:
     print(f"Record {raw_record['id']} has errors: {errors}")
     # We might choose to drop it or flag it for review
+    
 
 # 5. Handling Missing Data Output
 # If validate_record() finds issues:

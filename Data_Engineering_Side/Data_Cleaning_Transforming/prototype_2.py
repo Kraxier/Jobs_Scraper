@@ -69,8 +69,48 @@ df = pd.read_json('Mechatronics_2025-08-30.jsonl', lines=True)
 # print(df.info()) # Data Type are all object # What ever that means, Shoud i care ? 
 
 # Data Exploration Part, before Post Proccessing Thing i Should Data Explore it First
-column_1_role = df["Role"]
-print(column_1_role)
+# column_1_role = df["Role"]
+# print(column_1_role)
 
 # Basically go for Data Exploration First before Diving into the Data Cleaning, Maybe Try to Automate or Find a way to Find the Dirty Stuff like what is common instead of 
 # manually Checking things out 
+
+r'''
+"Focusing on Exploring the Dataset Instead of manual the goal is to figure out what is dirty creating a program to find the dirty data in the set off columns thing"
+'''
+
+########################## Location Data ##########################################
+# column_2_role = df["Location"]
+# print(column_2_role)
+# Terms of Location i can do the Standardization, Picking Between Luzon, Visayas and Mindanao
+r'''
+Also i can concentrated Area of things Metro Manila, Or Calabarzon
+Also i just know , how many Words that are Repeated in the things, to make it Some sort Concetrating in terms of locations 
+'''
+
+########################## Company Data ############################################
+# column_3_role = df["Company"]
+# print(column_3_role)
+r'''
+What Company is always Hiring i think in terms of this, maybe Create a Standardization of the company that are currently hiring 
+'''
+
+# column_4_role = df["Type"]
+# print(column_4_role)
+
+# In terms of Column no. 5 i can extract skills, which i already Do which is quite nice so It is really doesn't matter anymore man
+# column_5_role = df["Description"]
+# print(column_5_role)
+
+
+r'''
+After Exploring a little bit of the Data more on the standardization rather than cleaning white spaces because i already do it man 
+
+1. Remove all Duplicates 
+2. Find some Special Characters in each Column and try to Figure out What is common Special Characters
+3. Standardization of Things 
+
+So Far this is the Things i neeeded to do for data cleaning i think 
+
+i Should Add Date In Extracting Data for Creating ISO Format
+'''

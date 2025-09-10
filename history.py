@@ -88,7 +88,20 @@ r'''
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
 
-# September 9:
+# September 11:
+r'''
+After Exploring a little bit of the Data more on the standardization rather than cleaning white spaces because i already do it man 
+
+1. Remove all Duplicates 
+2. Find some Special Characters in each Column and try to Figure out What is common Special Characters
+3. Standardization of Things 
+
+So Far this is the Things i neeeded to do for data cleaning i think 
+
+i Should Add Date In Extracting Data for Creating ISO Format
+'''
+
+# September 10:
 r'''
 Its currently 6:30 PM which is pretty new to me but Let's do a small bit of programming 
 '''
