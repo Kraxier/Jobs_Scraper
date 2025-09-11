@@ -114,3 +114,83 @@ So Far this is the Things i neeeded to do for data cleaning i think
 
 i Should Add Date In Extracting Data for Creating ISO Format
 '''
+
+
+df_csv = pd.read_csv('mechatronics_jobs_2025-08-13_with_skills.csv')
+# print(df_csv.head())
+# print(df_csv.info())
+
+
+duplicates = df_csv.duplicated()
+print(duplicates)
+# print(duplicates.sum())  # Count duplicates
+# Data Frame Look like This: 
+r'''
+	A	B
+0	1	x
+1	1	x
+2	2	y
+3	2	z
+4	3	z
+
+0    False   # first (1, 'x') → not a duplicate yet
+1     True   # second (1, 'x') → duplicate of row 0
+2    False   # (2, 'y') → new combination
+3    False   # (2, 'z') → new combination
+4    False   # (3, 'z') → new combination
+
+print(duplicates.sum()) # Since True counts as 1 and False counts as 0, .sum() counts the number of duplicates.
+ 
+So This Means in the 183 There are Similar in a Row which is i can remove it properly because if there are similar in a row it really have a duplicate at things
+'''
+
+
+# duplicate_rows = df_csv[df_csv.duplicated()]
+# print(duplicate_rows)
+# print(duplicate_rows.head(10))
+
+
+# Experience in Doing the 
+r'''
+In terms of Doing things 
+I should Install the Pykernel but that will take up time to set up the Environment so i needed some Things i needed to think about 
+
+'''
+
+# Understanding the Duplicates:
+r'''
+Based on the Duplicates it state that even if they have in same Columns but they are different in others columns it didn't count as duplicates
+but if they all have the same data in all columns it means it consider a duplicate 
+
+	* If two rows both have "Automation Engineer (UiPath) - 6290" as Job Title, and "Cambridge University Press & Assessment" as Company Name, and "Manila, Metro Manila" as Company Location, and the same Description, and the same extracted_skills list, etc. → ✅ they are duplicates.
+	* If only the extracted_skills column matches (['sis']) but other columns differ (like different company name or job description), → ❌ they are not considered duplic
+The duplicates you’re seeing now are full-row duplicates — entire rows that are 100% identical across all columns.
+'''
+
+
+# Remove all duplicate rows
+# duplicate_rows = df_csv[df_csv.duplicated()] 
+# duplicate_count = df_csv.duplicated().sum()
+# print(duplicate_count)
+
+
+
+# df_no_duplicates = df_csv.drop_duplicates(keep=False)
+# df_no_duplicates = df_csv[df_csv.duplicated()]
+# print(df_no_duplicates.head(10)) # Printing if it is drop 
+
+
+# DataFrame Concepts 
+r'''
+Based on dropping it only in the data frame which is the memory of python but in the file of the csv itself it didn't drop anything 
+'''
+
+
+# # 1. Count duplicates
+# print("Duplicates before dropping:", df_csv.duplicated().sum())
+
+# # 2. Drop duplicates (keep first occurrence)
+# df_no_duplicates = df_csv.drop_duplicates(keep='first')
+
+# # 3. Count duplicates after
+# print("Duplicates after dropping:", df_no_duplicates.duplicated().sum())
