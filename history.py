@@ -87,6 +87,20 @@ r'''
     * Show results in a simple web dashboard (Streamlit, Flask, etc.).
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
+# September 14:
+r'''
+Define a MVP for the Project
+Redefine the Objective of the project 
+
+
+New Goal is to only Commit when you did build something even a micro building to really counted a new feature or a new function that will help build MVP 
+The goal of every time i touch the laptop/computer i always build 
+'''
+
+# September 13: 
+r'''
+In terms of this project i realize i been re-studyiung the things in here instead of finishing the project that i forgotten what is the objective of the project 
+'''
 
 # September 11:
 r'''

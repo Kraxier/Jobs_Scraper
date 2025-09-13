@@ -120,10 +120,30 @@ df_csv = pd.read_csv('mechatronics_jobs_2025-08-13_with_skills.csv')
 # print(df_csv.head())
 # print(df_csv.info())
 
-
+# Counting how many Duplicates in a Rows 
 duplicates = df_csv.duplicated()
-print(duplicates)
-# print(duplicates.sum())  # Count duplicates
+
+
+#print(duplicates)
+r'''
+Return of this is 
+0      False
+1      False
+2      False
+3      False
+4      False
+       ...  
+712     True
+713    False
+714    False
+715    False
+716    False
+
+Boolean
+'''
+# print(duplicates.sum())  # Count duplicates r'''183 Duplicates''''
+
+
 # Data Frame Look like This: 
 r'''
 	A	B
@@ -144,10 +164,24 @@ print(duplicates.sum()) # Since True counts as 1 and False counts as 0, .sum() c
 So This Means in the 183 There are Similar in a Row which is i can remove it properly because if there are similar in a row it really have a duplicate at things
 '''
 
+# The Actual Duplicates
+duplicate_rows = df_csv[df_csv.duplicated()]
+print(duplicate_rows)
+r'''
+                               Role of Job  ...                                   extracted_skills
+5      Automation Engineer (UiPath) - 6290  ...                                            ['sis']
+11                     Automation Engineer  ...                                     ['plc', 'sis']
+13            System (Automation) Engineer  ...  ['plc', 'programmable logic controller', 'scad...
+14     Robotic Process Automation Engineer  ...                                                 []
+21    Project Engineer Cavite, Philippines  ...                     ['plc', 'scada', 'dcs', 'sis']
+..                                     ...  ...                                                ...
+701       Senior Site Reliability Engineer  ...                                                 []
+705  Automation and Integration Programmer  ...                                                 []
+708          Process Automation Engineer-3  ...                                            ['sis']
+709  Automation and Integration Programmer  ...                                                 []
+712    MANUFACTURING ENGINEER II - Molding  ...                              ['sis', 'solidworks']
+'''
 
-# duplicate_rows = df_csv[df_csv.duplicated()]
-# print(duplicate_rows)
-# print(duplicate_rows.head(10))
 
 
 # Experience in Doing the 
@@ -174,10 +208,22 @@ The duplicates you’re seeing now are full-row duplicates — entire rows that 
 # print(duplicate_count)
 
 
+# Removing the Duplicates
+# df_no_duplicates = df_csv.drop_duplicates(keep=False)
+# print(df_no_duplicates.sum())
+
 
 # df_no_duplicates = df_csv.drop_duplicates(keep=False)
 # df_no_duplicates = df_csv[df_csv.duplicated()]
 # print(df_no_duplicates.head(10)) # Printing if it is drop 
+
+
+# Drop duplicates (keep only the first occurrence)
+df_no_duplicates = df_csv.drop_duplicates(keep='first')
+
+# Check how many duplicates remain
+dup_count = df_no_duplicates.duplicated().sum()
+print("Remaining duplicates:", dup_count)
 
 
 # DataFrame Concepts 
@@ -194,3 +240,9 @@ Based on dropping it only in the data frame which is the memory of python but in
 
 # # 3. Count duplicates after
 # print("Duplicates after dropping:", df_no_duplicates.duplicated().sum())
+
+
+# Duplicates is Done, i Think we Should go For STANDARDIZATION
+r'''
+
+'''
