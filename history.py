@@ -95,6 +95,22 @@ Redefine the Objective of the project
 
 New Goal is to only Commit when you did build something even a micro building to really counted a new feature or a new function that will help build MVP 
 The goal of every time i touch the laptop/computer i always build 
+
+
+The MVP of the Project? 
+from the datanerd.tech: 
+
+I can Figure out the Skills requirement, categories of Mechatronics Field, Location (Luzon Visayas and Mindanao)
+
+basically clean the data set categorizing , Luzon Visayas and Mindanao part 
+Extract all possible Skills 
+JSON Files to CSV files, Google Sheet API, and Database Input (Mysql)
+
+Automatic Scrapping Online (scheudling Automation) (Define This)
+Error Handling and Logging (Define This )
+Confiugrable Script
+
+
 '''
 
 # September 13: 
