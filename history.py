@@ -60,8 +60,6 @@ r'''
             JSONL → SQLite / MySQL / PostgreSQL / MongoDB
         5. (Optional later) Parquet, BigQuery, S3, API push, etc.
 
-
-
 4. Scheduling & Automation
     * Run scraper on a schedule (cron jobs, Airflow, Scrapy Cloud, GitHub Actions).
     * Automatic retries on failure.
@@ -74,7 +72,7 @@ r'''
 
 6. Configurable Scripts (for clients)
     * Choose category, date range, keywords from a config file or CLI.
-    * Example: python run.py --category "electronics" --format excel.
+    * Example: python run.py --category "electronics" --formatr excel.
     * Makes your tool usable by non-developers.
 
 7. Deployment / Delivery
@@ -87,6 +85,26 @@ r'''
     * Show results in a simple web dashboard (Streamlit, Flask, etc.).
     * Charts, filters → especially useful for e-commerce/lead gen scraping.
 '''
+
+# September 15:
+r'''
+MVP for now is: 
+    * Categorizing the Location maybe no because it's always on the luzon part in term of the industry part 
+    * Google Sheet API thing
+
+    Goal: Scrape → Clean with pandas → Save CSV (backup) → Push cleaned DataFrame to Google Sheet.
+        * pandas: excellent for robust cleaning, deduping, joins, date parsing, pivoting, normalization.
+        * Sheets API (gspread/pygsheets): for delivering results, scheduling, and letting clients collaborate.
+        * Knowing both makes you flexible and professional.
+        
+'''
+
+# September 16:
+r'''
+I have a Working in A Google Sheet and i will try to Study and Implement Things
+'''
+
+
 # September 14:
 r'''
 Define a MVP for the Project
